@@ -54,6 +54,19 @@ local function drawDate(x, y)
   -- lcd.drawText(x,y+6,datenow.day.."/"..datenow.mon.."/"..datenow.year,0)
 end
 
+local function SecondsToClock(seconds)
+  local seconds = tonumber(seconds)
+
+  if seconds <= 0 then
+    return "00:00:00";
+  else
+    hours = string.format("%02.f", math.floor(seconds/3600));
+    mins = string.format("%02.f", math.floor(seconds/60 - (hours*60)));
+    secs = string.format("%02.f", math.floor(seconds - hours*3600 - mins *60));
+    return hours..":"..mins..":"..secs
+  end
+end
+
 local function bgrnd_func()
   lcd.clear()
 
@@ -78,18 +91,18 @@ local function run(event)
   drawVerticalGauge(15, 63, 40, 6, 100+(getValue('ch7')/10), 200)
 
   -- Rear outputs
-  lcd.drawText(141, 1, "SC", SMLSIZE)
-  lcd.drawGauge(154, 1, 20, 6, 100+(getValue('ch11')/10), 200)
-  lcd.drawText(141, 8, "SD", SMLSIZE)
-  lcd.drawGauge(154, 8, 20, 6, 100+(getValue('ch12')/10), 200)
-  lcd.drawText(141, 15, "Vit", SMLSIZE)
-  drawServo(154, 15, 10, 6, getValue('ch13')/10, 100)
-  lcd.drawText(200, 1, "S2", SMLSIZE)
-  lcd.drawGauge(176, 1, 20, 6, 100+(getValue('ch14')/10), 200)
-  lcd.drawText(200, 8, "YDr", SMLSIZE)
-  lcd.drawGauge(176, 8, 20, 6, 100+(getValue('ch15')/10), 200)
-  lcd.drawText(200, 15, "SH", SMLSIZE)
-  lcd.drawGauge(176, 15, 20, 6, 100+(getValue('ch16')/10), 200)
+  lcd.drawText(200, 1, "SC", SMLSIZE)
+  lcd.drawGauge(176, 1, 20, 6, 100+(getValue('ch11')/10), 200)
+  lcd.drawText(200, 8, "SD", SMLSIZE)
+  lcd.drawGauge(176, 8, 20, 6, 100+(getValue('ch12')/10), 200)
+  lcd.drawText(200, 15, "Vit", SMLSIZE)
+  drawServo(176, 15, 10, 6, getValue('ch13')/10, 100)
+  lcd.drawText(141, 1, "S2", SMLSIZE)
+  lcd.drawGauge(154, 1, 20, 6, 100+(getValue('ch14')/10), 200)
+  lcd.drawText(141, 8, "YDr", SMLSIZE)
+  lcd.drawGauge(154, 8, 20, 6, 100+(getValue('ch15')/10), 200)
+  lcd.drawText(141, 15, "SH", SMLSIZE)
+  lcd.drawGauge(154, 15, 20, 6, 100+(getValue('ch16')/10), 200)
 
   -- Rear lift
   lcd.drawText(200, 38, "SE", SMLSIZE)
@@ -108,9 +121,16 @@ local function run(event)
   drawServo(76, 44, 28, 6, getValue('ch2')/10, 100)
   drawServo(76, 51, 28, 6, getValue('ch1')/10, 100)
   lcd.drawText(90, 58, "SG + YGa", SMLSIZE)
+  drawVerticalGauge(134, 63, 20, 6, 100+(getValue('sg')/10), 200)
 
   -- Various
   -- drawDate(32, 1)
+  lcd.drawText(141, 42,"To", SMLSIZE)
+  lcd.drawText(141, 49,"Av", SMLSIZE)
+  lcd.drawText(141, 56,"Ar", SMLSIZE)
+  lcd.drawText(152, 42,SecondsToClock(getValue('timer1')), SMLSIZE)
+  lcd.drawText(152, 49,SecondsToClock(getValue('timer2')), SMLSIZE)
+  lcd.drawText(152, 56,SecondsToClock(getValue('timer3')), SMLSIZE)
 
   -- linking lines
   -- (for servos)
