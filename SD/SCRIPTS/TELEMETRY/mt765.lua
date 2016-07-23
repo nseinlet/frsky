@@ -1,33 +1,19 @@
 local function drawVerticalGauge(x, y, size, width, value, max)
-  val = value
+  local val = value
   if val<0 then
     val=0
   end
   if val>max then
     val=max
   end
-  sz_filled = val*(size/max)
-  sz_unfilled = size-sz_filled
+  local sz_filled = val*(size/max)
+  local sz_unfilled = size-sz_filled
   lcd.drawRectangle(x, y-size, width, sz_unfilled)
   lcd.drawFilledRectangle(x, y-sz_filled, width, sz_filled)
 end
 
-local function drawReverseGauge(x, y, size, width, value, max)
-  val = value
-  if val<0 then
-    val=0
-  end
-  if val>max then
-    val=max
-  end
-  sz_filled = val*(size/max)
-  sz_unfilled = size-sz_filled
-  lcd.drawRectangle(x-size, y-width, sz_unfilled, width)
-  lcd.drawFilledRectangle(x-sz_filled, y-width, sz_filled, width)
-end
-
 local function drawServo(x, y, size, width, value, max)
-  val = value
+  local val = value
   if val<((-1)*max) then
     val=(-1)*max
   end
@@ -36,22 +22,16 @@ local function drawServo(x, y, size, width, value, max)
   end
   lcd.drawRectangle(x, y, size*2, width)
   if val>0 then
-    sz_filled = val*(size/max)
+    local sz_filled = val*(size/max)
     lcd.drawFilledRectangle(x+size-sz_filled, y, sz_filled, width)
   else
     if val<0 then
-      sz_filled = (-1)*val*(size/max)
+      local sz_filled = (-1)*val*(size/max)
       lcd.drawFilledRectangle(x+size, y, sz_filled, width)
     else
       lcd.drawLine(x+size, y, x+size, y+width-1, SOLID, FORCE)
     end
   end
-end
-
-local function drawDate(x, y)
-  local datenow = getDateTime()
-  lcd.drawText(x,y,datenow.hour..":"..datenow.min..":"..datenow.sec,0)
-  -- lcd.drawText(x,y+6,datenow.day.."/"..datenow.mon.."/"..datenow.year,0)
 end
 
 local function SecondsToClock(seconds)
@@ -60,9 +40,9 @@ local function SecondsToClock(seconds)
   if seconds <= 0 then
     return "00:00:00";
   else
-    hours = string.format("%02.f", math.floor(seconds/3600));
-    mins = string.format("%02.f", math.floor(seconds/60 - (hours*60)));
-    secs = string.format("%02.f", math.floor(seconds - hours*3600 - mins *60));
+    local hours = string.format("%02.f", math.floor(seconds/3600));
+    local mins = string.format("%02.f", math.floor(seconds/60 - (hours*60)));
+    local secs = string.format("%02.f", math.floor(seconds - hours*3600 - mins *60));
     return hours..":"..mins..":"..secs
   end
 end
@@ -125,12 +105,13 @@ local function run(event)
 
   -- Various
   -- drawDate(32, 1)
-  lcd.drawText(141, 42,"To", SMLSIZE)
-  lcd.drawText(141, 49,"Av", SMLSIZE)
-  lcd.drawText(141, 56,"Ar", SMLSIZE)
-  lcd.drawText(152, 42,SecondsToClock(getValue('timer1')), SMLSIZE)
-  lcd.drawText(152, 49,SecondsToClock(getValue('timer2')), SMLSIZE)
-  lcd.drawText(152, 56,SecondsToClock(getValue('timer3')), SMLSIZE)
+  lcd.drawText(141, 42,"SWR", SMLSIZE)
+  lcd.drawText(141, 49,"RssI", SMLSIZE)
+  -- lcd.drawText(141, 56,"Ar", SMLSIZE)
+  lcd.drawChannel(172, 42, "SWR", SMLSIZE)
+  lcd.drawChannel(172, 49, "RSSI", SMLSIZE)
+  local datenow = getDateTime()
+  lcd.drawText(141, 56, datenow.hour..":"..datenow.min..":"..datenow.sec, SMLSIZE)
 
   -- linking lines
   -- (for servos)
