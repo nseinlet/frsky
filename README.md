@@ -1,0 +1,3 @@
+# FrSky #
+
+Repo for FrSky radfios SD card content, model settings, firmwares, ...
