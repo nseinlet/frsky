@@ -59,7 +59,7 @@ local function drawServo(x, y, size, width, value, max)
 end
 
 local function create(zone, options)
-  local pie = { zone=zone, options=options }
+  local pie = { zone=zone, options=options, bitmap = Bitmap.open("/IMAGES/MT765.png") }
   return pie
 end
 
@@ -71,8 +71,7 @@ local function background(pie)
 end
 
 function refresh(pie)
-  --bitmap = lcd.loadBitmap("/IMAGES/MT765.jpg")
-  --lcd.drawBitmap(60, 0, bitmap)
+  lcd.drawBitmap(pie.bitmap, pie.zone.x+85, pie.zone.y-10, 100)
 
   -- Front outputs
   lcd.drawText(pie.zone.x, pie.zone.y, "SA", SMLSIZE+TEXT_COLOR)
@@ -83,59 +82,57 @@ function refresh(pie)
   lcd.drawGauge(pie.zone.x+19, pie.zone.y+25, 30, 10, 100+(getValue('ch6')/10), 200, CURVE_COLOR)
 
   -- Front lif
-  lcd.drawText(pie.zone.x, pie.zone.y+55, "SF", SMLSIZE)
-  lcd.drawText(pie.zone.x+3, pie.zone.y+65, "+", SMLSIZE)
-  lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE)
+  lcd.drawText(pie.zone.x, pie.zone.y+55, "SF", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+3, pie.zone.y+65, "+", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE+TEXT_COLOR)
   drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch7')/10), 200)
 
   -- Rear outputs
-  lcd.drawText(pie.zone.x+450, pie.zone.y, "SC", SMLSIZE)
-  lcd.drawGauge(pie.zone.x+406, pie.zone.y+2, 40, 10, 100+(getValue('ch11')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x+450, pie.zone.y+11, "SD", SMLSIZE)
-  lcd.drawGauge(pie.zone.x+406, pie.zone.y+13, 40, 10, 100+(getValue('ch12')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x+450, pie.zone.y+22, "Vit", SMLSIZE)
-  drawServo(pie.zone.x+406, pie.zone.y+25, 20, 10, getValue('ch13')/10, 100)
-  lcd.drawText(pie.zone.x+341, pie.zone.y, "S2", SMLSIZE)
-  lcd.drawGauge(pie.zone.x+364, pie.zone.y+2, 40, 10, 100+(getValue('ch14')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x+341, pie.zone.y+11, "YDr", SMLSIZE)
-  lcd.drawGauge(pie.zone.x+364, pie.zone.y+13, 40, 10, 100+(getValue('ch15')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x+341, pie.zone.y+22, "SH", SMLSIZE)
-  lcd.drawGauge(pie.zone.x+364, pie.zone.y+25, 40, 10, 100+(getValue('ch16')/10), 200, CURVE_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y, "SC", SMLSIZE+TEXT_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+2, 40, 10, 100+(getValue('ch11')/10), 200, CURVE_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+11, "SD", SMLSIZE+TEXT_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+13, 40, 10, 100+(getValue('ch12')/10), 200, CURVE_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+22, "Vit", SMLSIZE+TEXT_COLOR)
+  drawServo(pie.zone.x+pie.zone.w-64, pie.zone.y+25, 20, 10, getValue('ch13')/10, 100)
+  lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y, "S2", SMLSIZE+TEXT_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+2, 40, 10, 100+(getValue('ch14')/10), 200, CURVE_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+11, "YDr", SMLSIZE+TEXT_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+13, 40, 10, 100+(getValue('ch15')/10), 200, CURVE_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+22, "SH", SMLSIZE+TEXT_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch16')/10), 200, CURVE_COLOR)
 
   -- Rear lift
-  lcd.drawText(pie.zone.x+450, pie.zone.y+55, "SE", SMLSIZE)
-  lcd.drawText(pie.zone.x+453, pie.zone.y+65, "+", SMLSIZE)
-  lcd.drawText(pie.zone.x+450, pie.zone.y+75, "RS", SMLSIZE)
-  drawVerticalGauge(pie.zone.x+430, pie.zone.y+103, 60, 10, 100+(getValue('ch9')/10), 200)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+55, "SE", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-17, pie.zone.y+65, "+", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+75, "RS", SMLSIZE+TEXT_COLOR)
+  drawVerticalGauge(pie.zone.x+pie.zone.w-39, pie.zone.y+103, 60, 10, 100+(getValue('ch9')/10), 200)
 
   -- Power
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+0, "C1", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+8, "C2", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+16, "C3", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+43, "Cels", DBLSIZE)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+0, "C1", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+8, "C2", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+16, "C3", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
 
-  lcd.drawChannel(pie.zone.x+72, pie.zone.y+0, "Curr", DBLSIZE)
-  lcd.drawChannel(pie.zone.x+62, pie.zone.y+16, "Curr+", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+43, "VFAS", DBLSIZE)
+  lcd.drawChannel(pie.zone.x+55, pie.zone.y-5, "VFAS", DBLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+55, pie.zone.y+20, "Curr", DBLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+55, pie.zone.y+47, "Curr+", SMLSIZE+TEXT_COLOR)
 
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "BtRx", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+50, pie.zone.y+58, "tx-voltage", SMLSIZE)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "BtRx", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+50, pie.zone.y+58, "tx-voltage", SMLSIZE+TEXT_COLOR)
 
   -- Speed
-  drawServo(pie.zone.x+76, pie.zone.y+44, 28, 6, getValue('ch2')/10, 100)
-  drawServo(pie.zone.x+76, pie.zone.y+51, 28, 6, getValue('ch1')/10, 100)
-  lcd.drawText(pie.zone.x+90, pie.zone.y+58, "SG + YGa", SMLSIZE)
-  drawVerticalGauge(pie.zone.x+134, pie.zone.y+63, 20, 6, 100+(getValue('sg')/10), 200)
+  drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-34, 40, 10, getValue('ch2')/10, 100)
+  drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-22, 40, 10, getValue('ch1')/10, 100)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-20, "SC", SMLSIZE+TEXT_COLOR)
+  drawVerticalGauge(pie.zone.x+pie.zone.w-32, pie.zone.y+pie.zone.h, 46, 10, 100+(getValue('s5')/10), 200)
 
-  -- Various
-  -- drawDate(32, 1)
-  lcd.drawText(pie.zone.x+141, pie.zone.y+42, "SWR", SMLSIZE)
-  lcd.drawText(pie.zone.x+141, pie.zone.y+49, "RssI", SMLSIZE)
+  -- -- Various
+  -- -- drawDate(32, 1)
+  lcd.drawText(pie.zone.x+30, pie.zone.y+56, "SWR", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+30, pie.zone.y+67, "RssI", SMLSIZE+TEXT_COLOR)
   -- lcd.drawText(141, 56,"Ar", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+172, pie.zone.y+42, "SWR", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+172, pie.zone.y+49, "RSSI", SMLSIZE)
-  local datenow = getDateTime()
-  lcd.drawText(pie.zone.x+141, pie.zone.y+56, datenow.hour..":"..datenow.min..":"..datenow.sec, SMLSIZE)
+  lcd.drawChannel(pie.zone.x+64, pie.zone.y+56, "SWR", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+64, pie.zone.y+67, "RSSI", SMLSIZE+TEXT_COLOR)
 
   -- -- linking lines
   -- -- (for servos)
