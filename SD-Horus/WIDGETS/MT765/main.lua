@@ -32,8 +32,8 @@ local function drawVerticalGauge(x, y, size, width, value, max)
   end
   local sz_filled = val*(size/max)
   local sz_unfilled = size-sz_filled
-  lcd.drawRectangle(x, y-size, width, sz_unfilled, CURVE_COLOR, 1)
   lcd.drawFilledRectangle(x, y-sz_filled, width, sz_filled, CURVE_COLOR)
+  lcd.drawRectangle(x, y-size, width, sz_unfilled, BLACK, 1)
 end
 
 local function drawServo(x, y, size, width, value, max)
@@ -44,7 +44,7 @@ local function drawServo(x, y, size, width, value, max)
   if val>max then
     val=max
   end
-  lcd.drawRectangle(x, y, size*2, width, CURVE_COLOR, 1)
+  lcd.drawRectangle(x, y, size*2, width, BLACK, 1)
   if val>0 then
     local sz_filled = val*(size/max)
     lcd.drawFilledRectangle(x+size-sz_filled, y, sz_filled, width, CURVE_COLOR)
@@ -71,6 +71,8 @@ local function background(pie)
 end
 
 function refresh(pie)
+  -- lcd.setColor(CUSTOM_COLOR, lcd.RGB(0,102,0))
+  lcd.setColor(CUSTOM_COLOR, WHITE)
   lcd.drawBitmap(pie.bitmap, pie.zone.x+85, pie.zone.y-10, 100)
 
   -- Front outputs
@@ -108,47 +110,48 @@ function refresh(pie)
   drawVerticalGauge(pie.zone.x+pie.zone.w-39, pie.zone.y+103, 60, 10, 100+(getValue('ch9')/10), 200)
 
   -- Power
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+0, "C1", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+8, "C2", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+16, "C3", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
-
   lcd.drawChannel(pie.zone.x+55, pie.zone.y-5, "VFAS", DBLSIZE+TEXT_COLOR)
   lcd.drawChannel(pie.zone.x+55, pie.zone.y+20, "Curr", DBLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+55, pie.zone.y+47, "Curr+", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+30, pie.zone.y+47, "max", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+47, "Curr+", SMLSIZE+TEXT_COLOR)
 
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "BtRx", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+50, pie.zone.y+58, "tx-voltage", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+30, pie.zone.y+58, "RssI", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "RSSI", SMLSIZE+TEXT_COLOR+BOLD)
+  lcd.drawText(pie.zone.x+30, pie.zone.y+69, "RxBt", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+69, "RxBt", SMLSIZE+MENU_TITLE_BGCOLOR+BOLD)
+
+  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-60, "1:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-60, "C1", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-60, "2:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-60, "C2", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-49, "3:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-49, "C3", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-49, "4:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-49, "C4", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-38, "m:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-38, "Cmin", SMLSIZE+TEXT_COLOR+BOLD)
+  lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-38, "M:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-38, "Cmax", SMLSIZE+TEXT_COLOR+BOLD)
+  lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
 
   -- Speed
+  drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-46, 40, 10, getValue('RPM2'), 14000)
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-34, 40, 10, getValue('ch2')/10, 100)
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-22, 40, 10, getValue('ch1')/10, 100)
-  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-20, "SC", SMLSIZE+TEXT_COLOR)
+  drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-10, 40, 10, getValue('RPM1'), 14000)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-30, "S6", SMLSIZE+TEXT_COLOR)
   drawVerticalGauge(pie.zone.x+pie.zone.w-32, pie.zone.y+pie.zone.h, 46, 10, 100+(getValue('s5')/10), 200)
 
-  -- -- Various
-  -- -- drawDate(32, 1)
-  lcd.drawText(pie.zone.x+30, pie.zone.y+56, "SWR", SMLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x+30, pie.zone.y+67, "RssI", SMLSIZE+TEXT_COLOR)
-  -- lcd.drawText(141, 56,"Ar", SMLSIZE)
-  lcd.drawChannel(pie.zone.x+64, pie.zone.y+56, "SWR", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+64, pie.zone.y+67, "RSSI", SMLSIZE+TEXT_COLOR)
+  -- Various
+  lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+58, "T1:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+pie.zone.w-90, pie.zone.y+58, "Tmp1", SMLSIZE+CUSTOM_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+69, "T2:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+pie.zone.w-90, pie.zone.y+69, "Tmp2", SMLSIZE+CUSTOM_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+80, "T3:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+pie.zone.w-90, pie.zone.y+80, "Tmp3", SMLSIZE+CUSTOM_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+91, "T4:", SMLSIZE+TEXT_COLOR)
+  lcd.drawChannel(pie.zone.x+pie.zone.w-90, pie.zone.y+91, "Tmp4", SMLSIZE+CUSTOM_COLOR)
 
-  -- -- linking lines
-  -- -- (for servos)
-  -- lcd.drawLine(pie.zone.x+24, pie.zone.y+21, pie.zone.x+24, pie.zone.y+31, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+24, pie.zone.y+31, pie.zone.x+58, pie.zone.y+31, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+24, pie.zone.y+34, pie.zone.x+58, pie.zone.y+34, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+164, pie.zone.y+22, pie.zone.x+164, pie.zone.y+28, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+164, pie.zone.y+28, pie.zone.x+140, pie.zone.y+28, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+188, pie.zone.y+22, pie.zone.x+188, pie.zone.y+31, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+188, pie.zone.y+31, pie.zone.x+140, pie.zone.y+31, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+188, pie.zone.y+34, pie.zone.x+140, pie.zone.y+34, SOLID, LINE_COLOR)
-  -- -- (for power)
-  -- lcd.drawLine(pie.zone.x+72, pie.zone.y+8, pie.zone.x+78, pie.zone.y+8, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+78, pie.zone.y+8, pie.zone.x+78, pie.zone.y+14, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+65, pie.zone.y+51, pie.zone.x+74, pie.zone.y+51, SOLID, LINE_COLOR)
-  -- lcd.drawLine(pie.zone.x+74, pie.zone.y+51, pie.zone.x+74, pie.zone.y+40, SOLID, LINE_COLOR)
 end
 
 return { name="MT765", options=options, create=create, update=update, refresh=refresh, background=background }
