@@ -74,7 +74,7 @@ end
 
 local function run(event)
   bgrnd_func()
-  lcd.drawPixmap(65, 0, "/SCRIPTS/BMP/8420.bmp")
+  lcd.drawPixmap(65, 0, "/SCRIPTS/BMP/7930.bmp")
 
   -- Rear outputs
   lcd.drawText(200, 1, "SC", SMLSIZE)
@@ -91,10 +91,8 @@ local function run(event)
   drawVerticalGauge(191, 63, 40, 6, 100+(getValue('ch1')/10), 200)
 
   -- Power
-  lcd.drawChannel(35, 0, "C1", SMLSIZE)
-  lcd.drawChannel(35, 8, "C2", SMLSIZE)
-  lcd.drawChannel(35, 16, "C3", SMLSIZE)
-  lcd.drawChannel(20, 43, "Cels", DBLSIZE)
+  lcd.drawChannel(20, 0, "Curr", DBLSIZE)
+  lcd.drawChannel(20, 43, "VFAS", DBLSIZE)
   lcd.drawChannel(35, 58, "BtRx", SMLSIZE)
   lcd.drawChannel(20, 58, "tx-voltage", SMLSIZE)
 
