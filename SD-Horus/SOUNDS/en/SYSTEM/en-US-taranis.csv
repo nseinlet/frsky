@@ -136,6 +136,7 @@ SOUNDS/en/SYSTEM;celsius1.wav;degrees celsius
 SOUNDS/en/SYSTEM;fahr0.wav;degree fahrenheit
 SOUNDS/en/SYSTEM;fahr1.wav;degrees fahrenheit
 SOUNDS/en/SYSTEM;percent0.wav;percent
+SOUNDS/en/SYSTEM;percent1.wav;percent
 SOUNDS/en/SYSTEM;mamph0.wav;milliamp-hour
 SOUNDS/en/SYSTEM;mamph1.wav;milliamp-hours
 SOUNDS/en/SYSTEM;watt0.wav;watt
@@ -174,7 +175,7 @@ SOUNDS/en/SYSTEM;0175.wav;point eight
 SOUNDS/en/SYSTEM;0176.wav;point nine
 SOUNDS/en/SYSTEM;midtrim.wav;trim center
 SOUNDS/en/SYSTEM;maxtrim.wav;maximum trim reached
-SOUNDS/en/SYSTEM;mintrim.wav;minium trim reached
+SOUNDS/en/SYSTEM;mintrim.wav;minimum trim reached
 SOUNDS/en/SYSTEM;timovr1.wav;timer 1 elapsed
 SOUNDS/en/SYSTEM;timovr2.wav;timer 2 elapsed
 SOUNDS/en/SYSTEM;timovr3.wav;timer 3 elapsed
