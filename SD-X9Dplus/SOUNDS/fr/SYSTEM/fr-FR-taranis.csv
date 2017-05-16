@@ -125,7 +125,7 @@ SOUNDS/fr/SYSTEM;0123.wav;midi
 SOUNDS/fr/SYSTEM;volt0.wav;volts
 SOUNDS/fr/SYSTEM;amp0.wav;ampères
 SOUNDS/fr/SYSTEM;mamp0.wav;milli ampères
-SOUNDS/fr/SYSTEM;knot0.wav;noeud
+SOUNDS/fr/SYSTEM;knot0.wav;knots
 SOUNDS/fr/SYSTEM;mps0.wav;mètres seconde
 SOUNDS/fr/SYSTEM;fps0.wav;pieds par seconde
 SOUNDS/fr/SYSTEM;kph0.wav;kilomètre heure
@@ -133,7 +133,7 @@ SOUNDS/fr/SYSTEM;mph0.wav;miles par heure
 SOUNDS/fr/SYSTEM;meter0.wav;mètres
 SOUNDS/fr/SYSTEM;foot0.wav;pieds
 SOUNDS/fr/SYSTEM;celsius0.wav;degrés
-SOUNDS/fr/SYSTEM;degf0.wav;degrés fahrenheit
+SOUNDS/fr/SYSTEM;degf0.wav;degrés fahr
 SOUNDS/fr/SYSTEM;percent0.wav;pourcents
 SOUNDS/fr/SYSTEM;mamph0.wav;milli ampères heure
 SOUNDS/fr/SYSTEM;watt0.wav;watt

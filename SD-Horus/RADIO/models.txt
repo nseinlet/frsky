@@ -1,3 +1,4 @@
 [Models]
 model1.bin
 model2.bin
+model4.bin
