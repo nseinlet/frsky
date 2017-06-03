@@ -169,7 +169,7 @@ SOUNDS/fr/SYSTEM;inactiv.wav;Radio inactive !
 SOUNDS/fr/SYSTEM;thralert.wav;Alerte manche des gaz
 SOUNDS/fr/SYSTEM;swalert.wav;Alerte inters
 SOUNDS/fr/SYSTEM;eebad.wav;éprome corrompue
-SOUNDS/fr/SYSTEM;hello.wav;Bienvenue sur Open Thé Hix!
+SOUNDS/fr/SYSTEM;hello.wav;Bienvenue sur o pun t x
 SOUNDS/fr/SYSTEM;rssi_org.wav;Signal RF, faible
 SOUNDS/fr/SYSTEM;rssi_red.wav;Signal RF, critique
 SOUNDS/fr/SYSTEM;swr_red.wav;Antenne défectueuse
@@ -191,3 +191,32 @@ SOUNDS/fr;attero.wav;atterrissage
 SOUNDS/fr;trnon.wav;écolage
 SOUNDS/fr;trnoff.wav;fin écolage
 SOUNDS/fr;engoff.wav;moteur coupé
+SOUNDS/fr;spdmod.wav;high. speed. mode!, active
+SOUNDS/fr;thmmod.wav;thermal. mode!, on
+SOUNDS/fr;nrmmod.wav;normal. mode!, on
+SOUNDS/fr;lnding.wav;landing. mode!, on
+SOUNDS/fr;acro.wav;mode acro
+SOUNDS/fr;fm-1.wav;mode de vol un
+SOUNDS/fr;fm-2.wav;mode de vol deux
+SOUNDS/fr;fm-3.wav;mode de vol trois
+SOUNDS/fr;fm-4.wav;mode de vol quatre
+SOUNDS/fr;fm-5.wav;mode de vol 5
+SOUNDS/fr;fm-6.wav;mode de vol 6
+SOUNDS/fr;fm-7.wav;mode de vol sept
+SOUNDS/fr;fm-8.wav;mode de vol 8
+SOUNDS/fr;vrion.wav;vario activé
+SOUNDS/fr;vrioff.wav;vario désactivé
+SOUNDS/fr;fm-pwr.wav;mode de vol puissance
+SOUNDS/fr;fm-lnd.wav;mode de vol attérissage
+SOUNDS/fr;fm-flt.wav;mode de vol amérissage
+SOUNDS/fr;fm-spd.wav;mode de vol vitesse
+SOUNDS/fr;fm-fst.wav;mode de vol rapide
+SOUNDS/fr;fm-nrm.wav;mode de vol normal
+SOUNDS/fr;fm-crs.wav;mode de vol de croisière
+SOUNDS/fr;fm-acr.wav;mode de vol acro
+SOUNDS/fr;fm-rce.wav;mode de vol course
+SOUNDS/fr;fm-lch.wav;mode de vol lancé
+SOUNDS/fr;fm-png.wav;mode de vol ping
+SOUNDS/fr;fm-thm.wav;mode de vol thermique
+SOUNDS/fr;fm-thl.wav;mode de vol thermique gauche
+SOUNDS/fr;fm-thr.wav;mode de vol thermique droit

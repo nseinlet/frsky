@@ -121,7 +121,7 @@ SOUNDS/it/SYSTEM;msp1.wav;metri al secondo
 SOUNDS/it/SYSTEM;fps0.wav;piede al secondo
 SOUNDS/it/SYSTEM;fps1.wav;piedi al secondo
 SOUNDS/it/SYSTEM;kph0.wav;chilometro ora
-SOUNDS/it/SYSTEM;kph1.wav;kilometers per hour
+SOUNDS/it/SYSTEM;kph1.wav;chilometri orari
 SOUNDS/it/SYSTEM;mph0.wav;miglio per ora
 SOUNDS/it/SYSTEM;mph1.wav;miglia per ora
 SOUNDS/it/SYSTEM;meter0.wav;metro
@@ -139,7 +139,7 @@ SOUNDS/it/SYSTEM;mamph1.wav;milliampere ora
 SOUNDS/it/SYSTEM;watt0.wav;watt
 SOUNDS/it/SYSTEM;watt1.wav;watt
 SOUNDS/it/SYSTEM;mwatt0.wav;milli-watt
-SOUNDS/it/SYSTEM;mwatt1.wav;milli-watts
+SOUNDS/it/SYSTEM;mwatt1.wav;milli-watt
 SOUNDS/it/SYSTEM;db0.wav;d b
 SOUNDS/it/SYSTEM;db1.wav;d b
 SOUNDS/it/SYSTEM;rpm0.wav;r p m
@@ -154,18 +154,18 @@ SOUNDS/it/SYSTEM;m10.wav;millilitro
 SOUNDS/it/SYSTEM;m11.wav;millilitri
 SOUNDS/it/SYSTEM;founce0.wav;oncia
 SOUNDS/it/SYSTEM;founce1.wav;once
-SOUNDS/it/SYSTEM;hour0.wav;hour
-SOUNDS/it/SYSTEM;hour1.wav;hours
-SOUNDS/it/SYSTEM;minute0.wav;minute
-SOUNDS/it/SYSTEM;minute1.wav;minutes
-SOUNDS/it/SYSTEM;second0.wav;second
-SOUNDS/it/SYSTEM;second1.wav;seconds
+SOUNDS/it/SYSTEM;hour0.wav;ora
+SOUNDS/it/SYSTEM;hour1.wav;ore
+SOUNDS/it/SYSTEM;minute0.wav;minuto
+SOUNDS/it/SYSTEM;minute1.wav;minuti
+SOUNDS/it/SYSTEM;second0.wav;secondo
+SOUNDS/it/SYSTEM;second1.wav;secondi
 SOUNDS/it/SYSTEM;inactiv.wav;radio inattiva controllare
 SOUNDS/it/SYSTEM;lowbatt.wav;batteria della radio scarica
 SOUNDS/it/SYSTEM;thralert.wav;controllo motore non in posizione, verificare
 SOUNDS/it/SYSTEM;swalert.wav;interruttori non in posizione, verificare
 SOUNDS/it/SYSTEM;eebad.wav;eeprom corrotta
-SOUNDS/it/SYSTEM;eeformat.wav;formattazone eeprom in corso
+SOUNDS/it/SYSTEM;eeformat.wav;formattazzione eeprom in corso
 SOUNDS/it/SYSTEM;error.wav;errore
 SOUNDS/it/SYSTEM;midtrim.wav;trim centrato
 SOUNDS/it/SYSTEM;midpot.wav;potenziometro centrato
@@ -218,7 +218,7 @@ SOUNDS/it;gearup.wav;carrello chiuso
 SOUNDS/it;geardn.wav;carrello aperto
 SOUNDS/it;flapup.wav;flap rientrati
 SOUNDS/it;flapdn.wav;flap estesi
-SOUNDS/it;attero.wav;atterraggiio
+SOUNDS/it;attero.wav;atterraggio
 SOUNDS/it;trnon.wav;modalità maestro attiva
 SOUNDS/it;trnoff.wav;modalità maestro disattiva
 SOUNDS/it;engoff.wav;motore spento

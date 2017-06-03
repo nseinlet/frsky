@@ -216,27 +216,27 @@ SOUNDS/en;thmmod.wav;thermal. mode!, on
 SOUNDS/en;nrmmod.wav;normal. mode!, on
 SOUNDS/en;lnding.wav;landing. mode!, on
 SOUNDS/en;acro.wav;acro. mode!, on
-SOUNDS/en;fm-1.wav;flight. mode!, one
-SOUNDS/en;fm-2.wav;flight. mode!, two
-SOUNDS/en;fm-3.wav;flight. mode!, three
-SOUNDS/en;fm-4.wav;flight. mode!, four
-SOUNDS/en;fm-5.wav;flight. mode!, five
-SOUNDS/en;fm-6.wav;flight. mode!, six
-SOUNDS/en;fm-7.wav;flight. mode!, seven
-SOUNDS/en;fm-8.wav;flight. mode!, eight
+SOUNDS/en;fm-1.wav;flight mode one
+SOUNDS/en;fm-2.wav;flight mode two
+SOUNDS/en;fm-3.wav;flight mode three
+SOUNDS/en;fm-4.wav;flight mode four
+SOUNDS/en;fm-5.wav;flight mode five
+SOUNDS/en;fm-6.wav;flight mode six
+SOUNDS/en;fm-7.wav;flight mode seven
+SOUNDS/en;fm-8.wav;flight mode eight
 SOUNDS/en;vrion.wav;vario!, on
 SOUNDS/en;vrioff.wav;vario!, off
-SOUNDS/en;fm-pwr.wav;flight mode!, power
-SOUNDS/en;fm-lnd.wav;flight mode!, land
-SOUNDS/en;fm-flt.wav;flight mode!, float
-SOUNDS/en;fm-spd.wav;flight mode!, speed
-SOUNDS/en;fm-fst.wav;flight mode!, fast
-SOUNDS/en;fm-nrm.wav;flight mode!, normal
-SOUNDS/en;fm-crs.wav;flight mode!, cruise
-SOUNDS/en;fm-acr.wav;flight mode!, acro
-SOUNDS/en;fm-rce.wav;flight mode!, race
-SOUNDS/en;fm-lch.wav;flight mode!, launch
-SOUNDS/en;fm-png.wav;flight mode!, ping
-SOUNDS/en;fm-thm.wav;flight mode!, thermal
-SOUNDS/en;fm-thl.wav;flight mode!, thermal left
-SOUNDS/en;fm-thr.wav;flight mode!, thermal right
+SOUNDS/en;fm-pwr.wav;flight mode power
+SOUNDS/en;fm-lnd.wav;flight mode land
+SOUNDS/en;fm-flt.wav;flight mode float
+SOUNDS/en;fm-spd.wav;flight mode speed
+SOUNDS/en;fm-fst.wav;flight mode fast
+SOUNDS/en;fm-nrm.wav;flight mode normal
+SOUNDS/en;fm-crs.wav;flight mode cruise
+SOUNDS/en;fm-acr.wav;flight mode acro
+SOUNDS/en;fm-rce.wav;flight mode race
+SOUNDS/en;fm-lch.wav;flight mode launch
+SOUNDS/en;fm-png.wav;flight mode ping
+SOUNDS/en;fm-thm.wav;flight mode thermal
+SOUNDS/en;fm-thl.wav;flight mode thermal left
+SOUNDS/en;fm-thr.wav;flight mode thermal right

@@ -76,6 +76,20 @@ local function run(event)
   bgrnd_func()
   lcd.drawPixmap(65, 0, "/SCRIPTS/BMP/8420.bmp")
 
+  -- Front outputs
+  lcd.drawText(2, 1, "SA", SMLSIZE)
+  lcd.drawGauge(15, 1, 20, 6, 100+(getValue('ch9')/10), 200)
+  lcd.drawText(2, 8, "SB", SMLSIZE)
+  lcd.drawGauge(15, 8, 20, 6, 100+(getValue('ch10')/10), 200)
+  lcd.drawText(2, 15, "S1", SMLSIZE)
+  lcd.drawGauge(15, 15, 20, 6, 100+(getValue('ch11')/10), 200)
+
+  -- Front lift
+  lcd.drawText(2, 38, "SF", SMLSIZE)
+  lcd.drawText(5, 45, "+", SMLSIZE)
+  lcd.drawText(2, 52, "LS", SMLSIZE)
+  drawVerticalGauge(15, 63, 40, 6, 100+(getValue('ch12')/10), 200)
+
   -- Rear outputs
   lcd.drawText(200, 1, "SC", SMLSIZE)
   lcd.drawGauge(176, 1, 20, 6, 100+(getValue('ch6')/10), 200)
