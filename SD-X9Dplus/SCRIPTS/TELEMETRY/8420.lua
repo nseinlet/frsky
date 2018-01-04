@@ -91,7 +91,7 @@ local function run(event)
   drawVerticalGauge(15, 63, 40, 6, 100+(getValue('ch12')/10), 200)
 
   -- Rear outputs
-  lcd.drawText(200, 1, "SC", SMLSIZE)
+  lcd.drawText(200, 1, "S2", SMLSIZE)
   lcd.drawGauge(176, 1, 20, 6, 100+(getValue('ch6')/10), 200)
   lcd.drawText(200, 8, "SD", SMLSIZE)
   lcd.drawGauge(176, 8, 20, 6, 100+(getValue('ch7')/10), 200)

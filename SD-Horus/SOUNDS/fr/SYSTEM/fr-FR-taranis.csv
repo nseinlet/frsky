@@ -180,6 +180,7 @@ SOUNDS/fr/SYSTEM;trainok.wav;Signal écolage retrouvé
 SOUNDS/fr/SYSTEM;sensorko.wav;Sonde de télémétrie perdue
 SOUNDS/fr/SYSTEM;servoko.wav;Servo en surcharge
 SOUNDS/fr/SYSTEM;rxko.wav;Surcharge réception
+SOUNDS/fr/SYSTEM;modelpwr.wav;Récepteur encore sous tension
 SOUNDS/fr;altitude.wav;altitude
 SOUNDS/fr;moteur.wav;température moteur
 SOUNDS/fr;cntrleur.wav;température contrôleur

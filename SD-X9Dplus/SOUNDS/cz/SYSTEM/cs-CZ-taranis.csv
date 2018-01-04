@@ -253,6 +253,7 @@ SOUNDS/cz/SYSTEM;trainok.wav;trenér port připojen
 SOUNDS/cz/SYSTEM;sensorko.wav;senzor ztracen
 SOUNDS/cz/SYSTEM;servoko.wav;servo přetíženo
 SOUNDS/cz/SYSTEM;rxko.wav;r f přebuzeno
+SOUNDS/cz/SYSTEM;modelpwr.wav;receiver still connected
 SOUNDS/cz;podvo0.wav;podvozek je zasunut
 SOUNDS/cz;podvo1.wav;podvozek je vysunut
 SOUNDS/cz;klapk1.wav;klapky jsou zapnuty

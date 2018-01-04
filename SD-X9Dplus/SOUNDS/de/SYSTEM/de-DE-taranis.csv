@@ -171,6 +171,9 @@ SOUNDS/de/SYSTEM;telemko.wav;Telemetrie verloren
 SOUNDS/de/SYSTEM;telemok.wav;Telemetrie wiederhergestellt
 SOUNDS/de/SYSTEM;trainko.wav;Schülersignal verloren
 SOUNDS/de/SYSTEM;trainok.wav;Schülersignal wiederhergestellt
+SOUNDS/de/SYSTEM;servoko.wav;servo overload
+SOUNDS/de/SYSTEM;rxko.wav;power overload
+SOUNDS/de/SYSTEM;modelpwr.wav;Empfänger noch verbunden
 SOUNDS/de/SYSTEM;0134.wav;Uhr
 SOUNDS/de/SYSTEM;0135.wav;Uhr
 SOUNDS/de/SYSTEM;0136.wav;Sender

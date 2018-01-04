@@ -170,6 +170,9 @@ SOUNDS/es/SYSTEM;rssi_red.wav;recepción de señal crítica
 SOUNDS/es/SYSTEM;swr_red.wav;Problemas con la antena del transmisor
 SOUNDS/es/SYSTEM;telemko.wav;Sin telemetría
 SOUNDS/es/SYSTEM;telemok.wav;Telemetría disponible
+SOUNDS/es/SYSTEM;servoko.wav;servo overload
+SOUNDS/es/SYSTEM;rxko.wav;power overload
+SOUNDS/es/SYSTEM;modelpwr.wav;receiver still connected
 SOUNDS/es/SYSTEM;0141.wav;cronómetro
 SOUNDS/es/SYSTEM;0142.wav;cronómetro
 SOUNDS/es/SYSTEM;0143.wav;transmisión
