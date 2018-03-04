@@ -73,7 +73,7 @@ end
 function refresh(pie)
   -- lcd.setColor(CUSTOM_COLOR, lcd.RGB(0,102,0))
   lcd.setColor(CUSTOM_COLOR, WHITE)
-  lcd.drawBitmap(pie.bitmap, pie.zone.x+85, pie.zone.y-10, 100)
+  lcd.drawBitmap(pie.bitmap, pie.zone.x+80, pie.zone.y+8, 100)
 
   -- Front outputs
   lcd.drawText(pie.zone.x, pie.zone.y, "SA", SMLSIZE+TEXT_COLOR)
@@ -85,7 +85,7 @@ function refresh(pie)
 
   -- Front lif
   lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE+TEXT_COLOR)
-  drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch12')/10), 200)
+  drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch4')/10), 200)
 
   -- Rear outputs
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y, "SC", SMLSIZE+TEXT_COLOR)
@@ -102,9 +102,9 @@ function refresh(pie)
   lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch11')/10), 200, CURVE_COLOR)
 
   -- Rear lift
-  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+55, "SE", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+55, "SG", SMLSIZE+TEXT_COLOR)
   lcd.drawText(pie.zone.x+pie.zone.w-17, pie.zone.y+65, "+", SMLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+75, "RS", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+65, "RS", SMLSIZE+TEXT_COLOR)
   drawVerticalGauge(pie.zone.x+pie.zone.w-39, pie.zone.y+103, 60, 10, 100+(getValue('ch1')/10), 200)
 
   -- Power
@@ -125,19 +125,54 @@ function refresh(pie)
   lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-49, "3:", SMLSIZE+TEXT_COLOR)
   lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-49, "C3", SMLSIZE+TEXT_COLOR)
   lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-38, "m:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-38, "Cmin", SMLSIZE+TEXT_COLOR+BOLD)
+  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-38, "CMin", SMLSIZE+TEXT_COLOR+BOLD)
   lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-38, "M:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-38, "Cmax", SMLSIZE+TEXT_COLOR+BOLD)
+  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-38, "CMax", SMLSIZE+TEXT_COLOR+BOLD)
   lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
 
   -- Speed
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-34, 40, 10, getValue('ch2')/10, 100)
-  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-30, "6P", SMLSIZE+TEXT_COLOR)
+  lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-38, "6P", SMLSIZE+TEXT_COLOR)
+  if getFlightMode()==1 then
+    lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+pie.zone.h-26, "SE", SMLSIZE+TEXT_COLOR)
+  end
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-22, 40, 10, getValue('ch3')/10, 100)
+  drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, 40, 10, getValue('ch32')/10, 100)
   drawVerticalGauge(pie.zone.x+pie.zone.w-32, pie.zone.y+pie.zone.h-11, 23, 10, 100+(getValue('6P')/10), 200)
+  if getFlightMode()==0 then
+    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = sound", SMLSIZE+TEXT_COLOR)
+  end
+  if getFlightMode()==1 then
+    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = Av/Ar", SMLSIZE+CURVE_COLOR+BOLD)
+  end
+  lcd.drawText(pie.zone.x+120, pie.zone.y+pie.zone.h-12, "SF = Mode", TEXT_COLOR+BOLD)
 
   -- Various
+  local rectx = pie.zone.x+240
+  local recty = pie.zone.y+40
+  local xsize = 45
+  local ysize = 16
 
+  lcd.drawRectangle(rectx, recty, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+1, recty, "L Wa", SMLSIZE+TEXT_COLOR)
+  lcd.drawRectangle(rectx, recty+ysize, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+1, recty+ysize, "A Li", SMLSIZE+TEXT_COLOR)
+  lcd.drawRectangle(rectx, recty+(2*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+1, recty+(2*ysize), "Li", SMLSIZE+TEXT_COLOR)
+  lcd.drawRectangle(rectx, recty+(3*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+1, recty+(3*ysize), "HLi", SMLSIZE+TEXT_COLOR)
+
+  lcd.drawText(rectx+xsize, recty, "1", SMLSIZE+CURVE_COLOR)
+  lcd.drawText(rectx+xsize, recty+ysize, "2", SMLSIZE+CURVE_COLOR)
+  lcd.drawText(rectx+xsize, recty+(2*ysize), "3", SMLSIZE+CURVE_COLOR)
+  lcd.drawText(rectx+xsize, recty+(3*ysize), "4", SMLSIZE+CURVE_COLOR)
+
+  lcd.drawRectangle(rectx+8+xsize, recty, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+9+xsize, recty, "R Wa", SMLSIZE+TEXT_COLOR)
+  lcd.drawRectangle(rectx+8+xsize, recty+ysize, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+9+xsize, recty+ysize, "4 Wa", SMLSIZE+TEXT_COLOR)
+  lcd.drawRectangle(rectx+8+xsize, recty+(2*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawText(rectx+9+xsize, recty+(2*ysize), "Turn L", SMLSIZE+TEXT_COLOR)
 end
 
 return { name="MT665", options=options, create=create, update=update, refresh=refresh, background=background }
