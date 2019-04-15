@@ -112,7 +112,7 @@ SOUNDS/es/SYSTEM;0110.wav;mil
 SOUNDS/es/SYSTEM;0111.wav;coma
 SOUNDS/es/SYSTEM;0112.wav;un
 SOUNDS/es/SYSTEM;0113.wav;una
-SOUNDS/es/SYSTEM;0114.wav;y
+SOUNDS/es/SYSTEM;0114.wav;i
 SOUNDS/es/SYSTEM;0115.wav;meno
 SOUNDS/es/SYSTEM;0116.wav;hora
 SOUNDS/es/SYSTEM;0117.wav;horas
@@ -143,9 +143,12 @@ SOUNDS/es/SYSTEM;degree0.wav;grados
 SOUNDS/es/SYSTEM;rad0.wav;radianes 
 SOUNDS/es/SYSTEM;ml0.wav;mililitro
 SOUNDS/es/SYSTEM;founce0.wav;onzas
-SOUNDS/es/SYSTEM;hour0.wav;horas
-SOUNDS/es/SYSTEM;minute0.wav;minutos
-SOUNDS/es/SYSTEM;second0.wav;segundos
+SOUNDS/es/SYSTEM;hour0.wav;hora
+SOUNDS/es/SYSTEM;hour1.wav;horas
+SOUNDS/es/SYSTEM;minute0.wav;minuto
+SOUNDS/es/SYSTEM;minute1.wav;minutos
+SOUNDS/es/SYSTEM;second0.wav;segundo
+SOUNDS/es/SYSTEM;second1.wav;segundos
 SOUNDS/es/SYSTEM;inactiv.wav;me tienes abandonada
 SOUNDS/es/SYSTEM;lowbatt.wav;batería del transmisor baja
 SOUNDS/es/SYSTEM;thralert.wav;El acelerador está activado, por favor, corrijalo

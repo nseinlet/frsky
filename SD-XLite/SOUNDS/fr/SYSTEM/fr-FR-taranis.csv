@@ -173,7 +173,7 @@ SOUNDS/fr/SYSTEM;hello.wav;Bienvenue sur o pun t x
 SOUNDS/fr/SYSTEM;rssi_org.wav;Signal RF, faible
 SOUNDS/fr/SYSTEM;rssi_red.wav;Signal RF, critique
 SOUNDS/fr/SYSTEM;swr_red.wav;Antenne défectueuse
-SOUNDS/fr/SYSTEM;telemko.wav;Plus de télémétrie
+SOUNDS/fr/SYSTEM;telemko.wav;Télémétrie perdue
 SOUNDS/fr/SYSTEM;telemok.wav;Télémétrie retrouvée
 SOUNDS/fr/SYSTEM;trainko.wav;Signal écolage perdu
 SOUNDS/fr/SYSTEM;trainok.wav;Signal écolage retrouvé
