@@ -208,6 +208,8 @@ SOUNDS/cz/SYSTEM;founce0.wav;dutá unce
 SOUNDS/cz/SYSTEM;founce1.wav;duté unce
 SOUNDS/cz/SYSTEM;founce2.wav;dutých uncí
 SOUNDS/cz/SYSTEM;founce3.wav;duté unce
+SOUNDS/cz/SYSTEM;mlpm0.wav;milliliter per minute
+SOUNDS/cz/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/cz/SYSTEM;hour0.wav;hodina
 SOUNDS/cz/SYSTEM;hour1.wav;hodiny
 SOUNDS/cz/SYSTEM;hour2.wav;hodin
@@ -231,7 +233,7 @@ SOUNDS/cz/SYSTEM;inactiv.wav;zapoměl jsi na mě!
 SOUNDS/cz/SYSTEM;thralert.wav;plyn není na nule
 SOUNDS/cz/SYSTEM;swalert.wav;přepínače nejsou ve výchozí poloze
 SOUNDS/cz/SYSTEM;eebad.wav;neplatná eeprom
-SOUNDS/cz/SYSTEM;hello.wav;Oupn najn iks
+SOUNDS/cz/SYSTEM;hello.wav;Žádám o povolení ke startu.
 SOUNDS/cz/SYSTEM;bye.wav;Tak zase příště!
 SOUNDS/cz/SYSTEM;timer20.wav;dvacet sekund
 SOUNDS/cz/SYSTEM;timer30.wav;třicet sekund

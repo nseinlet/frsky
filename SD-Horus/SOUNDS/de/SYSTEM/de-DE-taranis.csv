@@ -135,6 +135,8 @@ SOUNDS/de/SYSTEM;degree0.wav;Grad
 SOUNDS/de/SYSTEM;rad0.wav;radians
 SOUNDS/de/SYSTEM;ml0.wav;Milliliter
 SOUNDS/de/SYSTEM;founce0.wav;Unze
+SOUNDS/de/SYSTEM;mlpm0.wav;Milliliter pro minute
+SOUNDS/de/SYSTEM;mlpm1.wav;Milliliter pro minuten
 SOUNDS/de/SYSTEM;hour0.wav;Stunde
 SOUNDS/de/SYSTEM;hour1.wav;Stunden
 SOUNDS/de/SYSTEM;minute0.wav;Minute
@@ -177,7 +179,7 @@ SOUNDS/de/SYSTEM;modelpwr.wav;Empfänger noch verbunden
 SOUNDS/de/SYSTEM;timovr1.wav;timer eins abgelaufen
 SOUNDS/de/SYSTEM;timovr2.wav;timer zwei abgelaufen
 SOUNDS/de/SYSTEM;timovr3.wav;timer drei abgelaufen
-SOUNDS/de/SYSTEM;sensorko.wav;Sensor veloren
+SOUNDS/de/SYSTEM;sensorko.wav;Sensor verloren
 SOUNDS/de/SYSTEM;hello.wav;Willkommen bei open te ix
 SOUNDS/de/SYSTEM;0134.wav;Uhr
 SOUNDS/de/SYSTEM;0135.wav;Uhr
@@ -223,4 +225,12 @@ SOUNDS/de;crowof.wav;Butterfly aus
 SOUNDS/de;fm-spd.wav;Geschwindigkeits-Modus ist aktiviert
 SOUNDS/de;fm-thm.wav;Thermik-Modus ist aktiviert
 SOUNDS/de;fm-nrm.wav;Normal-Modus ist aktiviert
-SOUNDS/de;fm-1.wav;Flugmodus
+SOUNDS/de;fm-1.wav;Flugmodus 1
+SOUNDS/de;fm-2.wav;Flugmodus 2
+SOUNDS/de;fm-3.wav;Flugmodus 3
+SOUNDS/de;fm-4.wav;Flugmodus 4
+SOUNDS/de;fm-5.wav;Flugmodus 5
+SOUNDS/de;fm-6.wav;Flugmodus 6
+SOUNDS/de;fm-7.wav;Flugmodus 7
+SOUNDS/de;fm-8.wav;Flugmodus 8
+SOUNDS/de;fm-9.wav;Flugmodus 9

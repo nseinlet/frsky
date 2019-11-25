@@ -157,6 +157,8 @@ SOUNDS/en/SYSTEM;ml0.wav;milliliter
 SOUNDS/en/SYSTEM;ml1.wav;milliliters
 SOUNDS/en/SYSTEM;founce0.wav;fluid ounce
 SOUNDS/en/SYSTEM;founce1.wav;fluid ounces
+SOUNDS/en/SYSTEM;mlpm0.wav;milliliter per minute
+SOUNDS/en/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/en/SYSTEM;hour0.wav;hour
 SOUNDS/en/SYSTEM;hour1.wav;hours
 SOUNDS/en/SYSTEM;minute0.wav;minute

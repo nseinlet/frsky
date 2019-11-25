@@ -145,6 +145,8 @@ SOUNDS/es/SYSTEM;ml0.wav;mililitro
 SOUNDS/es/SYSTEM;founce0.wav;onzas
 SOUNDS/es/SYSTEM;hour0.wav;hora
 SOUNDS/es/SYSTEM;hour1.wav;horas
+SOUNDS/es/SYSTEM;mlpm0.wav;milliliter per minute
+SOUNDS/es/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/es/SYSTEM;minute0.wav;minuto
 SOUNDS/es/SYSTEM;minute1.wav;minutos
 SOUNDS/es/SYSTEM;second0.wav;segundo

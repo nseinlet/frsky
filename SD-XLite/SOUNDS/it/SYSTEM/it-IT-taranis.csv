@@ -113,17 +113,17 @@ SOUNDS/it/SYSTEM;0111.wav;secondo
 SOUNDS/it/SYSTEM;0112.wav;secondi
 SOUNDS/it/SYSTEM;volt0.wav;volt
 SOUNDS/it/SYSTEM;amp0.wav;ampere
-SOUNDS/it/SYSTEM;mamp0.wav;milliampers
+SOUNDS/it/SYSTEM;mamp0.wav;milliampere
 SOUNDS/it/SYSTEM;knot0.wav;nodo
 SOUNDS/it/SYSTEM;knot1.wav;nodi
-SOUNDS/it/SYSTEM;mps0.wav;metro al secondo
+SOUNDS/it/SYSTEM;mps0.wav;metri al secondo
 SOUNDS/it/SYSTEM;msp1.wav;metri al secondo
-SOUNDS/it/SYSTEM;fps0.wav;piede al secondo
+SOUNDS/it/SYSTEM;fps0.wav;piedi al secondo
 SOUNDS/it/SYSTEM;fps1.wav;piedi al secondo
-SOUNDS/it/SYSTEM;kph0.wav;chilometro ora
+SOUNDS/it/SYSTEM;kph0.wav;chilometri orari
 SOUNDS/it/SYSTEM;kph1.wav;chilometri orari
-SOUNDS/it/SYSTEM;mph0.wav;miglio per ora
-SOUNDS/it/SYSTEM;mph1.wav;miglia per ora
+SOUNDS/it/SYSTEM;mph0.wav;miglia orarie
+SOUNDS/it/SYSTEM;mph1.wav;miglia orarie
 SOUNDS/it/SYSTEM;meter0.wav;metro
 SOUNDS/it/SYSTEM;meter1.wav;metri
 SOUNDS/it/SYSTEM;foot0.wav;piede
@@ -148,12 +148,14 @@ SOUNDS/it/SYSTEM;g0.wav;g
 SOUNDS/it/SYSTEM;g1.wav;g
 SOUNDS/it/SYSTEM;degree0.wav;grado
 SOUNDS/it/SYSTEM;degree1.wav;gradi
-SOUNDS/it/SYSTEM;rad0.wav;radian
-SOUNDS/it/SYSTEM;rad1.wav;radians
+SOUNDS/it/SYSTEM;rad0.wav;radiante
+SOUNDS/it/SYSTEM;rad1.wav;radianti
 SOUNDS/it/SYSTEM;m10.wav;millilitro
 SOUNDS/it/SYSTEM;m11.wav;millilitri
-SOUNDS/it/SYSTEM;founce0.wav;oncia
-SOUNDS/it/SYSTEM;founce1.wav;once
+SOUNDS/it/SYSTEM;founce0.wav;oncia fluida
+SOUNDS/it/SYSTEM;founce1.wav;once fluide
+SOUNDS/it/SYSTEM;mlpm0.wav;milliliter per minute
+SOUNDS/it/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/it/SYSTEM;hour0.wav;ora
 SOUNDS/it/SYSTEM;hour1.wav;ore
 SOUNDS/it/SYSTEM;minute0.wav;minuto
@@ -165,7 +167,7 @@ SOUNDS/it/SYSTEM;lowbatt.wav;batteria della radio scarica
 SOUNDS/it/SYSTEM;thralert.wav;controllo motore non in posizione, verificare
 SOUNDS/it/SYSTEM;swalert.wav;interruttori non in posizione, verificare
 SOUNDS/it/SYSTEM;eebad.wav;eeprom corrotta
-SOUNDS/it/SYSTEM;eeformat.wav;formattazzione eeprom in corso
+SOUNDS/it/SYSTEM;eeformat.wav;formattazione eeprom in corso
 SOUNDS/it/SYSTEM;error.wav;errore
 SOUNDS/it/SYSTEM;midtrim.wav;trim centrato
 SOUNDS/it/SYSTEM;midpot.wav;potenziometro centrato
@@ -188,9 +190,9 @@ SOUNDS/it/SYSTEM;rssi_red.wav;Segnale radio critico
 SOUNDS/it/SYSTEM;swr_red.wav;Problema all'antenna della radio
 SOUNDS/it/SYSTEM;telemko.wav;Telemetria assente
 SOUNDS/it/SYSTEM;telemok.wav;Telemetria disponibile
-SOUNDS/it/SYSTEM;servoko.wav;servo overload
-SOUNDS/it/SYSTEM;rxko.wav;power overload
-SOUNDS/it/SYSTEM;modelpwr.wav;receiver still connected
+SOUNDS/it/SYSTEM;servoko.wav;sovraccarico servo
+SOUNDS/it/SYSTEM;rxko.wav;sovraccarico di alimentazione
+SOUNDS/it/SYSTEM;modelpwr.wav;ricevente ancora connessa
 SOUNDS/it/SYSTEM;0135.wav;timer
 SOUNDS/it/SYSTEM;0137.wav;tensione
 SOUNDS/it/SYSTEM;0138.wav;tensione
@@ -210,9 +212,9 @@ SOUNDS/it/SYSTEM;0151.wav;tensione
 SOUNDS/it/SYSTEM;0152.wav;corrente
 SOUNDS/it/SYSTEM;0153.wav;consumo
 SOUNDS/it/SYSTEM;0154.wav;potenza
-SOUNDS/it/SYSTEM;0155.wav;accellerazione X
-SOUNDS/it/SYSTEM;0156.wav;accellerazione Y
-SOUNDS/it/SYSTEM;0157.wav;accellerazione Z
+SOUNDS/it/SYSTEM;0155.wav;accelerazione X
+SOUNDS/it/SYSTEM;0156.wav;accelerazione Y
+SOUNDS/it/SYSTEM;0157.wav;accelerazione Z
 SOUNDS/it/SYSTEM;0158.wav;direzione
 SOUNDS/it/SYSTEM;0159.wav;variometro
 SOUNDS/it/SYSTEM;0160.wav;minimo

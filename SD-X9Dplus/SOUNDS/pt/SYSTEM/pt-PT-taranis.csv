@@ -143,6 +143,8 @@ SOUNDS/pt/SYSTEM;degree0.wav;degree
 SOUNDS/pt/SYSTEM;rad0.wav;radian
 SOUNDS/pt/SYSTEM;ml0.wav;milliliter
 SOUNDS/pt/SYSTEM;founce0.wav;onças
+SOUNDS/pt/SYSTEM;mlpm0.wav;milliliter per minute
+SOUNDS/pt/SYSTEM;mlpm1.wav;milliliters per minute
 SOUNDS/pt/SYSTEM;hour0.wav;horas
 SOUNDS/pt/SYSTEM;minute0.wav;minutos
 SOUNDS/pt/SYSTEM;second0.wav;segundos
