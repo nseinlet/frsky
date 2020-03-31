@@ -221,15 +221,15 @@ local function runFieldsPage(event)
       end
     end
   elseif edit then
-    if event == EVT_VIRTUAL_NEXT or event == EVT_VIRTUAL_NEXT_REPT then
+    if event == EVT_VIRTUAL_INC or event == EVT_VIRTUAL_INC_REPT then
       addField(1)
-    elseif event == EVT_VIRTUAL_PREVIOUS or event == EVT_VIRTUAL_PREVIOUS_REPT then
+    elseif event == EVT_VIRTUAL_DEC or event == EVT_VIRTUAL_DEC_REPT then
       addField(-1)
     end
   else
     if event == EVT_VIRTUAL_NEXT then
       selectField(1)
-    elseif event == EVT_VIRTUAL_PREVIOUS then
+    elseif event == EVT_VIRTUAL_PREV then
       selectField(-1)
     end
   end
@@ -273,11 +273,6 @@ local function run(event)
   if event == nil then
     error("Cannot run as a model script!")
     return 2
-  elseif event == EVT_PAGE_BREAK or event == EVT_PAGEDN_FIRST or event == EVT_SHIFT_BREAK then
-    --selectPage(1)
-  elseif event == EVT_PAGE_LONG  or event == EVT_PAGEUP_FIRST or event == EVT_SHIFT_LONG then
-    --killEvents(event);
-    --selectPage(-1)
   end
   local result = pages[page](event)
 

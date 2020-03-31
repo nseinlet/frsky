@@ -1,1 +1,1 @@
-This directory is for lua functions
+This directory is for lua functions scripts.

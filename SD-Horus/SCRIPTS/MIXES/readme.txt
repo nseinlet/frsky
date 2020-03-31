@@ -1,1 +1,1 @@
-This directory is for lua mixer
+This directory is for lua mixer scripts.

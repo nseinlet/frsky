@@ -154,8 +154,8 @@ SOUNDS/it/SYSTEM;m10.wav;millilitro
 SOUNDS/it/SYSTEM;m11.wav;millilitri
 SOUNDS/it/SYSTEM;founce0.wav;oncia fluida
 SOUNDS/it/SYSTEM;founce1.wav;once fluide
-SOUNDS/it/SYSTEM;mlpm0.wav;milliliter per minute
-SOUNDS/it/SYSTEM;mlpm1.wav;milliliters per minute
+SOUNDS/it/SYSTEM;mlpm0.wav;millilitro per minuto
+SOUNDS/it/SYSTEM;mlpm1.wav;millilitri per minuto
 SOUNDS/it/SYSTEM;hour0.wav;ora
 SOUNDS/it/SYSTEM;hour1.wav;ore
 SOUNDS/it/SYSTEM;minute0.wav;minuto
@@ -190,39 +190,44 @@ SOUNDS/it/SYSTEM;rssi_red.wav;Segnale radio critico
 SOUNDS/it/SYSTEM;swr_red.wav;Problema all'antenna della radio
 SOUNDS/it/SYSTEM;telemko.wav;Telemetria assente
 SOUNDS/it/SYSTEM;telemok.wav;Telemetria disponibile
+SOUNDS/it/SYSTEM;trainko.wav;Segnale trainer perso
+SOUNDS/it/SYSTEM;trainok.wav;Segnale trainer disponibile
+SOUNDS/it/SYSTEM;sensorko.wav;Sensore perso
 SOUNDS/it/SYSTEM;servoko.wav;sovraccarico servo
 SOUNDS/it/SYSTEM;rxko.wav;sovraccarico di alimentazione
 SOUNDS/it/SYSTEM;modelpwr.wav;ricevente ancora connessa
-SOUNDS/it/SYSTEM;0135.wav;timer
-SOUNDS/it/SYSTEM;0137.wav;tensione
-SOUNDS/it/SYSTEM;0138.wav;tensione
-SOUNDS/it/SYSTEM;0139.wav;trasmissione
-SOUNDS/it/SYSTEM;0140.wav;ricezione
-SOUNDS/it/SYSTEM;0141.wav;altitudine
-SOUNDS/it/SYSTEM;0142.wav;motore
-SOUNDS/it/SYSTEM;0143.wav;carburante
-SOUNDS/it/SYSTEM;0144.wav;temperatura
-SOUNDS/it/SYSTEM;0145.wav;temperatura
-SOUNDS/it/SYSTEM;0146.wav;velocità
-SOUNDS/it/SYSTEM;0147.wav;distanza
-SOUNDS/it/SYSTEM;0148.wav;altitudine
-SOUNDS/it/SYSTEM;0149.wav;cella lipo
-SOUNDS/it/SYSTEM;0150.wav;totale lipo
-SOUNDS/it/SYSTEM;0151.wav;tensione
-SOUNDS/it/SYSTEM;0152.wav;corrente
-SOUNDS/it/SYSTEM;0153.wav;consumo
-SOUNDS/it/SYSTEM;0154.wav;potenza
-SOUNDS/it/SYSTEM;0155.wav;accelerazione X
-SOUNDS/it/SYSTEM;0156.wav;accelerazione Y
-SOUNDS/it/SYSTEM;0157.wav;accelerazione Z
-SOUNDS/it/SYSTEM;0158.wav;direzione
-SOUNDS/it/SYSTEM;0159.wav;variometro
-SOUNDS/it/SYSTEM;0160.wav;minimo
-SOUNDS/it/SYSTEM;0161.wav;massimo
+SOUNDS/it/SYSTEM;0155.wav;timer
+SOUNDS/it/SYSTEM;0157.wav;tensione
+SOUNDS/it/SYSTEM;0158.wav;tensione
+SOUNDS/it/SYSTEM;0159.wav;trasmissione
+SOUNDS/it/SYSTEM;0160.wav;ricezione
+SOUNDS/it/SYSTEM;0161.wav;altitudine
+SOUNDS/it/SYSTEM;0162.wav;motore
+SOUNDS/it/SYSTEM;0163.wav;carburante
+SOUNDS/it/SYSTEM;0164.wav;temperatura
+SOUNDS/it/SYSTEM;0165.wav;temperatura
+SOUNDS/it/SYSTEM;0166.wav;velocità
+SOUNDS/it/SYSTEM;0167.wav;distanza
+SOUNDS/it/SYSTEM;0168.wav;altitudine
+SOUNDS/it/SYSTEM;0169.wav;cella lipo
+SOUNDS/it/SYSTEM;0170.wav;totale lipo
+SOUNDS/it/SYSTEM;0171.wav;tensione
+SOUNDS/it/SYSTEM;0172.wav;corrente
+SOUNDS/it/SYSTEM;0173.wav;consumo
+SOUNDS/it/SYSTEM;0174.wav;potenza
+SOUNDS/it/SYSTEM;0175.wav;accelerazione X
+SOUNDS/it/SYSTEM;0176.wav;accelerazione Y
+SOUNDS/it/SYSTEM;0177.wav;accelerazione Z
+SOUNDS/it/SYSTEM;0178.wav;direzione
+SOUNDS/it/SYSTEM;0179.wav;variometro
+SOUNDS/it/SYSTEM;0180.wav;minimo
+SOUNDS/it/SYSTEM;0181.wav;massimo
 SOUNDS/it;gearup.wav;carrello chiuso
 SOUNDS/it;geardn.wav;carrello aperto
 SOUNDS/it;flapup.wav;flap rientrati
 SOUNDS/it;flapdn.wav;flap estesi
+SOUNDS/it;splrup.wav;spoiler su
+SOUNDS/it;splrdn.wav;spoiler giù
 SOUNDS/it;attero.wav;atterraggio
 SOUNDS/it;trnon.wav;modalità maestro attiva
 SOUNDS/it;trnoff.wav;modalità maestro disattiva
@@ -230,11 +235,15 @@ SOUNDS/it;engoff.wav;motore spento
 SOUNDS/it;tohigh.wav;troppo alto
 SOUNDS/it;tolow.wav;troppo basso
 SOUNDS/it;lowbat.wav;batteria scarica
-SOUNDS/it;crowon.wav;crow on
-SOUNDS/it;crowof.wav;crow off
+SOUNDS/it;crowon.wav;crow attivato
+SOUNDS/it;crowof.wav;crow disattivato
+SOUNDS/it;siglow.wav;segnale radio basso
+SOUNDS/it;sigcrt.wav;segnale radio critico
 SOUNDS/it;spdmod.wav;modo velocità
 SOUNDS/it;thmmod.wav;modo termica
 SOUNDS/it;nrmmod.wav;modo volo normale
+SOUNDS/it;lnding.wav;modo atterraggio
+SOUNDS/it;acro.wav;modo acro
 SOUNDS/it;fltmd1.wav;fase di volo 1
 SOUNDS/it;fltmd2.wav;fase di volo 2
 SOUNDS/it;fltmd3.wav;fase di volo 3
@@ -242,5 +251,19 @@ SOUNDS/it;fltmd4.wav;fase di volo 4
 SOUNDS/it;fltmd5.wav;fase di volo 5
 SOUNDS/it;fltmd6.wav;fase di volo 6
 SOUNDS/it;fltmd7.wav;fase di volo 7
-SOUNDS/it;fltmd8.wav;fase di volo 8
-SOUNDS/it;fltmd9.wav;fase di volo 9
+SOUNDS/it;vrion.wav;variometro attivato
+SOUNDS/it;vrioff.wav;variometro disabilitato
+SOUNDS/it;fm-pwr.wav;fase di volo power
+SOUNDS/it;fm-lnd.wav;fase di volo land
+SOUNDS/it;fm-flt.wav;fase di volo planata
+SOUNDS/it;fm-spd.wav;fase di volo velocità
+SOUNDS/it;fm-fst.wav;fase di volo veloce
+SOUNDS/it;fm-nrm.wav;fase di volo normale
+SOUNDS/it;fm-crs.wav;fase di volo cruise
+SOUNDS/it;fm-acr.wav;fase di volo acro
+SOUNDS/it;fm-rce.wav;fase di volo race
+SOUNDS/it;fm-lch.wav;fase di volo lancio
+SOUNDS/it;fm-png.wav;fase di volo ping
+SOUNDS/it;fm-thm.wav;fase di volo termica
+SOUNDS/it;fm-thl.wav;fase di volo termica sinistra
+SOUNDS/it;fm-thr.wav;fase di volo termica destra
