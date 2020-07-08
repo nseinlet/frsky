@@ -112,8 +112,11 @@ SOUNDS/it/SYSTEM;0110.wav;minuti
 SOUNDS/it/SYSTEM;0111.wav;secondo
 SOUNDS/it/SYSTEM;0112.wav;secondi
 SOUNDS/it/SYSTEM;volt0.wav;volt
+SOUNDS/it/SYSTEM;volt1.wav;volt
 SOUNDS/it/SYSTEM;amp0.wav;ampere
+SOUNDS/it/SYSTEM;amp1.wav;ampere
 SOUNDS/it/SYSTEM;mamp0.wav;milliampere
+SOUNDS/it/SYSTEM;mamp1.wav;milliampere
 SOUNDS/it/SYSTEM;knot0.wav;nodo
 SOUNDS/it/SYSTEM;knot1.wav;nodi
 SOUNDS/it/SYSTEM;mps0.wav;metri al secondo
