@@ -161,24 +161,27 @@ SOUNDS/es/SYSTEM;error.wav;error
 SOUNDS/es/SYSTEM;midtrim.wav;trim centrado
 SOUNDS/es/SYSTEM;midpot.wav;potenciómetro centrado
 SOUNDS/es/SYSTEM;maxtrim.wav;trim al máximo
-SOUNDS/es/SYSTEM;mintrim.wav;trim al mínima
+SOUNDS/es/SYSTEM;mintrim.wav;trim al mínimo
 SOUNDS/es/SYSTEM;timer20.wav;20 segundos
 SOUNDS/es/SYSTEM;timer30.wav;30 segundos
-SOUNDS/es/SYSTEM;highmah.wav;assorbimiento elevado
-SOUNDS/es/SYSTEM;hightemp.wav;temperatura elevada
+SOUNDS/es/SYSTEM;highmah.wav;consumo alto
+SOUNDS/es/SYSTEM;hightemp.wav;temperatura alta
 SOUNDS/es/SYSTEM;a1_org.wav;Alarma A1
 SOUNDS/es/SYSTEM;a1_red.wav;A1 crítica
 SOUNDS/es/SYSTEM;a2_org.wav;Alarma A2
 SOUNDS/es/SYSTEM;a2_red.wav;A2 crítica
 SOUNDS/es/SYSTEM;hello.wav;Bienvenido a open t equis
-SOUNDS/es/SYSTEM;rssi_org.wav;recepcion de señal baja
-SOUNDS/es/SYSTEM;rssi_red.wav;recepción de señal crítica
+SOUNDS/es/SYSTEM;rssi_org.wav;señal baja
+SOUNDS/es/SYSTEM;rssi_red.wav;señal crítica
 SOUNDS/es/SYSTEM;swr_red.wav;Problemas con la antena del transmisor
 SOUNDS/es/SYSTEM;telemko.wav;Sin telemetría
 SOUNDS/es/SYSTEM;telemok.wav;Telemetría disponible
-SOUNDS/es/SYSTEM;servoko.wav;servo overload
-SOUNDS/es/SYSTEM;rxko.wav;power overload
-SOUNDS/es/SYSTEM;modelpwr.wav;El receptor esta conectado
+SOUNDS/es/SYSTEM;servoko.wav;sobrecarga de servo
+SOUNDS/es/SYSTEM;rxko.wav;sobrecarga de potencia
+SOUNDS/es/SYSTEM;modelpwr.wav;El receptor aún está encendido
+SOUNDS/es/SYSTEM;timovr1.wav;cronómetro uno terminado
+SOUNDS/es/SYSTEM;timovr2.wav;cronómetro dos terminado
+SOUNDS/es/SYSTEM;timovr3.wav;cronómetro tres terminado
 SOUNDS/es/SYSTEM;0141.wav;cronómetro
 SOUNDS/es/SYSTEM;0142.wav;cronómetro
 SOUNDS/es/SYSTEM;0143.wav;transmisión
@@ -222,12 +225,12 @@ SOUNDS/es;crowof.wav;crou, desligado
 SOUNDS/es;spdmod.wav;modo de velocidad
 SOUNDS/es;thmmod.wav;modo de térmica
 SOUNDS/es;nrmmod.wav;modo de vuelo normal
-SOUNDS/es;fltmd1.wav;fase de vuelo 1
-SOUNDS/es;fltmd2.wav;fase de vuelo 2
-SOUNDS/es;fltmd3.wav;fase de vuelo 3
-SOUNDS/es;fltmd4.wav;fase de vuelo 4
-SOUNDS/es;fltmd5.wav;fase de vuelo 5
-SOUNDS/es;fltmd6.wav;fase de vuelo 6
-SOUNDS/es;fltmd7.wav;fase de vuelo 7
-SOUNDS/es;fltmd8.wav;fase de vuelo 8
-SOUNDS/es;fltmd9.wav;fase de vuelo 9
+SOUNDS/es;fltmd1.wav;modo de vuelo 1
+SOUNDS/es;fltmd2.wav;modo de vuelo 2
+SOUNDS/es;fltmd3.wav;modo de vuelo 3
+SOUNDS/es;fltmd4.wav;modo de vuelo 4
+SOUNDS/es;fltmd5.wav;modo de vuelo 5
+SOUNDS/es;fltmd6.wav;modo de vuelo 6
+SOUNDS/es;fltmd7.wav;modo de vuelo 7
+SOUNDS/es;fltmd8.wav;modo de vuelo 8
+SOUNDS/es;fltmd9.wav;modo de vuelo 9

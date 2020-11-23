@@ -125,7 +125,7 @@ SOUNDS/de/SYSTEM;foot0.wav;Fuesse
 SOUNDS/de/SYSTEM;celsius0.wav;Grad Celsius
 SOUNDS/de/SYSTEM;fahr0.wav;Grad Fahrenheit
 SOUNDS/de/SYSTEM;percent0.wav;Prozent
-SOUNDS/de/SYSTEM;mamph0.wav;Milliampär pro stunde
+SOUNDS/de/SYSTEM;mamph0.wav;Milliampär stunde
 SOUNDS/de/SYSTEM;watt0.wav;Watt
 SOUNDS/de/SYSTEM;mwatt0.wav;Milli Watt
 SOUNDS/de/SYSTEM;db0.wav;D B
@@ -180,7 +180,7 @@ SOUNDS/de/SYSTEM;timovr1.wav;timer eins abgelaufen
 SOUNDS/de/SYSTEM;timovr2.wav;timer zwei abgelaufen
 SOUNDS/de/SYSTEM;timovr3.wav;timer drei abgelaufen
 SOUNDS/de/SYSTEM;sensorko.wav;Sensor verloren
-SOUNDS/de/SYSTEM;hello.wav;Willkommen bei open te ix
+SOUNDS/de/SYSTEM;hello.wav;Willkommen bei open t x
 SOUNDS/de/SYSTEM;0134.wav;Uhr
 SOUNDS/de/SYSTEM;0135.wav;Uhr
 SOUNDS/de/SYSTEM;0136.wav;Sender

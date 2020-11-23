@@ -159,6 +159,12 @@ SOUNDS/en/SYSTEM;founce0.wav;fluid ounce
 SOUNDS/en/SYSTEM;founce1.wav;fluid ounces
 SOUNDS/en/SYSTEM;mlpm0.wav;milliliter per minute
 SOUNDS/en/SYSTEM;mlpm1.wav;milliliters per minute
+SOUNDS/en/SYSTEM;hertz0.wav;hertz
+SOUNDS/en/SYSTEM;hertz1.wav;hertz
+SOUNDS/en/SYSTEM;ms0.wav;milisecond
+SOUNDS/en/SYSTEM;ms1.wav;miliseconds
+SOUNDS/en/SYSTEM;us0.wav;microsecond
+SOUNDS/en/SYSTEM;us1.wav;microseconds
 SOUNDS/en/SYSTEM;hour0.wav;hour
 SOUNDS/en/SYSTEM;hour1.wav;hours
 SOUNDS/en/SYSTEM;minute0.wav;minute
@@ -200,6 +206,8 @@ SOUNDS/en/SYSTEM;rxko.wav;power overload
 SOUNDS/en/SYSTEM;modelpwr.wav;receiver still connected
 SOUNDS/en;armed.wav;armed
 SOUNDS/en;disarm.wav;disarmed
+SOUNDS/en;thrcut.wav;throttle  cut
+SOUNDS/en;thract.wav;throttle  active
 SOUNDS/en;gearup.wav;gear!, up!
 SOUNDS/en;geardn.wav;gear!, down!
 SOUNDS/en;flapup.wav;flaps!, up!
@@ -216,6 +224,8 @@ SOUNDS/en;crowon.wav;crow!, on!
 SOUNDS/en;crowof.wav;crow!, off!
 SOUNDS/en;siglow.wav;rf. signal!, low!
 SOUNDS/en;sigcrt.wav;rf. signal!, critical!
+SOUNDS/en;lq.wav;LQ
+SOUNDS/en;rfmode.wav;RF mode
 SOUNDS/en;spdmod.wav;high. speed. mode!, active
 SOUNDS/en;thmmod.wav;thermal. mode!, on
 SOUNDS/en;nrmmod.wav;normal. mode!, on
@@ -245,3 +255,11 @@ SOUNDS/en;fm-png.wav;flight mode ping
 SOUNDS/en;fm-thm.wav;flight mode thermal
 SOUNDS/en;fm-thl.wav;flight mode thermal left
 SOUNDS/en;fm-thr.wav;flight mode thermal right
+SOUNDS/en;fm-stb.wav;flight mode stabilize
+SOUNDS/en;fm-hor.wav;flight mode horizon
+SOUNDS/en;fm-ang.wav;flight mode angle
+SOUNDS/en;fm-id1.wav;flight mode idle up 1
+SOUNDS/en;fm-id2.wav;flight mode idle up 2
+SOUNDS/en;ratlow.wav;low rate
+SOUNDS/en;ratmed.wav;medium rate
+SOUNDS/en;rathi.wav;high rate
