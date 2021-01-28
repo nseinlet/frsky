@@ -170,24 +170,12 @@ SOUNDS/it/SYSTEM;lowbatt.wav;batteria della radio scarica
 SOUNDS/it/SYSTEM;thralert.wav;controllo motore non in posizione, verificare
 SOUNDS/it/SYSTEM;swalert.wav;interruttori non in posizione, verificare
 SOUNDS/it/SYSTEM;eebad.wav;eeprom corrotta
-SOUNDS/it/SYSTEM;eeformat.wav;formattazione eeprom in corso
 SOUNDS/it/SYSTEM;error.wav;errore
 SOUNDS/it/SYSTEM;midtrim.wav;trim centrato
-SOUNDS/it/SYSTEM;midpot.wav;potenziometro centrato
 SOUNDS/it/SYSTEM;maxtrim.wav;massimo trim raggiunto
 SOUNDS/it/SYSTEM;mintrim.wav;minimo trim raggiunto
-SOUNDS/it/SYSTEM;timer20.wav;venti secondi
-SOUNDS/it/SYSTEM;timer30.wav;trenta secondi
 SOUNDS/it/SYSTEM;highmah.wav;assorbimento elevato
 SOUNDS/it/SYSTEM;hightemp.wav;temperatura elevata
-SOUNDS/it/SYSTEM;a1_org.wav;A1 in allarme
-SOUNDS/it/SYSTEM;a1_red.wav;A1 critico
-SOUNDS/it/SYSTEM;a2_org.wav;A2 in allarme
-SOUNDS/it/SYSTEM;a2_red.wav;A2 critico
-SOUNDS/it/SYSTEM;a3_org.wav;A3 in allarme
-SOUNDS/it/SYSTEM;a3_red.wav;A3 critico
-SOUNDS/it/SYSTEM;a4_org.wav;A4 in allarme
-SOUNDS/it/SYSTEM;a4_red.wav;A4 critico
 SOUNDS/it/SYSTEM;rssi_org.wav;Segnale radio basso
 SOUNDS/it/SYSTEM;rssi_red.wav;Segnale radio critico
 SOUNDS/it/SYSTEM;swr_red.wav;Problema all'antenna della radio

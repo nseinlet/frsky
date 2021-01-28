@@ -1,4 +1,4 @@
-local toolName = "TNS|Crossfire config|TNE"
+local toolName = "TNS|Crossfire configure|TNE"
 
 ---- #########################################################################
 ---- #                                                                       #

@@ -117,70 +117,65 @@ SOUNDS/de/SYSTEM;amp0.wav;Ampär
 SOUNDS/de/SYSTEM;mamp0.wav;MilliAmpär
 SOUNDS/de/SYSTEM;knot0.wav;Knoten
 SOUNDS/de/SYSTEM;mps0.wav;Meter pro sekunde
-SOUNDS/de/SYSTEM;fps0.wav;Fuss pro sekunde
+SOUNDS/de/SYSTEM;fps0.wav;Fuß pro sekunde
 SOUNDS/de/SYSTEM;kph0.wav;Kilometer pro stunde
 SOUNDS/de/SYSTEM;mph0.wav;Meilen pro Stunde
 SOUNDS/de/SYSTEM;meter0.wav;Meter
-SOUNDS/de/SYSTEM;foot0.wav;Fuesse
+SOUNDS/de/SYSTEM;foot0.wav;Fuß
 SOUNDS/de/SYSTEM;celsius0.wav;Grad Celsius
 SOUNDS/de/SYSTEM;fahr0.wav;Grad Fahrenheit
 SOUNDS/de/SYSTEM;percent0.wav;Prozent
-SOUNDS/de/SYSTEM;mamph0.wav;Milliampär stunde
+SOUNDS/de/SYSTEM;mamph0.wav;Milliampärstunde
+SOUNDS/de/SYSTEM;mamph1.wav;Milliampärstunden
 SOUNDS/de/SYSTEM;watt0.wav;Watt
 SOUNDS/de/SYSTEM;mwatt0.wav;Milli Watt
 SOUNDS/de/SYSTEM;db0.wav;D B
-SOUNDS/de/SYSTEM;rpm0.wav;Drehzahl
+SOUNDS/de/SYSTEM;rpm0.wav;Umdrehungen pro Minute
 SOUNDS/de/SYSTEM;g0.wav;g
 SOUNDS/de/SYSTEM;degree0.wav;Grad
-SOUNDS/de/SYSTEM;rad0.wav;radians
+SOUNDS/de/SYSTEM;rad0.wav;radiant
+SOUNDS/de/SYSTEM;rad1.wav;radianten
 SOUNDS/de/SYSTEM;ml0.wav;Milliliter
 SOUNDS/de/SYSTEM;founce0.wav;Unze
+SOUNDS/de/SYSTEM;founce1.wav;Unzen
 SOUNDS/de/SYSTEM;mlpm0.wav;Milliliter pro minute
-SOUNDS/de/SYSTEM;mlpm1.wav;Milliliter pro minuten
+SOUNDS/de/SYSTEM;hertz0.wav;Hertz
+SOUNDS/de/SYSTEM;ms0.wav;Millisekunde
+SOUNDS/de/SYSTEM;ms1.wav;Millisekunden
+SOUNDS/de/SYSTEM;us0.wav;Mikrosekunde
+SOUNDS/de/SYSTEM;us1.wav;Mikrosekunden
 SOUNDS/de/SYSTEM;hour0.wav;Stunde
 SOUNDS/de/SYSTEM;hour1.wav;Stunden
 SOUNDS/de/SYSTEM;minute0.wav;Minute
 SOUNDS/de/SYSTEM;minute1.wav;Minuten
 SOUNDS/de/SYSTEM;second0.wav;Sekunde
 SOUNDS/de/SYSTEM;second1.wav;Sekunden
-SOUNDS/de/SYSTEM;inactiv.wav;Inaktivitätsalarm
+SOUNDS/de/SYSTEM;midtrim.wav;Trimmung zentriert
+SOUNDS/de/SYSTEM;maxtrim.wav;Obere Trimmungsgrenze erreicht
+SOUNDS/de/SYSTEM;mintrim.wav;Untere Trimmungsgrenze erreicht
+SOUNDS/de/SYSTEM;timovr1.wav;timer eins abgelaufen
+SOUNDS/de/SYSTEM;timovr2.wav;timer zwei abgelaufen
+SOUNDS/de/SYSTEM;timovr3.wav;timer drei abgelaufen
 SOUNDS/de/SYSTEM;lowbatt.wav;Senderspannung schwach
+SOUNDS/de/SYSTEM;inactiv.wav;Inaktivitätsalarm
 SOUNDS/de/SYSTEM;thralert.wav;Gaskanal nicht Null, bitte prüfen
 SOUNDS/de/SYSTEM;swalert.wav;Schalter fehlpositioniert, bitte prüfen
 SOUNDS/de/SYSTEM;eebad.wav;EEPROM fehlerhaft
-SOUNDS/de/SYSTEM;eeformat.wav;EEPROM formatiert
-SOUNDS/de/SYSTEM;error.wav;Fehler
-SOUNDS/de/SYSTEM;midtrim.wav;Trim zentriert
-SOUNDS/de/SYSTEM;midpot.wav;Poti zentriert
-SOUNDS/de/SYSTEM;maxtrim.wav;Obere Trimmungsgrenze erreicht
-SOUNDS/de/SYSTEM;mintrim.wav;Untere Trimmungsgrenze erreicht
-SOUNDS/de/SYSTEM;timer20.wav;20 Sekunden
-SOUNDS/de/SYSTEM;timer30.wav;30 Sekunden
-SOUNDS/de/SYSTEM;highmah.wav;Senderstrom zu hoch!
-SOUNDS/de/SYSTEM;hightemp.wav;Sendertemperatur zu hoch!
-SOUNDS/de/SYSTEM;a1_org.wav;A1 schwach!
-SOUNDS/de/SYSTEM;a1_red.wav;A1 kritisch!
-SOUNDS/de/SYSTEM;a2_org.wav;A2 schwach!
-SOUNDS/de/SYSTEM;a2_red.wav;A2 kritisch!
-SOUNDS/de/SYSTEM;a3_org.wav;A3 schwach!
-SOUNDS/de/SYSTEM;a3_red.wav;A3 kritisch!
-SOUNDS/de/SYSTEM;a4_org.wav;A4 schwach!
-SOUNDS/de/SYSTEM;a4_red.wav;A4 kritisch!
+SOUNDS/de/SYSTEM;hello.wav;Willkommen bei open t x
 SOUNDS/de/SYSTEM;rssi_org.wav;Funksignal schwach!
 SOUNDS/de/SYSTEM;rssi_red.wav;Funksignal kritisch!
-SOUNDS/de/SYSTEM;swr_red.wav;Problem mit der Sender Antenne
+SOUNDS/de/SYSTEM;swr_red.wav;Senderantenne fehlerhaft
 SOUNDS/de/SYSTEM;telemko.wav;Telemetrie verloren
 SOUNDS/de/SYSTEM;telemok.wav;Telemetrie wiederhergestellt
 SOUNDS/de/SYSTEM;trainko.wav;Schülersignal verloren
 SOUNDS/de/SYSTEM;trainok.wav;Schülersignal wiederhergestellt
-SOUNDS/de/SYSTEM;servoko.wav;servo overload
-SOUNDS/de/SYSTEM;rxko.wav;power overload
-SOUNDS/de/SYSTEM;modelpwr.wav;Empfänger noch verbunden
-SOUNDS/de/SYSTEM;timovr1.wav;timer eins abgelaufen
-SOUNDS/de/SYSTEM;timovr2.wav;timer zwei abgelaufen
-SOUNDS/de/SYSTEM;timovr3.wav;timer drei abgelaufen
 SOUNDS/de/SYSTEM;sensorko.wav;Sensor verloren
-SOUNDS/de/SYSTEM;hello.wav;Willkommen bei open t x
+SOUNDS/de/SYSTEM;servoko.wav;servo Überlast
+SOUNDS/de/SYSTEM;rxko.wav;power Überlast
+SOUNDS/de/SYSTEM;modelpwr.wav;Empfänger noch verbunden
+SOUNDS/de/SYSTEM;error.wav;Fehler
+SOUNDS/de/SYSTEM;highmah.wav;Senderstrom zu hoch!
+SOUNDS/de/SYSTEM;hightemp.wav;Sendertemperatur zu hoch!
 SOUNDS/de/SYSTEM;0134.wav;Uhr
 SOUNDS/de/SYSTEM;0135.wav;Uhr
 SOUNDS/de/SYSTEM;0136.wav;Sender

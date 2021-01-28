@@ -190,7 +190,7 @@ local function fieldSignedSave(field, size)
 end
 
 local function fieldIntDisplay(field, y, attr)
-  lcd.drawNumber(89, y, field.value, LEFT + attr)
+  lcd.drawNumber(140, y, field.value, LEFT + attr)
   lcd.drawText(lcd.getLastPos(), y, field.unit, attr)
 end
 
@@ -252,7 +252,7 @@ local function formatFloat(num, decimals)
 end
 
 local function fieldFloatDisplay(field, y, attr)
-  lcd.drawText(89, y, formatFloat(field.value, field.prec), LEFT + attr)
+  lcd.drawText(140, y, formatFloat(field.value, field.prec), LEFT + attr)
   lcd.drawText(lcd.getLastPos(), y, field.unit, attr)
 end
 
@@ -279,7 +279,7 @@ local function fieldTextSelectionSave(field)
 end
 
 local function fieldTextSelectionDisplay(field, y, attr)
-  lcd.drawText(89, y, field.values[field.value+1], attr)
+  lcd.drawText(140, y, field.values[field.value+1], attr)
   lcd.drawText(lcd.getLastPos(), y, field.unit, attr)
 end
 
@@ -302,10 +302,10 @@ end
 
 local function fieldStringDisplay(field, y, attr)
   if edit == true and attr then
-    lcd.drawText(89, y, field.value, FIXEDWIDTH)
-    lcd.drawText(83+6*charIndex, y, string.sub(field.value, charIndex, charIndex), FIXEDWIDTH + attr)
+    lcd.drawText(140, y, field.value, FIXEDWIDTH)
+    lcd.drawText(134+6*charIndex, y, string.sub(field.value, charIndex, charIndex), FIXEDWIDTH + attr)
   else
-    lcd.drawText(89, y, field.value, attr)
+    lcd.drawText(140, y, field.value, attr)
   end
 end
 
@@ -330,7 +330,7 @@ end
 local function fieldCommandDisplay(field, y, attr)
   lcd.drawText(0, y, field.name, attr)
   if field.info ~= "" then
-    lcd.drawText(89, y, "[" .. field.info .. "]")
+    lcd.drawText(140, y, "[" .. field.info .. "]")
   end
 end
 
@@ -448,9 +448,9 @@ local function runDevicePage(event)
       end
     end
   elseif edit then
-    if event == EVT_VIRTUAL_NEXT or event == EVT_VIRTUAL_NEXT_REPT then
+    if event == EVT_VIRTUAL_INC or event == EVT_VIRTUAL_INC_REPT then
       incrField(1)
-    elseif event == EVT_VIRTUAL_PREV or event == EVT_VIRTUAL_PREV_REPT then
+    elseif event == EVT_VIRTUAL_DEC or event == EVT_VIRTUAL_DEC_REPT then
       incrField(-1)
     end
   else

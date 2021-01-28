@@ -235,16 +235,6 @@ SOUNDS/cz/SYSTEM;swalert.wav;přepínače nejsou ve výchozí poloze
 SOUNDS/cz/SYSTEM;eebad.wav;neplatná eeprom
 SOUNDS/cz/SYSTEM;hello.wav;Žádám o povolení ke startu.
 SOUNDS/cz/SYSTEM;bye.wav;Tak zase příště!
-SOUNDS/cz/SYSTEM;timer20.wav;dvacet sekund
-SOUNDS/cz/SYSTEM;timer30.wav;třicet sekund
-SOUNDS/cz/SYSTEM;a1_org.wav;A1,nízká
-SOUNDS/cz/SYSTEM;a1_red.wav;A1,kritická
-SOUNDS/cz/SYSTEM;a2_org.wav;A2,nízká
-SOUNDS/cz/SYSTEM;a2_red.wav;A2,kritická
-SOUNDS/cz/SYSTEM;a3_org.wav;A3,nízká
-SOUNDS/cz/SYSTEM;a3_red.wav;A3,kritická
-SOUNDS/cz/SYSTEM;a4_org.wav;A4,nízká
-SOUNDS/cz/SYSTEM;a4_red.wav;A4,kritická
 SOUNDS/cz/SYSTEM;rssi_org.wav;nízký RF signál
 SOUNDS/cz/SYSTEM;rssi_red.wav;kritický RF signál
 SOUNDS/cz/SYSTEM;swr_red.wav;problém s anténou rádia

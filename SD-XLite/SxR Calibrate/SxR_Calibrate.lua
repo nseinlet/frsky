@@ -30,8 +30,6 @@ local calibrationStep = 0
 local pages = {}
 local fields = {}
 local modifications = {}
-local positionConfirmed = 0
-local orientationAutoSense = 0
 
 local calibrationFields = {
   {"X:", VALUE, 0x9E, 0, -100, 100, "%"},
@@ -56,12 +54,12 @@ end
 -- Draw initial warning page
 local function runWarningPage(event)
   lcd.clear()
-  lcd.drawScreenTitle("SxR Calibration", page, #pages)
-  lcd.drawText(0, 10, "You only need to calibrate", SMLSIZE)
-  lcd.drawText(0, 20, "once. You will need the SxR,", SMLSIZE)
-  lcd.drawText(0, 30, "power, and a level surface.", SMLSIZE)
+  lcd.drawScreenTitle("SxR", page, #pages)
+  lcd.drawText(0, 10, "Warning: this will start SxR calibration", SMLSIZE)
+  lcd.drawText(0, 20, "This need to be run only once. You need a SxR,", SMLSIZE)
+  lcd.drawText(0, 30, "power supply and a flat level surface (desk,...)", SMLSIZE)
   lcd.drawText(0, 40, "Press [Enter] when ready", SMLSIZE)
-  lcd.drawText(0, 50, "Press [Exit] to cancel", SMLSIZE)
+  lcd.drawText(0, 50, "Press [Exit] when cancel", SMLSIZE)
   if event == EVT_VIRTUAL_ENTER then
     selectPage(1)
     return 0
@@ -74,7 +72,7 @@ end
 -- Redraw the current page
 local function redrawFieldsPage()
   lcd.clear()
-  lcd.drawScreenTitle("SxR Calibration", page, #pages)
+  lcd.drawScreenTitle("SxR", page, #pages)
 
   if refreshIndex < #fields then
     drawProgressBar()
@@ -212,36 +210,7 @@ local function runFieldsPage(event)
   return 0
 end
 
-local function drawCalibrationOrientation(x, y, step)
-    local orientation = { {"Label up.", "", 0, 0, 1000, 0, 0, 1000},
-                            {"Label down.", "", 0, 0, -1000, 0, 0, -1000},
-                            {"Pins Up.", "", -1000, 0, 0, 1000, 0, 0},
-                            {"Pins Down.", "", 1000, 0, 0, -1000, 0, 0},
-                            {"Label facing you", "Pins Right", 0, 1000, 0, 0, -1000, 0},
-                            {"Label facing you", "Pins Left", 0, -1000 , 0, 0, 1000, 0} }
-
-    lcd.drawText(0, 9, "Place the SxR as follows:", 0)
-    lcd.drawText(x-9, y, orientation[step][1])
-    lcd.drawText(x-9, y+10, orientation[step][2])
-    local positionStatus = 0
-    for index = 1, 3, 1 do
-      local field = fields[index]
-      lcd.drawText(90, 12+10*index, field[1], 0)
-      if math.abs(field[4] - orientation[step][2+index+orientationAutoSense]) < 200 then
-        lcd.drawNumber(100, 12+10*index, field[4]/10, LEFT+PREC2)
-        positionStatus = positionStatus + 1
-      else
-        lcd.drawNumber(100, 12+10*index, field[4]/10, LEFT+PREC2+INVERS)
-      end
-    end
-    if step == 3 and positionStatus == 2 then -- orientation auto sensing
-      orientationAutoSense = 3 - orientationAutoSense
-    end
-    if positionStatus == 3 then
-      lcd.drawText(0, 56, " [Enter] to validate          ", INVERS)
-      positionConfirmed = 1
-    end
-end
+local calibrationPositionsBitmaps = { "bmp/up.bmp", "bmp/down.bmp", "bmp/left.bmp", "bmp/right.bmp", "bmp/forward.bmp", "bmp/back.bmp"  }
 
 local function runCalibrationPage(event)
   fields = calibrationFields
@@ -249,26 +218,34 @@ local function runCalibrationPage(event)
     refreshIndex = 0
   end
   lcd.clear()
-  lcd.drawScreenTitle("SxR Calibration", page, #pages)
+  lcd.drawScreenTitle("SxR", page, #pages)
   if(calibrationStep < 6) then
-    drawCalibrationOrientation(10, 24, 1 + calibrationStep)
+    lcd.drawText(0, 9, "Turn the SxR as shown", 0)
+    lcd.drawPixmap(10, 19, calibrationPositionsBitmaps[1 + calibrationStep])
+    for index = 1, 3, 1 do
+      local field = fields[index]
+      lcd.drawText(80, 12+10*index, field[1], 0)
+      lcd.drawNumber(90, 12+10*index, field[4]/10, LEFT+PREC2)
+    end
 
     local attr = calibrationState == 0 and INVERS or 0
-    --lcd.drawText(0, 56, "[Enter] to validate", attr)
+    lcd.drawText(0, 56, "Press [Enter] when ready", attr)
   else
-    lcd.drawText(0, 19, "Calibration completed", 0)
---    lcd.drawText(10, 19, "Done",0)
+    lcd.drawText(0, 9, "Calibration completed", 0)
+    lcd.drawPixmap(10, 19, "bmp/done.bmp")
     lcd.drawText(0, 56, "Press [Exit] when ready", attr)
   end
   if calibrationStep > 6 and (event == EVT_VIRTUAL_ENTER or event == EVT_VIRTUAL_EXIT) then
     return 2
-  elseif event == EVT_VIRTUAL_ENTER and positionConfirmed  then
+  elseif event == EVT_VIRTUAL_ENTER then
     calibrationState = 1
-    positionConfirmed = 0
+  elseif event == EVT_VIRTUAL_EXIT then
+    if calibrationStep > 0 then
+      calibrationStep = 0
+    end
   end
   return 0
 end
-
 
 -- Init
 local function init()

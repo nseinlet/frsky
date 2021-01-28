@@ -153,20 +153,12 @@ SOUNDS/pt/SYSTEM;lowbatt.wav;bateria do rádio fraca
 SOUNDS/pt/SYSTEM;thralert.wav;atenção,acelerador não está no mínimo
 SOUNDS/pt/SYSTEM;swalert.wav;atenção, certifique-se que os interruptores estão na posição certa
 SOUNDS/pt/SYSTEM;eebad.wav;eeprom corrompida
-SOUNDS/pt/SYSTEM;eeformat.wav;formatação da eeprom em curso
 SOUNDS/pt/SYSTEM;error.wav;erro
 SOUNDS/pt/SYSTEM;midtrim.wav;trim centrado
-SOUNDS/pt/SYSTEM;midpot.wav;potenciómetro centrado
 SOUNDS/pt/SYSTEM;maxtrim.wav;trim no máximo
 SOUNDS/pt/SYSTEM;mintrim.wav;trim no mínimo
-SOUNDS/pt/SYSTEM;timer20.wav;20 segundos
-SOUNDS/pt/SYSTEM;timer30.wav;30 segundos
 SOUNDS/pt/SYSTEM;highmah.wav;assorbimento elevato
 SOUNDS/pt/SYSTEM;hightemp.wav;temperatura elevata
-SOUNDS/pt/SYSTEM;a1_org.wav;Alarme A1
-SOUNDS/pt/SYSTEM;a1_red.wav;A1 critica
-SOUNDS/pt/SYSTEM;a2_org.wav;Alarme A2
-SOUNDS/pt/SYSTEM;a2_red.wav;A2 critica
 SOUNDS/pt/SYSTEM;rssi_org.wav;recepção de sinal muito baixa
 SOUNDS/pt/SYSTEM;rssi_red.wav;recepção de sinal crítica
 SOUNDS/pt/SYSTEM;swr_red.wav;Problema com a antena do transmissor

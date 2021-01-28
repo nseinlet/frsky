@@ -156,20 +156,12 @@ SOUNDS/es/SYSTEM;lowbatt.wav;batería del transmisor baja
 SOUNDS/es/SYSTEM;thralert.wav;El acelerador está activado, por favor, corrijalo
 SOUNDS/es/SYSTEM;swalert.wav;Los interruptores no están en la posición correcta, por favor corrijalo
 SOUNDS/es/SYSTEM;eebad.wav;eeprom corrompida
-SOUNDS/es/SYSTEM;eeformat.wav;Formateo de eeprom en curso
 SOUNDS/es/SYSTEM;error.wav;error
 SOUNDS/es/SYSTEM;midtrim.wav;trim centrado
-SOUNDS/es/SYSTEM;midpot.wav;potenciómetro centrado
 SOUNDS/es/SYSTEM;maxtrim.wav;trim al máximo
 SOUNDS/es/SYSTEM;mintrim.wav;trim al mínimo
-SOUNDS/es/SYSTEM;timer20.wav;20 segundos
-SOUNDS/es/SYSTEM;timer30.wav;30 segundos
 SOUNDS/es/SYSTEM;highmah.wav;consumo alto
 SOUNDS/es/SYSTEM;hightemp.wav;temperatura alta
-SOUNDS/es/SYSTEM;a1_org.wav;Alarma A1
-SOUNDS/es/SYSTEM;a1_red.wav;A1 crítica
-SOUNDS/es/SYSTEM;a2_org.wav;Alarma A2
-SOUNDS/es/SYSTEM;a2_red.wav;A2 crítica
 SOUNDS/es/SYSTEM;hello.wav;Bienvenido a open t equis
 SOUNDS/es/SYSTEM;rssi_org.wav;señal baja
 SOUNDS/es/SYSTEM;rssi_red.wav;señal crítica
