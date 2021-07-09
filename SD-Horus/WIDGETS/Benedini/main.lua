@@ -46,35 +46,40 @@ function refresh(wgt)
     elseif val < -820 then
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "Horn", TEXT_COLOR+BOLD)
     elseif val < -700 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S3", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+1, "Open", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+15, "door", TEXT_COLOR+BOLD)
     elseif val < -580 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S4", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+1, "Close", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+15, "door", TEXT_COLOR+BOLD)
     elseif val < -460 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S5", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "Roof", TEXT_COLOR+BOLD)
     elseif val < -340 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S6", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+1, "Start", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+15, "GPS", TEXT_COLOR+BOLD)
     elseif val < -220 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S7", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+1, "Align", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+15, "GPS", TEXT_COLOR+BOLD)
     elseif val < -100 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S8", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+1, "Stop", TEXT_COLOR+BOLD)
+        lcd.drawText(wgt.zone.x+5, wgt.zone.y+15, "GPS", TEXT_COLOR+BOLD)
     elseif val > 900 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S17", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "V +", TEXT_COLOR+BOLD)
     elseif val > 820 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S16", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "V -", TEXT_COLOR+BOLD)
     elseif val > 700 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S15", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "Inter", TEXT_COLOR+BOLD)
     elseif val > 580 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S14", TEXT_COLOR+BOLD)
-    elseif val > 460 then
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S13", TEXT_COLOR+BOLD)
-    elseif val > 340 then
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S12", TEXT_COLOR+BOLD)
-    elseif val > 220 then
+    elseif val > 460 then
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S11", TEXT_COLOR+BOLD)
-    elseif val > 100 then
+    elseif val > 340 then
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S10", TEXT_COLOR+BOLD)
+    elseif val > 220 then
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S09", TEXT_COLOR+BOLD)
+    elseif val > 100 then
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S08", TEXT_COLOR+BOLD)
     else
-       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "S9", TEXT_COLOR+BOLD)
+       lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "", BLACK+BOLD)
     end
     lcd.setColor(TEXT_COLOR, BLACK)
 end
