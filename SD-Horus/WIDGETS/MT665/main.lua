@@ -17,9 +17,10 @@
 ---- #########################################################################
 
 local options = {
-  { "Option1", SOURCE, 1 },
-  { "Option2", VALUE, 1000 },
-  { "Option3", COLOR, RED }
+  { "FrontLift", BOOL, 0 },
+  { "FrontOutput", BOOL, 0 },
+  { "FirstFrontChannel", VALUE, 12 },
+  { "FirstRearChannel", VALUE, 6 },
 }
 
 local function drawVerticalGauge(x, y, size, width, value, max)
@@ -59,7 +60,7 @@ local function drawServo(x, y, size, width, value, max)
 end
 
 local function create(zone, options)
-  local pie = { zone=zone, options=options, bitmap = Bitmap.open("/IMAGES/MT665.png") }
+  local pie = { zone=zone, options=options, bitmap = Bitmap.open("/IMAGES/" .. model.getInfo().bitmap) }
   return pie
 end
 
@@ -76,30 +77,40 @@ function refresh(pie)
   lcd.drawBitmap(pie.bitmap, pie.zone.x+80, pie.zone.y+8, 100)
 
   -- Front outputs
-  lcd.drawText(pie.zone.x, pie.zone.y, "SA", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+19, pie.zone.y+2, 30, 10, 100+(getValue('ch13')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x, pie.zone.y+11, "SB", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+19, pie.zone.y+13, 30, 10, 100+(getValue('ch14')/10), 200, CURVE_COLOR)
-  lcd.drawText(pie.zone.x, pie.zone.y+22, "S1", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+19, pie.zone.y+25, 30, 10, 100+(getValue('ch15')/10), 200, CURVE_COLOR)
+  if pie.options.FrontOutput==1 then
+    lcd.drawText(pie.zone.x, pie.zone.y, "SA", SMLSIZE+TEXT_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+2, 30, 10, 100+(getValue('ch' .. pie.options.FirstFrontChannel)/10), 200, CURVE_COLOR)
+    lcd.drawText(pie.zone.x, pie.zone.y+11, "SB", SMLSIZE+TEXT_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+13, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+1))/10), 200, CURVE_COLOR)
+    lcd.drawText(pie.zone.x, pie.zone.y+22, "S1", SMLSIZE+TEXT_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+25, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+2))/10), 200, CURVE_COLOR)
+  end
 
   -- Front lif
-  lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE+TEXT_COLOR)
-  drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch4')/10), 200)
+  if pie.options.FrontOutput==1 then
+    lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE+TEXT_COLOR)
+    drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch4')/10), 200)
+  end
 
   -- Rear outputs
+  local rearOut = {pie.options.FirstRearChannel}
+  for i=1,5 do
+      rearOut[i+1] = pie.options.FirstRearChannel+i
+      if rearOut[i+1]>=12 then rearOut[i+1] = rearOut[i+1] + 1 end
+  end
+
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y, "SC", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+2, 40, 10, 100+(getValue('ch6')/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[1])/10), 200, CURVE_COLOR)
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+11, "SD", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+13, 40, 10, 100+(getValue('ch7')/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[2])/10), 200, CURVE_COLOR)
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+22, "Vit", SMLSIZE+TEXT_COLOR)
-  drawServo(pie.zone.x+pie.zone.w-64, pie.zone.y+25, 20, 10, getValue('ch8')/10, 100)
+  drawServo(pie.zone.x+pie.zone.w-64, pie.zone.y+25, 20, 10, getValue('ch' .. rearOut[3])/10, 100)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y, "S2", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+2, 40, 10, 100+(getValue('ch9')/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[4])/10), 200, CURVE_COLOR)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+11, "L1", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+13, 40, 10, 100+(getValue('ch10')/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[5])/10), 200, CURVE_COLOR)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+22, "L2", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch11')/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch' .. rearOut[6])/10), 200, CURVE_COLOR)
 
   -- Rear lift
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+55, "SG", SMLSIZE+TEXT_COLOR)
