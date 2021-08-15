@@ -165,6 +165,8 @@ SOUNDS/en/SYSTEM;ms0.wav;milisecond
 SOUNDS/en/SYSTEM;ms1.wav;miliseconds
 SOUNDS/en/SYSTEM;us0.wav;microsecond
 SOUNDS/en/SYSTEM;us1.wav;microseconds
+SOUNDS/en/SYSTEM;km0.wav;kilometer
+SOUNDS/en/SYSTEM;km1.wav;kilometers
 SOUNDS/en/SYSTEM;hour0.wav;hour
 SOUNDS/en/SYSTEM;hour1.wav;hours
 SOUNDS/en/SYSTEM;minute0.wav;minute

@@ -1,3 +1,7 @@
+Pour activer le mode CPPM
+il faut faire le bind en
+mode CH9-16
+
 X4R:
 ===
 CH1 -> CPPM (CH1-CH8)

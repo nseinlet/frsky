@@ -14,8 +14,6 @@
 ---- # GNU General Public License for more details.                          #
 ---- #                                                                       #
 ---- #########################################################################
--- Navigation variables
-local dirty = true
 
 -- Model types
 local modelType = 0
@@ -27,10 +25,8 @@ local MODELTYPE_QUAD = 2
 local function fieldIncDec(event, value, max)
   if event == EVT_VIRTUAL_DEC or event == EVT_VIRTUAL_DEC_REPT then
     value = (value + max)
-    dirty = true
   elseif event == EVT_VIRTUAL_INC or event == EVT_VIRTUAL_INC_REPT then
     value = (value + max + 2)
-    dirty = true
   end
   value = (value % (max+1))
   return value
@@ -38,24 +34,25 @@ end
 
 -- Model Type Menu
 local function modelTypeSurround(index)
-  lcd.drawRectangle(17+65*index, 14, 48, 48)
-  lcd.drawPixmap(22+65*index, 9, "mark.bmp")
+  if index <= 1 then
+    lcd.drawFilledRectangle(59*(index%2)+12, 13, 43, 23)
+  else
+    lcd.drawFilledRectangle(59*(index%2)+12, 34, 40, 20)
+  end
 end
 
 local function drawModelChoiceMenu()
   lcd.clear()
   lcd.drawScreenTitle("Select model type", 0, 0)
-  lcd.drawPixmap(21, 18, "plane.bmp")
-  lcd.drawPixmap(86, 18, "delta.bmp")
-  lcd.drawPixmap(151, 18, "quadri.bmp")
+    lcd.drawText( 20, 20, "Plane")
+    lcd.drawText( 78, 20, "Delta")
+    lcd.drawText( 20, 40, "Multi")
   modelTypeSurround(modelType)
+  fieldsMax = 0
 end
 
 local function modelTypeMenu(event)
-  if dirty == true then
-    drawModelChoiceMenu()
-    dirty = false
-  end
+  drawModelChoiceMenu()
   if event == EVT_VIRTUAL_ENTER then
     if modelType == MODELTYPE_PLANE then
       return "plane.lua"
@@ -64,7 +61,6 @@ local function modelTypeMenu(event)
     elseif modelType == MODELTYPE_QUAD then
       return "multi.lua"
     end
-    dirty = true
   else
     modelType = fieldIncDec(event, modelType, 2)
   end
@@ -80,6 +76,8 @@ local function run(event)
   if event == EVT_VIRTUAL_EXIT then
     return 2
   end
+
+
   return modelTypeMenu(event)
 end
 

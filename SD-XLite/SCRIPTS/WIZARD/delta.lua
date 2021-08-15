@@ -52,10 +52,10 @@ end
 
 local function fieldIncDec(event, value, max, force)
   if edit or force==true then
-    if event == EVT_VIRTUAL_DEC or event == EVT_VIRTUAL_DEC_REPT then
+    if event == EVT_VIRTUAL_INC then
       value = (value + max)
       dirty = true
-    elseif event == EVT_VIRTUAL_INC or event == EVT_VIRTUAL_INC_REPT then
+    elseif event == EVT_VIRTUAL_DEC then
       value = (value + max + 2)
       dirty = true
     end
@@ -93,11 +93,11 @@ local function navigate(event, fieldMax, prevPage, nextPage)
       dirty = blinkChanged()
     end
   else
-    if event == EVT_PAGE_BREAK then
+    if event == EVT_VIRTUAL_NEXT_PAGE then
       page = nextPage
       field = 0
       dirty = true
-    elseif event == EVT_PAGE_LONG then
+    elseif event == EVT_VIRTUAL_PREV_PAGE then
       page = prevPage
       field = 0
       killEvents(event);
@@ -120,7 +120,7 @@ local function getFieldFlags(position)
 end
 
 local function channelIncDec(event, value)
-  if not edit and event == EVT_VIRTUAL_MENU then
+  if not edit and event==EVT_VIRTUAL_MENU then
     servoPage = value
     dirty = true
   else
@@ -141,22 +141,19 @@ end
 local engineModeItems = {"No", "Yes"}
 local function drawEngineMenu()
   lcd.clear()
-  lcd.drawText(1, 0, "Has your model got an engine?", 0)
-  lcd.drawFilledRectangle(0, 0, LCD_W, 8, GREY_DEFAULT+FILL_WHITE)
-  lcd.drawCombobox(0, 8, LCD_W/2, engineModeItems, engineMode, getFieldFlags(0))
-  lcd.drawLine(LCD_W/2-1, 18, LCD_W/2-1, LCD_H-1, DOTTED, 0)
   if engineMode == 0 then
     -- No engine
-    lcd.drawPixmap(132, 8, "engine-0.bmp")
     fieldsMax = 0
   else
     -- 1 channel
-    lcd.drawPixmap(132, 8, "engine-1.bmp")
-    lcd.drawText(25, LCD_H-16, "Assign channel", 0);
-    lcd.drawText(LCD_W/2-19, LCD_H-8, ">>>", 0);
-    lcd.drawSource(151, LCD_H-8, MIXSRC_CH1+thrCH1, getFieldFlags(1))
+    lcd.drawText(5, 30, "Assign channel", 0);
+    lcd.drawText(5, 40, ">>>", 0);
+    lcd.drawSource(25, 40, MIXSRC_CH1+thrCH1, getFieldFlags(1))
     fieldsMax = 1
   end
+  lcd.drawText(1, 0, "Got an engine?", 0)
+  lcd.drawFilledRectangle(0, 0, LCD_W, 8, FILL_WHITE)
+  lcd.drawCombobox(0, 8, LCD_W, engineModeItems, engineMode, getFieldFlags(0))
 end
 
 local function engineMenu(event)
@@ -175,18 +172,18 @@ local function engineMenu(event)
 end
 
 -- Elevons Menu
-local elevonsModeItems = {"2 Channels..."}
+local elevonsModeItems = {"2 Channels"}
 local function drawElevonsMenu()
   lcd.clear()
   lcd.drawText(1, 0, "Select elevon channnels", 0)
-  lcd.drawFilledRectangle(0, 0, LCD_W, 8, GREY_DEFAULT+FILL_WHITE)
-  lcd.drawCombobox(0, 8, LCD_W/2, elevonsModeItems, elevonsMode, 0)
-  lcd.drawLine(LCD_W/2-1, 18, LCD_W/2-1, LCD_H-1, DOTTED, 0)
-  lcd.drawPixmap(110, 9, "elevons.bmp")
-  lcd.drawText(20, LCD_H-16, "Assign channels", 0);
-  lcd.drawText(LCD_W/2-19, LCD_H-8, ">>>", 0);
-  lcd.drawSource(116, LCD_H-8, MIXSRC_CH1+elevCH1, getFieldFlags(0))
-  lcd.drawSource(175, LCD_H-8, MIXSRC_CH1+elevCH2, getFieldFlags(1))
+  lcd.drawFilledRectangle(0, 0, LCD_W, 8, FILL_WHITE)
+  lcd.drawCombobox(0, 8, LCD_W, elevonsModeItems, elevonsMode, 0)
+  lcd.drawText(5, 30, "Assign channels", 0);
+  lcd.drawText(30, 40, "L", 0);
+  lcd.drawText(65, 40, "R", 0);
+  lcd.drawText(5, 50, ">>>", 0);
+  lcd.drawSource(25, 50, MIXSRC_CH1+elevCH1, getFieldFlags(0))
+  lcd.drawSource(60, 50, MIXSRC_CH1+elevCH2, getFieldFlags(1))
   fieldsMax = 1
 end
 
@@ -210,22 +207,19 @@ local rudderModeItems = {"No", "Yes"}
 
 local function drawRudderMenu()
   lcd.clear()
-  lcd.drawText(1, 0, "Has your model got a rudder?", 0)
-  lcd.drawFilledRectangle(0, 0, LCD_W, 8, GREY_DEFAULT+FILL_WHITE)
-  lcd.drawCombobox(0, 8, LCD_W/2, rudderModeItems, rudderMode, getFieldFlags(0))
-  lcd.drawLine(LCD_W/2-1, 18, LCD_W/2-1, LCD_H-1, DOTTED, 0)
   if rudderMode == 0 then
     -- No rudder
-    lcd.drawPixmap(109, 14, "drudder-0.bmp")
     fieldsMax = 0
   else
     -- 1 channel
-    lcd.drawPixmap(109, 14, "drudder-1.bmp")
-    lcd.drawText(25, LCD_H-16, "Assign channel", 0);
-    lcd.drawText(LCD_W/2-19, LCD_H-8, ">>>", 0);
-    lcd.drawSource(190, LCD_H-55, MIXSRC_CH1+rudCH1, getFieldFlags(1))
+    lcd.drawText(5, 30, "Assign channel", 0);
+    lcd.drawText(5, 40, ">>>", 0);
+    lcd.drawSource(25, 40, MIXSRC_CH1+rudCH1, getFieldFlags(1))
     fieldsMax = 1
   end
+  lcd.drawText(1, 0, "Got a rudder?", 0)
+  lcd.drawFilledRectangle(0, 0, LCD_W, 8, FILL_WHITE)
+  lcd.drawCombobox(0, 8, LCD_W, rudderModeItems, rudderMode, getFieldFlags(0))
 end
 
 local function rudderMenu(event)
@@ -248,10 +242,8 @@ local function drawServoMenu(limits)
   lcd.clear()
   lcd.drawSource(1, 0, MIXSRC_CH1+servoPage, 0)
   lcd.drawText(25, 0, "servo min/max/center/direction?", 0)
-  lcd.drawFilledRectangle(0, 0, LCD_W, 8, GREY_DEFAULT+FILL_WHITE)
-  lcd.drawLine(LCD_W/2-1, 8, LCD_W/2-1, LCD_H-1, DOTTED, 0)
+  lcd.drawFilledRectangle(0, 0, LCD_W, 8, FILL_WHITE)
   lcd.drawText(LCD_W/2-19, LCD_H-8, ">>>", 0);
-  lcd.drawPixmap(122, 8, "servo.bmp")
   lcd.drawNumber(140, 35, limits.min, PREC1+getFieldFlags(0));
   lcd.drawNumber(205, 35, limits.max, PREC1+getFieldFlags(1));
   lcd.drawNumber(170, 9, limits.offset, PREC1+getFieldFlags(2));
@@ -343,9 +335,8 @@ local function drawConfirmationMenu()
   if rudderMode == 1 then
     drawNextLine(x, y, "Rudder", rudCH1)
   end
-  lcd.drawText(48, LCD_H-8, "Long [ENT] to confirm", 0);
+  lcd.drawText(0, LCD_H-8, "[Enter Long] to confirm", 0);
   lcd.drawFilledRectangle(0, LCD_H-9, LCD_W, 9, 0)
-  lcd.drawPixmap(LCD_W-18, LCD_H-17, "confirm-tick.bmp")
   fieldsMax = 0
 end
 
@@ -374,6 +365,7 @@ local function run(event)
   if event == nil then
     error("Cannot be run as a model script!")
   end
+
   if servoPage ~= nil then
     servoMenu(event)
   elseif page == ENGINE_PAGE then

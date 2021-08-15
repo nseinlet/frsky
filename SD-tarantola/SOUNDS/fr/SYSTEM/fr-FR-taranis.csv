@@ -146,6 +146,10 @@ SOUNDS/fr/SYSTEM;rad0.wav;radians
 SOUNDS/fr/SYSTEM;ml0.wav;millilitres
 SOUNDS/fr/SYSTEM;founce0.wav;onces
 SOUNDS/fr/SYSTEM;mlpm0.wav;millilitre minute
+SOUNDS/fr/SYSTEM;us0.wav;microsecond
+SOUNDS/fr/SYSTEM;ms0.wav;milisecond
+SOUNDS/fr/SYSTEM;hertz0.wav;hertz
+SOUNDS/fr/SYSTEM;km0.wav;kilometre
 SOUNDS/fr/SYSTEM;hour0.wav;heure
 SOUNDS/fr/SYSTEM;minute0.wav;minute
 SOUNDS/fr/SYSTEM;second0.wav;seconde
