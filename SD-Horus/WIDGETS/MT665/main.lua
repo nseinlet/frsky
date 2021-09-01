@@ -1,7 +1,7 @@
 ---- #########################################################################
 ---- #                                                                       #
 ---- # Tractor monitoring Widget script for FrSky Horus                      #
----- # Copyright (C) OpenTX                                                  #
+---- # Copyright (C) Nicolas Seinlet                                         #
 -----#                                                                       #
 ---- # License GPLv2: http://www.gnu.org/licenses/gpl-2.0.html               #
 ---- #                                                                       #
@@ -19,8 +19,8 @@
 local options = {
   { "FrontLift", BOOL, 0 },
   { "FrontOutput", BOOL, 0 },
-  { "FirstFrontChannel", VALUE, 12 },
-  { "FirstRearChannel", VALUE, 6 },
+  { "FirstFrontChannel", VALUE, 12, 1, 24},
+  { "FirstRearChannel", VALUE, 6, 1, 24},
 }
 
 local function drawVerticalGauge(x, y, size, width, value, max)
@@ -87,7 +87,7 @@ function refresh(pie)
   end
 
   -- Front lif
-  if pie.options.FrontOutput==1 then
+  if pie.options.FrontLift==1 then
     lcd.drawText(pie.zone.x, pie.zone.y+75, "LS", SMLSIZE+TEXT_COLOR)
     drawVerticalGauge(pie.zone.x+19, pie.zone.y+103, 60, 10, 100+(getValue('ch4')/10), 200)
   end
@@ -119,27 +119,39 @@ function refresh(pie)
   drawVerticalGauge(pie.zone.x+pie.zone.w-39, pie.zone.y+103, 60, 10, 100+(getValue('ch1')/10), 200)
 
   -- Power
-  lcd.drawChannel(pie.zone.x+55, pie.zone.y-5, "VFAS", DBLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+55, pie.zone.y+20, "Curr", DBLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x+30, pie.zone.y+47, "max", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+47, "Curr+", SMLSIZE+TEXT_COLOR)
-
+  if getValue("VFAS")>0 then
+    -- Only available with VFAS 40A
+    lcd.drawChannel(pie.zone.x+55, pie.zone.y-5, "VFAS", DBLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+55, pie.zone.y+20, "Curr", DBLSIZE+TEXT_COLOR)
+    lcd.drawText(pie.zone.x+30, pie.zone.y+47, "max", SMLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+65, pie.zone.y+47, "Curr+", SMLSIZE+TEXT_COLOR)
+  end
   lcd.drawText(pie.zone.x+30, pie.zone.y+58, "RssI", SMLSIZE+TEXT_COLOR)
   lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "RSSI", SMLSIZE+TEXT_COLOR+BOLD)
   lcd.drawText(pie.zone.x+30, pie.zone.y+69, "RxBt", SMLSIZE+TEXT_COLOR)
   lcd.drawChannel(pie.zone.x+65, pie.zone.y+69, "RxBt", SMLSIZE+MENU_TITLE_BGCOLOR+BOLD)
 
-  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-60, "1:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-60, "C1", SMLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-60, "2:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-60, "C2", SMLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-49, "3:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-49, "C3", SMLSIZE+TEXT_COLOR)
-  lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-38, "m:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-38, "CMin", SMLSIZE+TEXT_COLOR+BOLD)
-  lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-38, "M:", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-38, "CMax", SMLSIZE+TEXT_COLOR+BOLD)
-  lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
+  if getValue("C1")>0 then
+      -- Only available with FLVSS or any other compatible sensor
+    lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-60, "1:", SMLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-60, "C1", SMLSIZE+TEXT_COLOR)
+    lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-60, "2:", SMLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-60, "C2", SMLSIZE+TEXT_COLOR)
+    -- Crappy way of checking batt cells count
+    if getValue("C3")>0 then
+      lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-49, "3:", SMLSIZE+TEXT_COLOR)
+      lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-49, "C3", SMLSIZE+TEXT_COLOR)
+    end
+    if getValue("C4")>0 then
+      lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-49, "4:", SMLSIZE+TEXT_COLOR)
+      lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-49, "C4", SMLSIZE+TEXT_COLOR)
+    end
+    lcd.drawText(pie.zone.x, pie.zone.y+pie.zone.h-38, "m:", SMLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+16, pie.zone.y+pie.zone.h-38, "CMin", SMLSIZE+TEXT_COLOR+BOLD)
+    lcd.drawText(pie.zone.x+57, pie.zone.y+pie.zone.h-38, "M:", SMLSIZE+TEXT_COLOR)
+    lcd.drawChannel(pie.zone.x+73, pie.zone.y+pie.zone.h-38, "CMax", SMLSIZE+TEXT_COLOR+BOLD)
+    lcd.drawChannel(pie.zone.x, pie.zone.y+pie.zone.h-30, "Cels", DBLSIZE+TEXT_COLOR)
+  end
 
   -- Speed
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-34, 40, 10, getValue('ch2')/10, 100)
