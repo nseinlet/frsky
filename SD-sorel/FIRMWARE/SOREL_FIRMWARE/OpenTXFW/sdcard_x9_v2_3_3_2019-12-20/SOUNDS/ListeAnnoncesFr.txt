@@ -1,0 +1,222 @@
+_130x  -> Modele Blade 130X
+_autoG -> Modele Autogire
+_bipla -> Modele Biplan
+_bixle -> Modele Bixler
+_bix2  -> Modele Bixler 2
+_bix3  -> Modele Bixler 3
+_blade -> Modele Blade
+_bnf   -> Modele BNF
+_calma -> Modele Calmato
+_capri -> Modele Caprice
+_caval -> Modele Cavallino
+_cielp -> Modele Pou du ciel
+_cular -> Modele Cularis
+_discu -> Modele Discus
+_dji   -> Modele DJI Phantom
+_drena -> Modele Drenalyn
+_drone -> Modele drone
+_easy2 -> Modele Easy Star II
+_ext33 -> Modele Extra 330
+_fokdr -> Modele Fokker DR1
+_funfl -> Modele FunFly
+_fury  -> Modele Fury
+_gama  -> Modele gama 2100
+_heron -> Modele Heron 
+_junio -> Modele Junior
+_kata  -> Modele Katana
+_lady  -> Modele ladybird
+_magnu -> Modele Magnum
+_mikro -> Modele Mikrokopter
+_minip -> Modele mini pou
+_motop -> Modele Motopou
+_navyc -> Modele Navy Cub
+_offsh -> Modele offshore
+_oxy3  -> Modele OXY 3
+_petit -> Modele Petit bleu de Haneffe 
+_piete -> Modele PietenPol 
+_pt-17 -> Modele PT-17
+_pt-19 -> Modele PT-19
+_qx90c -> Modele QX90C
+_racer -> Modele racer
+_rapto -> Modele Raptor
+_rex15 -> Modele T-Rex 150
+_rex25 -> Modele T-Rex 250
+_rex45 -> Modele T-Rex 450
+_rex50 -> Modele T-Rex 500
+_rex55 -> Modele T-Rex 550
+_rex60 -> Modele T-Rex 600
+_rex70 -> Modele T-Rex 700
+_simu  -> Config simulateur
+_staud -> Modele Staudacher
+_strat -> Modele stratus
+_sukoi -> Modele sukoi SU26M
+_test  -> Modele de test
+_tundr -> Modele Tundra
+_x4    -> Modele X4 Hubsan
+_yak   -> Modele yak 55M
+accx   -> Acceleration X
+accy   -> Acceleration Y
+accz   -> Acceleration Z
+add1of -> Module 1, desactive
+add1on -> Module 1, active
+add2of -> Module 2, desactive
+add2on -> Module 2, active
+add3of -> Module 3, desactive
+add3on -> Module 3, active
+add4of -> Module 4, desactive
+add4on -> Module 4, active
+add5of -> Module 5, desactive
+add5on -> Module 5, active
+alt    -> Altitude
+altoff -> Maintien altitude, desactive
+alton  -> Maintien altitude, active
+attero -> Atterrissage
+autrot -> Autorotation
+bandby -> Banderole, larguee
+bandok -> Banderole, deployee
+batcri -> Batterie modele critique
+batlow -> Batterie modele faible
+bougof -> Chauffe bougie, eteint
+bougon -> Chauffe bougie, allume
+bousof -> Boussole, desactivee
+bouson -> Boussole, activee
+brakin -> Aerofreins, rentres
+brakou -> Aerofreins, sortis
+capuse -> Capacite utilisee
+cfAcro -> Mode, Acro
+cfAngl -> Mode, Angle
+cfBaro -> Mode, Baro
+cfHdFr -> Mode, Headfree
+cfHold -> Mode, GPS Hold
+cfHome -> Mode, GPS Home
+cfHori -> Mode, Horizon
+cfMag  -> Mode, Mag
+cntrol -> Temperature contrôleur
+contac -> Contact
+courb1 -> Courbe 1
+courb2 -> Courbe 2
+courb3 -> Courbe 3
+courb4 -> Courbe 4
+croco  -> Aile crocodile
+dr-hgh -> Debattements forts
+dr-low -> Debattements faibles
+dr-nrm -> Debattements normaux
+drvful -> Derive normale
+drvlim -> Derive limitee
+dualr1 -> Petits debattements
+dualr2 -> Moyens debattemants
+dualr3 -> Grands debattements
+engoff -> Moteur coupe
+engon  -> Moteur active
+fire1  -> Feux d'artifice 1
+fire2  -> Feux d'artifice 2
+fire3  -> Feux d'artifice 3
+fire4  -> Feux d'artifice 4
+fire5  -> Feux d'artifice 5
+flapdn -> Volets sortis
+flapup -> Volets rentres
+flphal -> Flaps, 50%
+flapof -> Flaperons, rentres
+flapon -> Flaperons, sortis
+fm-0   -> Phase de vol 0
+fm-1   -> Phase de vol 1
+fm-2   -> Phase de vol 2
+fm-3   -> Phase de vol 3
+fm-4   -> Phase de vol 4
+fm-5   -> Phase de vol 5
+fm-6   -> Phase de vol 6
+fm-7   -> Phase de vol 7
+fm-8   -> Phase de vol 8
+fm-acr -> Mode acro, active
+fm-cbt -> Mode combat, active
+fm-esy -> Mode easy, active
+fm-exp -> Mode expert, active
+fm-grt -> Mode gratte
+fm-lnd -> Mode atterissage, active
+fm-mnt -> Mode monte
+fm-nrm -> Mode normal, active
+fm-paF -> Mode panique, desactive
+fm-paO -> Mode panique, active
+fm-rea -> Mode realiste, active
+fm-slw -> Mode lent, active
+fm-spd -> Mode vitesse, active
+fm-tra -> Mode transition
+fm-tur -> Mode turbo, active
+fm-vit -> Mode vitesse
+fm-th1 -> Mode thermique 1
+fm-th2 -> Mode thermique 2
+fm-th3 -> Mode thermique 3
+fuel   -> Carburant
+fuelcr -> Danger! niveau carburant critique
+fuelev -> Niveau carburant
+fuelwa -> Attention! niveau carburant faible
+geardn -> Train sorti
+geardv -> Train, deverrouille
+gearup -> Train rentre
+gearvr -> Train, verrouille
+gyroff -> Conservateur de cap desactive
+gyron  -> Conservateur de cap active
+headof -> Head-in lock, off
+headon -> Head-in lock, on
+hel3d  -> 3D
+helaut -> Autorotation
+helid1 -> IDLE-Up 1
+helid2 -> IDLE-Up 2
+helid3 -> IDLE-Up 3
+helidl -> IDLE-Up
+helnor -> Normal
+ill1of -> Feux, desactive
+ill1on -> Feux, active
+limite -> Attention! altitude limite atteinte
+lipocr -> Attention! cellule lipo anormalement basse
+lipodt -> Attention! delta entre element lipo anormalement haut
+logoff -> Enregistrement log, arrete
+logon  -> Enregistrement log, demarre
+manual -> Manuel
+misOn  -> Mission, activee
+misOff -> Mission, desactivee
+modadv -> Mode, expert
+modbeg -> Mode, facile
+modnor -> Mode, normal
+moteur -> Temperature moteur
+motful -> Moteur sans limitation
+motlim -> Limitation regime moteur
+nop    -> Pas de fonction
+para   -> Largage parachute
+paras  -> Largage des parachutes
+percen -> Pourcent
+photo  -> Prise de photo
+photo2 -> Cliche
+photos -> Photos en rafale
+remorq -> Largage planeur
+rth    -> Retour sur terrain
+rudful -> Direction normale
+rudlim -> Direction limitee
+smokof -> Fumigene, desactive
+smokon -> Fumigene, active
+stb3D  -> Stabilisateur 3D
+stbDeb -> Stabilisateur debutant
+stbExp -> Stabilisateur expert
+stbHov -> Mode, vol torque
+stbLvl -> Mode, maintient de niveau
+stbOff -> Stabilisateur desactive
+stbOn  -> Stabilisateur active
+stbPra -> Stabilisateur entrainement
+stbSta -> Mode, stabilise
+stbTra -> Mode, vol tranche
+trapof -> Trappe fermee
+trapon -> Trappe ouverte
+trnbad -> Pas de signal ecolage
+trnko  -> Signal ecolage perdu
+trnoff -> Fin ecolage
+trnok  -> Signal ecolage present
+trnon  -> Ecolage
+tstvol -> Test du volume
+vario  -> Variometre
+videof -> Enregistrement video, stoppe
+videon -> Enregistrement video, active
+volhal -> Volets, 50%
+volin  -> Volets, rentre
+volout -> Volets, sortis
+vrioff -> Vario coupe
+vrion  -> Vario active
