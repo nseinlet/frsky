@@ -1,1 +1,0 @@
-This EdgeTX theme was created by DZARO for the Radiomaster TX16S with purple CNC parts.

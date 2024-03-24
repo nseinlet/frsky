@@ -1,1 +1,0 @@
-DLG model with rudder and elevator only.

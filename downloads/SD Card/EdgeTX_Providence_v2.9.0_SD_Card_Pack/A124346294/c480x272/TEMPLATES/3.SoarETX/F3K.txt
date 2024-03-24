@@ -1,2 +1,0 @@
-DLG model with advanced mixes.
-Always full aileron control, as flaps are automatically retracted, if needed. Snap-flaps are compensated for camber preset, to avoid excessive movement.
