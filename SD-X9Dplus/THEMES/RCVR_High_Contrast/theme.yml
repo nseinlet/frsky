@@ -1,0 +1,17 @@
+---
+summary:
+  name: RCVR High Contrast
+  author: RCVR(rcvideoreviews.com)
+  info: RCVR High Contrast
+colors:
+  PRIMARY1:   0xFFFFFF
+  PRIMARY2:   0x111111
+  PRIMARY3:   0xEE3333
+  SECONDARY1: 0xFFFFFF
+  SECONDARY2: 0x111111
+  SECONDARY3: 0x111111
+  FOCUS:      0xEE3333
+  EDIT:       0xFFFFFF
+  ACTIVE:     0x777777
+  WARNING:    0xFFFFFF
+  DISABLED:   0x111111

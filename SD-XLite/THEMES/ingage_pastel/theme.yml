@@ -1,0 +1,17 @@
+---
+summary:
+  name: IG_Pastel
+  author: InGage FPV
+  info: Lt Dan! Ice Cream!
+colors:
+  PRIMARY1:   0x5084B0
+  PRIMARY2:   0xE894A8
+  PRIMARY3:   0xF0F4C8
+  SECONDARY1: 0xB0D8F0
+  SECONDARY2: 0xF0CCD8
+  SECONDARY3: 0x98C8E8
+  FOCUS:      0xE0D898
+  EDIT:       0xE894A8
+  ACTIVE:     0x98C8E8
+  WARNING:    0xF8FCF8
+  DISABLED:   0x808080

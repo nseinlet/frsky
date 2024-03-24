@@ -1,0 +1,17 @@
+---
+summary:
+  name: RCVR Halloween
+  author: RCVR(rcvideoreviews.com)
+  info: Fall is Here-Orange and Black FTW!
+colors:
+  PRIMARY1:   0xFFFFFF
+  PRIMARY2:   0x111111
+  PRIMARY3:   0xEE3333
+  SECONDARY1: 0xff9900
+  SECONDARY2: 0x444444
+  SECONDARY3: 0x111111
+  FOCUS:      0xFFEE00
+  EDIT:       0xFFFFFF
+  ACTIVE:     0x444444
+  WARNING:    0x111111
+  DISABLED:   0x808080

@@ -1,0 +1,640 @@
+header: 
+   name: "Inductix"
+   modelId: 
+      0:
+         val: 19
+      1:
+         val: 19
+   bitmap: "v250.png"
+timers: 
+   0:
+      start: 360
+      swtch: "NONE"
+      value: 0
+      mode: THR
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   1:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   2:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 0
+displayChecklist: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 50
+   destCh: 0
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 50
+   destCh: 1
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: -100
+   destCh: 2
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "SA0"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 50
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 50
+   destCh: 3
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 4
+   srcRaw: SE
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 13
+   srcRaw: ch(13)
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Sticky"
+ -
+   weight: -100
+   destCh: 13
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L11"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 13
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "SA0"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+limitData: 
+   0:
+      min: 200
+      max: -200
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: ""
+   1:
+      min: 200
+      max: -200
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: ""
+   2:
+      min: 200
+      max: -200
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: ""
+   3:
+      min: 200
+      max: -200
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: ""
+   4:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: ""
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+logicalSw: 
+   0:
+      func: FUNC_VPOS
+      def: "Thr,-98"
+      andsw: "!L12"
+      delay: 0
+      duration: 0
+   1:
+      func: FUNC_VPOS
+      def: "Thr,-98"
+      andsw: "L12"
+      delay: 0
+      duration: 0
+   2:
+      func: FUNC_EDGE
+      def: "SH2,0,5"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   10:
+      func: FUNC_VNEG
+      def: "Thr,-99"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   11:
+      func: FUNC_VPOS
+      def: "ch(13),0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+customFn: 
+   0:
+      swtch: "SA0"
+      func: PLAY_TRACK
+      def: "thrhol,1x"
+   1:
+      swtch: "SA1"
+      func: PLAY_TRACK
+      def: "thract,1x"
+   3:
+      swtch: "L3"
+      func: RESET
+      def: "Tmr1,1"
+   4:
+      swtch: "L2"
+      func: PLAY_TRACK
+      def: "thrhol,10"
+flightModeData: 
+   1:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   2:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   3:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   4:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   5:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   6:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   7:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   8:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: Iu
+varioData: 
+   source: 1
+   centerSilent: 0
+   centerMax: 0
+   centerMin: 0
+   min: 0
+   max: 0
+rssiSource: none
+voltsSource: none
+altitudeSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+moduleData: 
+   0:
+      type: TYPE_NONE
+      subType: 0
+      channelsStart: 0
+      channelsCount: 8
+      failsafeMode: HOLD
+      mod: 
+         ppm: 
+            delay: 0
+            pulsePol: 0
+            outputType: 0
+            frameLength: 0
+   1:
+      type: TYPE_MULTIMODULE
+      subType: 6,2
+      channelsStart: 0
+      channelsCount: 7
+      failsafeMode: HOLD
+      mod: 
+         multi: 
+            disableTelemetry: 0
+            disableMapping: 0
+            autoBindMode: 0
+            lowPowerMode: 0
+            optionValue: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+trainerData: 
+   mode: MASTER_TRAINER_JACK
+   channelsStart: 0
+   channelsCount: -8
+   frameLength: 0
+   delay: 0
+   pulsePol: 0
+inputNames: 
+   0:
+      val: "Thr"
+   1:
+      val: "Ail"
+   2:
+      val: "Ele"
+   3:
+      val: "Rud"
+potsWarnEnabled: 31
+view: 0
+modelRegistrationID: ""

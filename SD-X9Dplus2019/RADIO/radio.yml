@@ -1,0 +1,165 @@
+checksum: 41997
+manuallyEdited: 0
+semver: 2.8.5
+board: x9d+2019
+calib: 
+   Rud:
+      mid: 930
+      spanNeg: 723
+      spanPos: 790
+   Ele:
+      mid: 968
+      spanNeg: 441
+      spanPos: 593
+   Thr:
+      mid: 964
+      spanNeg: 802
+      spanPos: 821
+   Ail:
+      mid: 918
+      spanNeg: 877
+      spanPos: 862
+   POT1:
+      mid: 1022
+      spanNeg: 1007
+      spanPos: 52
+   POT2:
+      mid: 994
+      spanNeg: 979
+      spanPos: 46
+   SLIDER1:
+      mid: 111
+      spanNeg: 62
+      spanPos: 1762
+   SLIDER2:
+      mid: 1
+      spanNeg: 1
+      spanPos: 1877
+currModel: 1
+contrast: 25
+vBatWarn: 65
+txVoltageCalibration: 0
+backlightMode: backlight_mode_all
+antennaMode: MODE_PER_MODEL
+disableRtcWarning: 0
+keysBacklight: 0
+internalModule: TYPE_ISRM_PXX2
+trainer: 
+   mix: 
+      0:
+         srcChn: 2
+         mode: REPL
+         studWeight: 100
+      1:
+         srcChn: 3
+         mode: REPL
+         studWeight: 100
+      2:
+         srcChn: 1
+         mode: REPL
+         studWeight: 100
+      3:
+         srcChn: 0
+         mode: REPL
+         studWeight: 100
+view: 0
+fai: 0
+beepMode: mode_alarms
+alarmsFlash: 0
+disableMemoryWarning: 0
+disableAlarmWarning: 0
+stickMode: 1
+timezone: 1
+adjustRTC: 0
+inactivityTimer: 10
+internalModuleBaudrate: 0
+splashMode: 0
+hapticMode: mode_quiet
+switchesDelay: 0
+lightAutoOff: 12
+templateSetup: 17
+PPM_Multiplier: 0
+hapticLength: 2
+beepLength: 2
+hapticStrength: 2
+gpsFormat: 0
+speakerPitch: 0
+speakerVolume: 4
+vBatMin: 72
+vBatMax: 82
+backlightBright: 0
+globalTimer: 3770143
+bluetoothBaudrate: 0
+bluetoothMode: TRAINER
+countryCode: 2
+pwrOnSpeed: 0
+pwrOffSpeed: 0
+noJitterFilter: 0
+imperial: 0
+disableRssiPoweroffAlarm: 0
+USBMode: 0
+jackMode: 0
+ttsLanguage: "fr"
+beepVolume: 1
+wavVolume: 2
+varioVolume: 1
+backgroundVolume: 1
+varioPitch: 0
+varioRange: 0
+varioRepeat: 0
+customFn: 
+   0:
+      swtch: "ON"
+      func: VOLUME
+      def: "POT1,1"
+   1:
+      swtch: "SF0"
+      func: RESET
+      def: "All,1"
+slidersConfig: 
+   SLIDER1:
+      type: with_detent
+      name: ""
+   SLIDER2:
+      type: with_detent
+      name: ""
+potsConfig: 
+   POT1:
+      type: with_detent
+      name: ""
+   POT2:
+      type: with_detent
+      name: ""
+backlightColor: 19
+switchConfig: 
+   SA:
+      type: 3pos
+      name: ""
+   SB:
+      type: 3pos
+      name: ""
+   SC:
+      type: 3pos
+      name: ""
+   SD:
+      type: 3pos
+      name: ""
+   SE:
+      type: 3pos
+      name: ""
+   SF:
+      type: 2pos
+      name: ""
+   SG:
+      type: 3pos
+      name: ""
+   SH:
+      type: toggle
+      name: ""
+   SI:
+      type: toggle
+      name: ""
+bluetoothName: ""
+ownerRegistrationID: "\xF5 \xE6\xE6%\xE6\x04\x18"
+rotEncMode: 0
+uartSampleMode: 0

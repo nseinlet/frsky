@@ -1,0 +1,126 @@
+checksum: 61588
+manuallyEdited: 0
+semver: 2.8.5
+board: xlite
+calib: 
+   Rud:
+      mid: 692
+      spanNeg: 672
+      spanPos: 639
+   Ele:
+      mid: 1323
+      spanNeg: 652
+      spanPos: 655
+   Thr:
+      mid: 1355
+      spanNeg: 683
+      spanPos: 633
+   Ail:
+      mid: 652
+      spanNeg: 625
+      spanPos: 654
+   POT1:
+      mid: 1142
+      spanNeg: 382
+      spanPos: 382
+   POT2:
+      mid: 1029
+      spanNeg: 347
+      spanPos: 348
+currModel: 1
+contrast: 20
+vBatWarn: 66
+txVoltageCalibration: 0
+backlightMode: backlight_mode_all
+antennaMode: MODE_PER_MODEL
+disableRtcWarning: 0
+keysBacklight: 0
+internalModule: TYPE_XJT_PXX1
+trainer: 
+   mix: 
+      0:
+         srcChn: 2
+         mode: REPL
+         studWeight: 100
+      1:
+         srcChn: 3
+         mode: REPL
+         studWeight: 100
+      2:
+         srcChn: 1
+         mode: REPL
+         studWeight: 100
+      3:
+         srcChn: 0
+         mode: REPL
+         studWeight: 100
+view: 1
+fai: 0
+beepMode: mode_nokeys
+alarmsFlash: 0
+disableMemoryWarning: 0
+disableAlarmWarning: 0
+stickMode: 1
+timezone: 1
+adjustRTC: 1
+inactivityTimer: 10
+internalModuleBaudrate: 0
+splashMode: 0
+hapticMode: mode_nokeys
+switchesDelay: 0
+lightAutoOff: 2
+templateSetup: 17
+PPM_Multiplier: 0
+hapticLength: 2
+beepLength: 2
+hapticStrength: 2
+gpsFormat: 0
+speakerPitch: 0
+speakerVolume: 12
+vBatMin: 67
+vBatMax: 83
+backlightBright: 0
+globalTimer: 43334
+bluetoothBaudrate: 0
+bluetoothMode: OFF
+countryCode: 2
+pwrOnSpeed: 0
+pwrOffSpeed: 0
+noJitterFilter: 0
+imperial: 0
+disableRssiPoweroffAlarm: 0
+USBMode: 0
+jackMode: 0
+ttsLanguage: "fr"
+beepVolume: 2
+wavVolume: 4
+varioVolume: 2
+backgroundVolume: 3
+varioPitch: 0
+varioRange: 0
+varioRepeat: 0
+potsConfig: 
+   POT1:
+      type: without_detent
+      name: ""
+   POT2:
+      type: without_detent
+      name: ""
+backlightColor: 0
+switchConfig: 
+   SA:
+      type: 3pos
+      name: ""
+   SB:
+      type: 3pos
+      name: ""
+   SC:
+      type: 2pos
+      name: ""
+   SD:
+      type: 2pos
+      name: ""
+bluetoothName: ""
+ownerRegistrationID: "\xE9\x19\xE6\xE6\xF8\xE6\x14\x03"
+rotEncMode: 0
+uartSampleMode: 0

@@ -1,0 +1,17 @@
+---
+summary:
+  name: IG_Purps
+  author: InGage FPV
+  info: Purps on purps on purps
+colors:
+  PRIMARY1:   0x632476
+  PRIMARY2:   0x34dddd
+  PRIMARY3:   0xffffff
+  SECONDARY1: 0x632476
+  SECONDARY2: 0xe3e3e3
+  SECONDARY3: 0x34dddd
+  FOCUS:      0x8d8d8d
+  EDIT:       0x999999
+  ACTIVE:     0xacacac
+  WARNING:    0xFFFFFF
+  DISABLED:   0x808080

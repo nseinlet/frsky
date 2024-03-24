@@ -1,0 +1,839 @@
+header: 
+   name: "Bobcat"
+   modelId: 
+      0:
+         val: 2
+      1:
+         val: 2
+   bitmap: ""
+timers: 
+   0:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   1:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   2:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 1
+displayChecklist: 0
+extendedLimits: 1
+extendedTrims: 0
+throttleReversed: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: -100
+   destCh: 0
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 55
+   destCh: 0
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 20
+   destCh: 0
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: -100
+   destCh: 1
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 55
+   destCh: 1
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 20
+   destCh: 1
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: -100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: -100
+   destCh: 2
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 55
+   destCh: 2
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 20
+   destCh: 2
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: -100
+   destCh: 3
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: -100
+   destCh: 3
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 20
+   destCh: 3
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 55
+   destCh: 3
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "SB1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 150
+   destCh: 4
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 30
+   speedDown: 30
+   name: ""
+ -
+   weight: 100
+   destCh: 5
+   srcRaw: ch(5)
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 1
+   destCh: 5
+   srcRaw: I3
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "L1"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 5
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: -100
+   destCh: 5
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L3"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+limitData: 
+   0:
+      min: 200
+      max: -200
+      ppmCenter: -166
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: "MotD\x1C"
+   1:
+      min: 200
+      max: -200
+      ppmCenter: -26
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: "MOtD\x1D"
+   2:
+      min: 200
+      max: -200
+      ppmCenter: -15
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: "MotG\x1C"
+   3:
+      min: 200
+      max: -200
+      ppmCenter: -37
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: "MotG\x1D"
+   4:
+      min: 200
+      max: 300
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "Bras"
+   5:
+      min: -500
+      max: 500
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "Bac"
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SB
+   carryTrim: 0
+   chn: 4
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+logicalSw: 
+   0:
+      func: FUNC_APOS
+      def: "I3,1"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   1:
+      func: FUNC_VPOS
+      def: "ch(5),100"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   2:
+      func: FUNC_VNEG
+      def: "ch(5),-100"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+flightModeData: 
+   0:
+      trim: 
+         0:
+            value: -22
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   1:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   2:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   3:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   4:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   5:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   6:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   7:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+   8:
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: HuIu
+varioData: 
+   source: 1
+   centerSilent: 0
+   centerMax: 0
+   centerMin: 0
+   min: 0
+   max: 0
+rssiSource: none
+voltsSource: none
+altitudeSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+moduleData: 
+   0:
+      type: TYPE_XJT_PXX1
+      subType: D16
+      channelsStart: 0
+      channelsCount: 8
+      failsafeMode: NOPULSES
+      mod: 
+         pxx: 
+            power: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+            antennaMode: 0
+trainerData: 
+   mode: MASTER_TRAINER_JACK
+   channelsStart: 0
+   channelsCount: -8
+   frameLength: 0
+   delay: 0
+   pulsePol: 0
+inputNames: 
+   0:
+      val: "Dir"
+   1:
+      val: "Bra\xED"
+   2:
+      val: "Gaz"
+   3:
+      val: "Bac"
+potsWarnEnabled: 0
+telemetrySensors: 
+   0:
+      id1: 
+         id: 61701
+      id2: 
+         instance: 248
+      label: "SWR"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   1:
+      id1: 
+         id: 61697
+      id2: 
+         instance: 248
+      label: "RSSI"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 1
+            offset: 1
+   2:
+      id1: 
+         id: 61700
+      id2: 
+         instance: 248
+      label: "BtRx"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 1
+      autoOffset: 0
+      filter: 1
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 132
+            offset: 0
+screens: 
+   0:
+      type: VALUES
+      u: 
+         lines: 
+            0:
+               sources: 
+                  0:
+                     val: tele(0)
+            1:
+               sources: 
+                  0:
+                     val: tele(1)
+            2:
+               sources: 
+                  0:
+                     val: tele(2)
+view: 2
+modelRegistrationID: ""

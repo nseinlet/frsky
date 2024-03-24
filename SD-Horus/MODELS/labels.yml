@@ -1,0 +1,106 @@
+Labels:
+  "Favorites":
+Sort: 1
+Models:
+  model5.yml:
+    hash: "566a000021280800"
+    name: "MT 665b"
+    mod0id: 3
+    mod1id: 7
+    labels: ""
+    bitmap: "MT665.png"
+    lastopen: 7
+  model2.yml:
+    hash: "772b000021ec0100"
+    name: "Inductix"
+    mod0id: 19
+    mod1id: 19
+    mod1type: 6
+    mod1rf: 5
+    labels: ""
+    bitmap: "v250.png"
+    lastopen: 0
+  model10.yml:
+    hash: "2f0e000021ec0200"
+    name: "New model"
+    mod0id: 10
+    mod1id: 10
+    labels: ""
+    bitmap: ""
+    lastopen: 0
+  model3.yml:
+    hash: "975c000021ec0200"
+    name: "Mt 765B"
+    mod0id: 1
+    mod0type: 3
+    mod0rf: 1
+    labels: ""
+    bitmap: "MT765.png"
+    lastopen: 0
+  model4.yml:
+    hash: "ca63000021283200"
+    name: "MT 1050"
+    mod0id: 5
+    mod0type: 3
+    mod1id: 7
+    labels: ""
+    bitmap: "1050.png"
+    lastopen: 946684838
+  model6.yml:
+    hash: "b663000021ec0200"
+    name: "MT 555e"
+    mod0id: 8
+    mod0type: 3
+    mod0rf: 1
+    mod1id: 7
+    labels: ""
+    bitmap: "mt555e.png"
+    lastopen: 0
+  model7.yml:
+    hash: "6252000021ec0200"
+    name: "MT 465d"
+    mod0id: 9
+    mod0type: 3
+    mod1id: 7
+    labels: ""
+    bitmap: "mt465e.png"
+    lastopen: 0
+  model8.yml:
+    hash: "2456000021ec0300"
+    name: "Cat 45"
+    mod0id: 7
+    mod0type: 3
+    mod0rf: 1
+    labels: ""
+    bitmap: "cat45.png"
+    lastopen: 0
+  model9.yml:
+    hash: "5a61000021ec0300"
+    name: "JD8420"
+    mod0id: 4
+    mod0type: 3
+    mod0rf: 1
+    mod1id: 5
+    labels: ""
+    bitmap: "8420.png"
+    lastopen: 0
+  model11.yml:
+    hash: "ed10000021ec0300"
+    name: "charrue test"
+    mod0id: 20
+    mod0type: 3
+    mod0rf: 1
+    mod1id: 10
+    labels: ""
+    bitmap: ""
+    lastopen: 0
+  model1.yml:
+    hash: "3f28000021ec0100"
+    name: "Blade 200QX"
+    mod0id: 19
+    mod1id: 19
+    mod1type: 1
+    labels: ""
+    bitmap: "qx200.jpg"
+    lastopen: 0
+

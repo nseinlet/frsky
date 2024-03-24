@@ -1,0 +1,1433 @@
+checksum: 6902
+header: 
+   name: "Mt 765B"
+   modelId: 
+      0:
+         val: 1
+   bitmap: "MT765.png"
+timers: 
+   0:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: ON
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: "Total"
+   1:
+      start: 0
+      swtch: "L12"
+      value: 0
+      mode: ON
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: "Running"
+   2:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 1
+displayChecklist: 0
+extendedLimits: 1
+extendedTrims: 0
+throttleReversed: 0
+beepANACenter: 2032
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I5
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!L2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: -100
+   destCh: 0
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!L2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 50
+   destCh: 0
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "L10"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I5
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!L2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "!L2"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 15
+   speedDown: 15
+   name: ""
+ -
+   weight: 50
+   destCh: 1
+   srcRaw: MAX
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   offset: 0
+   swtch: "L10"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: SA
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 4
+   srcRaw: SB
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 5
+   srcRaw: S1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 6
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "re Av1"
+ -
+   weight: -100
+   destCh: 7
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "re Av2"
+ -
+   weight: 100
+   destCh: 8
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "re Ar1"
+ -
+   weight: 100
+   destCh: 9
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "re Ar2"
+ -
+   weight: 100
+   destCh: 10
+   srcRaw: ch(10)
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "outAr1"
+ -
+   weight: 1
+   destCh: 10
+   srcRaw: SC
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "L3"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 10
+   speedDown: 10
+   name: ""
+ -
+   weight: 100
+   destCh: 10
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L4"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: -100
+   destCh: 10
+   srcRaw: MAX
+   carryTrim: 1
+   mixWarn: 0
+   mltpx: REPL
+   offset: 0
+   swtch: "L5"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 11
+   srcRaw: SD
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "OutAr2"
+ -
+   weight: 100
+   destCh: 12
+   srcRaw: S2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "OutAr3"
+ -
+   weight: 100
+   destCh: 13
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "OutAr4"
+ -
+   weight: 100
+   destCh: 13
+   srcRaw: S3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   curve: 
+      type: 3
+      value: 2
+   delayUp: 0
+   delayDown: 0
+   speedUp: 20
+   speedDown: 20
+   name: "OutAr4"
+ -
+   weight: 100
+   destCh: 14
+   srcRaw: S4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "OutAr5"
+ -
+   weight: 100
+   destCh: 15
+   srcRaw: SH
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "OutAr6"
+limitData: 
+   0:
+      min: -176
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 1
+      name: "Mot G"
+   1:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 1
+      name: "Mot D"
+   2:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "OutAv1"
+   3:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "phares"
+   4:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "OutAv2"
+   5:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "Outav3"
+   6:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "relAv1"
+   7:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "relAv2"
+   8:
+      min: -500
+      max: -425
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "relAr1"
+   9:
+      min: -500
+      max: -425
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "relAr2"
+   10:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: "outAr1"
+   11:
+      min: 500
+      max: -500
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 1
+      curve: 0
+      name: ""
+   13:
+      min: -71
+      max: 65
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: ""
+   14:
+      min: -500
+      max: 500
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: ""
+   15:
+      min: 0
+      max: 0
+      ppmCenter: 0
+      offset: 0
+      symetrical: 0
+      revert: 0
+      curve: 0
+      name: "outAr6"
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P15"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P14"
+   flightModes: 000000000
+   weight: 80
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P13"
+   flightModes: 000000000
+   weight: 50
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P12"
+   flightModes: 000000000
+   weight: 40
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P11"
+   flightModes: 000000000
+   weight: 30
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 0
+   swtch: "6P10"
+   flightModes: 000000000
+   weight: 20
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: LS
+   carryTrim: 0
+   chn: 2
+   swtch: "SF0"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: MAX
+   carryTrim: 0
+   chn: 2
+   swtch: "SF2"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: RS
+   carryTrim: 0
+   chn: 4
+   swtch: "SE1"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: MAX
+   carryTrim: 0
+   chn: 4
+   swtch: "SE2"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: MAX
+   carryTrim: 0
+   chn: 4
+   swtch: "SE0"
+   flightModes: 000000000
+   weight: -100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P15"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P14"
+   flightModes: 000000000
+   weight: 80
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P13"
+   flightModes: 000000000
+   weight: 50
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P12"
+   flightModes: 000000000
+   weight: 40
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P11"
+   flightModes: 000000000
+   weight: 30
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 5
+   swtch: "6P10"
+   flightModes: 000000000
+   weight: 20
+   name: ""
+   offset: 0
+curves: 
+   0:
+      type: 1
+      smooth: 1
+      points: 6
+      name: "spe"
+   1:
+      type: 0
+      smooth: 1
+      points: 6
+      name: "lev"
+   2:
+      type: 0
+      smooth: 0
+      points: 0
+      name: "l b"
+   3:
+      type: 0
+      smooth: 0
+      points: 0
+      name: "l h"
+points: 
+   0:
+      val: -100
+   1:
+      val: -80
+   2:
+      val: -60
+   3:
+      val: -40
+   4:
+      val: -20
+   6:
+      val: 20
+   7:
+      val: 40
+   8:
+      val: 60
+   9:
+      val: 80
+   10:
+      val: 100
+   11:
+      val: -80
+   12:
+      val: -60
+   13:
+      val: -40
+   14:
+      val: -20
+   16:
+      val: 20
+   17:
+      val: 40
+   18:
+      val: 60
+   19:
+      val: 80
+   20:
+      val: -100
+   21:
+      val: -93
+   22:
+      val: -85
+   23:
+      val: -72
+   24:
+      val: -48
+   26:
+      val: 48
+   27:
+      val: 69
+   28:
+      val: 85
+   29:
+      val: 94
+   30:
+      val: 100
+   31:
+      val: -100
+   32:
+      val: -98
+   33:
+      val: -96
+   34:
+      val: -94
+   35:
+      val: -92
+   36:
+      val: 92
+   37:
+      val: 94
+   38:
+      val: 96
+   39:
+      val: 98
+   40:
+      val: 100
+logicalSw: 
+   0:
+      func: FUNC_VNEG
+      def: "tele(19),355"
+      andsw: "!L2"
+      delay: 0
+      duration: 0
+   1:
+      func: FUNC_VNEG
+      def: "tele(19),335"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   2:
+      func: FUNC_APOS
+      def: "SC,1"
+      andsw: "L7"
+      delay: 0
+      duration: 0
+   3:
+      func: FUNC_VPOS
+      def: "ch(10),100"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   4:
+      func: FUNC_VNEG
+      def: "ch(10),-100"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   5:
+      func: FUNC_OR
+      def: "L1,L2"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   6:
+      func: FUNC_TIMER
+      def: "1,2"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   7:
+      func: FUNC_VNEG
+      def: "ch(0),0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   8:
+      func: FUNC_VNEG
+      def: "ch(1),0"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   9:
+      func: FUNC_AND
+      def: "L8,L9"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   10:
+      func: FUNC_VPOS
+      def: "tele(2),35"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   11:
+      func: FUNC_APOS
+      def: "I5,5"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+customFn: 
+   0:
+      swtch: "L1"
+      func: PLAY_TRACK
+      def: "batlow,10"
+   1:
+      swtch: "L2"
+      func: PLAY_TRACK
+      def: "batcri,5"
+   2:
+      swtch: "L11"
+      func: PLAY_SOUND
+      def: "Sirn,2"
+flightModeData: 
+   0:
+      trim: 
+         3:
+            value: 4
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: A-B-C-D-E-G-
+rssiSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+moduleData: 
+   0:
+      type: TYPE_ISRM_PXX2
+      subType: D16
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOPULSES
+      mod: 
+         pxx2: 
+            receivers: 0
+            racingMode: 0
+   1:
+      type: TYPE_NONE
+      subType: 0
+      channelsStart: 0
+      channelsCount: 8
+      failsafeMode: NOT_SET
+      mod: 
+         ppm: 
+            delay: -32
+            pulsePol: 0
+            outputType: 0
+            frameLength: 0
+inputNames: 
+   0:
+      val: "Dir"
+   1:
+      val: "Prf"
+   2:
+      val: "reAV"
+   3:
+      val: "Ail"
+   4:
+      val: "reAR"
+   5:
+      val: "Gaz"
+potsWarnEnabled: 0
+telemetrySensors: 
+   4:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_CONSUMPTION
+      label: "Cons"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 14
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         consumption: 
+            source: 24
+   6:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_MULTIPLY
+      label: "Powr"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 15
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         calc: 
+            sources: 
+               0:
+                  val: 15
+               1:
+                  val: 24
+   8:
+      id1: 
+         id: 1280
+      id2: 
+         instance: 4
+      label: "RPM"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 18
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 1
+            offset: 1
+   14:
+      id1: 
+         id: 768
+      id2: 
+         instance: 1
+      label: "Cels"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 38
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         param: 0
+   15:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_CELL
+      label: "C1"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         cell: 
+            source: 15
+            index: 1
+   16:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_CELL
+      label: "C2"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         cell: 
+            source: 15
+            index: 2
+   17:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_CELL
+      label: "C3"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         cell: 
+            source: 15
+            index: 3
+   18:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_CELL
+      label: "C4"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         cell: 
+            source: 15
+            index: 4
+   19:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_MIN
+      label: "Cmin"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         calc: 
+            sources: 
+               0:
+                  val: 16
+               1:
+                  val: 17
+               2:
+                  val: 18
+               3:
+                  val: 19
+   20:
+      id1: 
+         id: 0
+      id2: 
+         formula: FORMULA_MAX
+      label: "Cmax"
+      subId: 0
+      type: TYPE_CALCULATED
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 0
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         calc: 
+            sources: 
+               0:
+                  val: 16
+               1:
+                  val: 17
+               2:
+                  val: 18
+               3:
+                  val: 19
+   21:
+      id1: 
+         id: 61697
+      id2: 
+         instance: 24
+      label: "RSSI"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   22:
+      id1: 
+         id: 61700
+      id2: 
+         instance: 24
+      label: "RxBt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 1
+      autoOffset: 0
+      filter: 1
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 132
+            offset: 0
+   23:
+      id1: 
+         id: 512
+      id2: 
+         instance: 2
+      label: "Curr"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 2
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 1
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   24:
+      id1: 
+         id: 528
+      id2: 
+         instance: 2
+      label: "VFAS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   25:
+      id1: 
+         id: 1024
+      id2: 
+         instance: 4
+      label: "Tmp1"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 11
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   26:
+      id1: 
+         id: 1280
+      id2: 
+         instance: 5
+      label: "RPM"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 18
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 1
+            offset: 1
+   27:
+      id1: 
+         id: 1040
+      id2: 
+         instance: 4
+      label: "Tmp2"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 11
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   28:
+      id1: 
+         id: 1024
+      id2: 
+         instance: 5
+      label: "Tmp1"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 11
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   29:
+      id1: 
+         id: 1040
+      id2: 
+         instance: 5
+      label: "Tmp2"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 11
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+screenData: 
+   0:
+      LayoutId: "Layout2P1"
+      layoutData: 
+         options: 
+            0:
+               type: Bool
+               value: 
+                  boolValue: 1
+            1:
+               type: Bool
+               value: 
+                  boolValue: 1
+            2:
+               type: Bool
+               value: 
+                  boolValue: 1
+            3:
+               type: Bool
+               value: 
+                  boolValue: 1
+            4:
+               type: Bool
+               value: 
+                  boolValue: 0
+view: 0
+modelRegistrationID: ""

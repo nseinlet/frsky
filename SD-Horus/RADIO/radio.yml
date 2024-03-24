@@ -1,0 +1,201 @@
+checksum: 60818
+manuallyEdited: 0
+semver: 2.9.3
+board: x12s
+calib: 
+   Rud:
+      mid: 979
+      spanNeg: 791
+      spanPos: 880
+   Ele:
+      mid: 980
+      spanNeg: 797
+      spanPos: 829
+   Thr:
+      mid: 1029
+      spanNeg: 803
+      spanPos: 832
+   Ail:
+      mid: 1027
+      spanNeg: 830
+      spanPos: 804
+   S1:
+      mid: 1024
+      spanNeg: 1007
+      spanPos: 1008
+   6POS:
+      mid: 5125
+      spanNeg: 9500
+      spanPos: 24373
+   S2:
+      mid: 1032
+      spanNeg: 1014
+      spanPos: 1000
+   S3:
+      mid: 1025
+      spanNeg: 1008
+      spanPos: 1007
+   S4:
+      mid: 979
+      spanNeg: 963
+      spanPos: 1052
+   LS:
+      mid: 1025
+      spanNeg: 643
+      spanPos: 801
+   RS:
+      mid: 1031
+      spanNeg: 716
+      spanPos: 735
+   MOUSE1:
+      mid: 1046
+      spanNeg: 1028
+      spanPos: 985
+   MOUSE2:
+      mid: 1022
+      spanNeg: 819
+      spanPos: 1008
+vBatWarn: 86
+txVoltageCalibration: 0
+backlightMode: backlight_mode_all
+antennaMode: MODE_PER_MODEL
+disableRtcWarning: 0
+keysBacklight: 0
+internalModule: TYPE_XJT_PXX1
+trainer: 
+   mix: 
+      0:
+         srcChn: 0
+         mode: REPL
+         studWeight: 100
+      1:
+         srcChn: 1
+         mode: REPL
+         studWeight: 100
+      2:
+         srcChn: 2
+         mode: REPL
+         studWeight: 100
+      3:
+         srcChn: 3
+         mode: REPL
+         studWeight: 100
+view: 0
+fai: 0
+beepMode: mode_all
+alarmsFlash: 1
+disableMemoryWarning: 0
+disableAlarmWarning: 0
+stickMode: 1
+timezone: 2
+adjustRTC: 1
+inactivityTimer: 10
+internalModuleBaudrate: 0
+hapticMode: mode_nokeys
+switchesDelay: 0
+lightAutoOff: 2
+templateSetup: 0
+PPM_Multiplier: 0
+hapticLength: 2
+beepLength: 2
+hapticStrength: 2
+gpsFormat: 0
+speakerPitch: 0
+speakerVolume: 15
+vBatMin: 85
+vBatMax: 114
+backlightBright: 91
+globalTimer: 402994
+bluetoothBaudrate: 0
+bluetoothMode: OFF
+countryCode: 2
+pwrOnSpeed: 0
+pwrOffSpeed: 0
+noJitterFilter: 0
+imperial: 0
+disableRssiPoweroffAlarm: 0
+USBMode: 0
+jackMode: 0
+ttsLanguage: "fr"
+beepVolume: 2
+wavVolume: 4
+varioVolume: 4
+backgroundVolume: 4
+varioPitch: 0
+varioRange: 0
+varioRepeat: 0
+serialPort: 
+   AUX2:
+      mode: GPS
+      power: 0
+switchConfig: 
+   SA:
+      type: 3pos
+      name: ""
+   SB:
+      type: 3pos
+      name: ""
+   SC:
+      type: 3pos
+      name: ""
+   SD:
+      type: 3pos
+      name: ""
+   SE:
+      type: 3pos
+      name: ""
+   SF:
+      type: 2pos
+      name: ""
+   SG:
+      type: 3pos
+      name: ""
+   SH:
+      type: toggle
+      name: ""
+potsConfig: 
+   S1:
+      type: without_detent
+      name: ""
+   6POS:
+      type: multipos_switch
+      name: ""
+   S2:
+      type: with_detent
+      name: ""
+slidersConfig: 
+   S3:
+      type: with_detent
+      name: ""
+   S4:
+      type: with_detent
+      name: ""
+   LS:
+      type: with_detent
+      name: ""
+   RS:
+      type: with_detent
+      name: ""
+currModelFilename: "model4.yml"
+modelQuickSelect: 0
+blOffBright: 17
+bluetoothName: ","
+themeName: "EdgeTX"
+ownerRegistrationID: "534615Q-"
+rotEncMode: 0
+uartSampleMode: 0
+audioMuteEnable: 0
+imuMax: 0
+imuOffset: 0
+selectedTheme: "EdgeTX Default"
+radioThemesDisabled: 0
+radioGFDisabled: 0
+radioTrainerDisabled: 0
+modelHeliDisabled: 0
+modelFMDisabled: 0
+modelCurvesDisabled: 0
+modelGVDisabled: 0
+modelLSDisabled: 0
+modelSFDisabled: 0
+modelCustomScriptsDisabled: 1
+modelTelemetryDisabled: 0
