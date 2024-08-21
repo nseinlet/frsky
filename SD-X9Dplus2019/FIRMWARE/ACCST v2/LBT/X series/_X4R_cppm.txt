@@ -1,0 +1,17 @@
+Pour activer le mode CPPM
+il faut faire le bind en
+mode CH9-16
+
+X4R:
+===
+CH1 -> CPPM (CH1-CH8)
+CH2 -> CH9
+CH3 -> CH10
+CH4 -> CH11
+
+X4RSB:
+=====
+CH1 -> CPPM (CH1-CH8)
+CH2 -> CH9
+CH3 -> CH10
+CH4 -> SBUS (CH1-CH16)

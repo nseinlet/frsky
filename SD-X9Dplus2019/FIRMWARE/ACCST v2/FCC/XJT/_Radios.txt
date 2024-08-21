@@ -1,0 +1,9 @@
+Radios suportees:
+=================
+X7
+X7S
+X9D
+X9E
+X9D+
+X9D+ SE
+Module externe XJT

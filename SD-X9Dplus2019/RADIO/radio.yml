@@ -1,96 +1,82 @@
-checksum: 41997
+checksum: 19194
 manuallyEdited: 0
 semver: 2.8.5
-board: x9d+2019
+board: x9d+
 calib: 
    Rud:
-      mid: 930
-      spanNeg: 723
-      spanPos: 790
+      mid: 916
+      spanNeg: 664
+      spanPos: 628
    Ele:
-      mid: 968
-      spanNeg: 441
-      spanPos: 593
+      mid: 924
+      spanNeg: 690
+      spanPos: 758
    Thr:
-      mid: 964
-      spanNeg: 802
-      spanPos: 821
+      mid: 1067
+      spanNeg: 633
+      spanPos: 622
    Ail:
-      mid: 918
-      spanNeg: 877
-      spanPos: 862
+      mid: 1044
+      spanNeg: 629
+      spanPos: 652
    POT1:
-      mid: 1022
-      spanNeg: 1007
-      spanPos: 52
+      mid: 1032
+      spanNeg: 1016
+      spanPos: 999
    POT2:
-      mid: 994
-      spanNeg: 979
-      spanPos: 46
+      mid: 1005
+      spanNeg: 989
+      spanPos: 1025
+   POT3:
+      mid: 5
+      spanNeg: 1283
+      spanPos: 9991
    SLIDER1:
-      mid: 111
-      spanNeg: 62
-      spanPos: 1762
+      mid: 1025
+      spanNeg: 849
+      spanPos: 1005
    SLIDER2:
-      mid: 1
-      spanNeg: 1
-      spanPos: 1877
+      mid: 1009
+      spanNeg: 830
+      spanPos: 1021
 currModel: 1
 contrast: 25
-vBatWarn: 65
+vBatWarn: 66
 txVoltageCalibration: 0
-backlightMode: backlight_mode_all
+backlightMode: backlight_mode_on
 antennaMode: MODE_PER_MODEL
 disableRtcWarning: 0
 keysBacklight: 0
-internalModule: TYPE_ISRM_PXX2
-trainer: 
-   mix: 
-      0:
-         srcChn: 2
-         mode: REPL
-         studWeight: 100
-      1:
-         srcChn: 3
-         mode: REPL
-         studWeight: 100
-      2:
-         srcChn: 1
-         mode: REPL
-         studWeight: 100
-      3:
-         srcChn: 0
-         mode: REPL
-         studWeight: 100
+internalModule: TYPE_XJT_PXX1
 view: 0
 fai: 0
-beepMode: mode_alarms
+beepMode: mode_nokeys
 alarmsFlash: 0
 disableMemoryWarning: 0
 disableAlarmWarning: 0
 stickMode: 1
-timezone: 1
-adjustRTC: 0
-inactivityTimer: 10
+timezone: 2
+adjustRTC: 1
+inactivityTimer: 0
 internalModuleBaudrate: 0
 splashMode: 0
-hapticMode: mode_quiet
+hapticMode: mode_nokeys
 switchesDelay: 0
-lightAutoOff: 12
-templateSetup: 17
+lightAutoOff: 18
+templateSetup: 0
 PPM_Multiplier: 0
 hapticLength: 2
 beepLength: 2
 hapticStrength: 2
 gpsFormat: 0
 speakerPitch: 0
-speakerVolume: 4
-vBatMin: 72
-vBatMax: 82
+speakerVolume: 12
+vBatMin: 67
+vBatMax: 90
 backlightBright: 0
-globalTimer: 3770143
+globalTimer: 274053
 bluetoothBaudrate: 0
-bluetoothMode: TRAINER
+bluetoothMode: OFF
 countryCode: 2
 pwrOnSpeed: 0
 pwrOffSpeed: 0
@@ -99,23 +85,18 @@ imperial: 0
 disableRssiPoweroffAlarm: 0
 USBMode: 0
 jackMode: 0
-ttsLanguage: "fr"
-beepVolume: 1
+ttsLanguage: "de"
+beepVolume: 2
 wavVolume: 2
-varioVolume: 1
-backgroundVolume: 1
+varioVolume: 2
+backgroundVolume: 2
 varioPitch: 0
 varioRange: 0
 varioRepeat: 0
-customFn: 
-   0:
-      swtch: "ON"
-      func: VOLUME
-      def: "POT1,1"
-   1:
-      swtch: "SF0"
-      func: RESET
-      def: "All,1"
+serialPort: 
+   AUX1:
+      mode: TELEMETRY_IN
+      power: 0
 slidersConfig: 
    SLIDER1:
       type: with_detent
@@ -130,7 +111,10 @@ potsConfig:
    POT2:
       type: with_detent
       name: ""
-backlightColor: 19
+   POT3:
+      type: multipos_switch
+      name: ""
+backlightColor: 0
 switchConfig: 
    SA:
       type: 3pos
@@ -156,10 +140,7 @@ switchConfig:
    SH:
       type: toggle
       name: ""
-   SI:
-      type: toggle
-      name: ""
 bluetoothName: ""
-ownerRegistrationID: "\xF5 \xE6\xE6%\xE6\x04\x18"
+ownerRegistrationID: ""
 rotEncMode: 0
 uartSampleMode: 0

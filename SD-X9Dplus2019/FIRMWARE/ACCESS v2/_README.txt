@@ -1,0 +1,1 @@
+The suggested ACCESS RSSI is 32 for Critical Alarm and 35 for Low Alarm.
