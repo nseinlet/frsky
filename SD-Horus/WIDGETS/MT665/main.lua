@@ -33,8 +33,8 @@ local function drawVerticalGauge(x, y, size, width, value, max)
   end
   local sz_filled = val*(size/max)
   local sz_unfilled = size-sz_filled
-  lcd.drawFilledRectangle(x, y-sz_filled, width, sz_filled, CURVE_COLOR)
-  lcd.drawRectangle(x, y-size, width, sz_unfilled, BLACK, 1)
+  lcd.drawFilledRectangle(x, y-sz_filled, width, sz_filled, COLOR_THEME_SECONDARY1)
+  lcd.drawRectangle(x, y-size, width, sz_unfilled, COLOR_THEME_PRIMARY2, 1)
 end
 
 local function drawServo(x, y, size, width, value, max)
@@ -45,16 +45,16 @@ local function drawServo(x, y, size, width, value, max)
   if val>max then
     val=max
   end
-  lcd.drawRectangle(x, y, size*2, width, BLACK, 1)
+  lcd.drawRectangle(x, y, size*2, width, COLOR_THEME_PRIMARY2, 1)
   if val>0 then
     local sz_filled = val*(size/max)
-    lcd.drawFilledRectangle(x+size-sz_filled, y, sz_filled, width, CURVE_COLOR)
+    lcd.drawFilledRectangle(x+size-sz_filled, y, sz_filled, width, COLOR_THEME_SECONDARY1)
   else
     if val<0 then
       local sz_filled = (-1)*val*(size/max)
-      lcd.drawFilledRectangle(x+size, y, sz_filled, width, CURVE_COLOR)
+      lcd.drawFilledRectangle(x+size, y, sz_filled, width, COLOR_THEME_SECONDARY1)
     else
-      lcd.drawLine(x+size, y, x+size, y+width-1, CURVE_COLOR, 1)
+      lcd.drawLine(x+size, y, x+size, y+width-1, COLOR_THEME_SECONDARY1, 1)
     end
   end
 end
@@ -73,17 +73,18 @@ end
 
 function refresh(pie)
   -- lcd.setColor(CUSTOM_COLOR, lcd.RGB(0,102,0))
-  lcd.setColor(CUSTOM_COLOR, WHITE)
+  -- lcd.setColor(CUSTOM_COLOR, WHITE)
+  local TEXT_COLOR = COLOR_THEME_PRIMARY2
   lcd.drawBitmap(pie.bitmap, pie.zone.x+80, pie.zone.y+8, 100)
 
   -- Front outputs
   if pie.options.FrontOutput==1 then
     lcd.drawText(pie.zone.x, pie.zone.y, "SA", SMLSIZE+TEXT_COLOR)
-    lcd.drawGauge(pie.zone.x+19, pie.zone.y+2, 30, 10, 100+(getValue('ch' .. pie.options.FirstFrontChannel)/10), 200, CURVE_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+2, 30, 10, 100+(getValue('ch' .. pie.options.FirstFrontChannel)/10), 200, COLOR_THEME_SECONDARY1)
     lcd.drawText(pie.zone.x, pie.zone.y+11, "SB", SMLSIZE+TEXT_COLOR)
-    lcd.drawGauge(pie.zone.x+19, pie.zone.y+13, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+1))/10), 200, CURVE_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+13, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+1))/10), 200, COLOR_THEME_SECONDARY1)
     lcd.drawText(pie.zone.x, pie.zone.y+22, "S1", SMLSIZE+TEXT_COLOR)
-    lcd.drawGauge(pie.zone.x+19, pie.zone.y+25, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+2))/10), 200, CURVE_COLOR)
+    lcd.drawGauge(pie.zone.x+19, pie.zone.y+25, 30, 10, 100+(getValue('ch' .. (pie.options.FirstFrontChannel+2))/10), 200, COLOR_THEME_SECONDARY1)
   end
 
   -- Front lif
@@ -100,17 +101,17 @@ function refresh(pie)
   end
 
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y, "SC", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[1])/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[1])/10), 200, COLOR_THEME_SECONDARY1)
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+11, "SD", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[2])/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-64, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[2])/10), 200, COLOR_THEME_SECONDARY1)
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+22, "Vit", SMLSIZE+TEXT_COLOR)
   drawServo(pie.zone.x+pie.zone.w-64, pie.zone.y+25, 20, 10, getValue('ch' .. rearOut[3])/10, 100)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y, "S2", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[4])/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+2, 40, 10, 100+(getValue('ch' .. rearOut[4])/10), 200, COLOR_THEME_SECONDARY1)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+11, "L1", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[5])/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+13, 40, 10, 100+(getValue('ch' .. rearOut[5])/10), 200, COLOR_THEME_SECONDARY1)
   lcd.drawText(pie.zone.x+pie.zone.w-132, pie.zone.y+22, "L2", SMLSIZE+TEXT_COLOR)
-  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch' .. rearOut[6])/10), 200, CURVE_COLOR)
+  lcd.drawGauge(pie.zone.x+pie.zone.w-106, pie.zone.y+25, 40, 10, 100+(getValue('ch' .. rearOut[6])/10), 200, COLOR_THEME_SECONDARY1)
 
   -- Rear lift
   lcd.drawText(pie.zone.x+pie.zone.w-20, pie.zone.y+55, "SG", SMLSIZE+TEXT_COLOR)
@@ -166,7 +167,7 @@ function refresh(pie)
     lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = sound", SMLSIZE+TEXT_COLOR)
   end
   if getFlightMode()==1 then
-    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = Av/Ar", SMLSIZE+CURVE_COLOR+BOLD)
+    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = Av/Ar", SMLSIZE+COLOR_THEME_SECONDARY1+BOLD)
   end
   lcd.drawText(pie.zone.x+120, pie.zone.y+pie.zone.h-12, "SF = Mode", TEXT_COLOR+BOLD)
 
@@ -176,25 +177,25 @@ function refresh(pie)
   local xsize = 45
   local ysize = 16
 
-  lcd.drawRectangle(rectx, recty, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx, recty, xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+1, recty, "L Wa", SMLSIZE+TEXT_COLOR)
-  lcd.drawRectangle(rectx, recty+ysize, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx, recty+ysize, xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+1, recty+ysize, "A Li", SMLSIZE+TEXT_COLOR)
-  lcd.drawRectangle(rectx, recty+(2*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx, recty+(2*ysize), xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+1, recty+(2*ysize), "Li", SMLSIZE+TEXT_COLOR)
-  lcd.drawRectangle(rectx, recty+(3*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx, recty+(3*ysize), xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+1, recty+(3*ysize), "HLi", SMLSIZE+TEXT_COLOR)
 
-  lcd.drawText(rectx+xsize, recty, "1", SMLSIZE+CURVE_COLOR)
-  lcd.drawText(rectx+xsize, recty+ysize, "2", SMLSIZE+CURVE_COLOR)
-  lcd.drawText(rectx+xsize, recty+(2*ysize), "3", SMLSIZE+CURVE_COLOR)
-  lcd.drawText(rectx+xsize, recty+(3*ysize), "4", SMLSIZE+CURVE_COLOR)
+  lcd.drawText(rectx+xsize, recty, "1", SMLSIZE+COLOR_THEME_SECONDARY1)
+  lcd.drawText(rectx+xsize, recty+ysize, "2", SMLSIZE+COLOR_THEME_SECONDARY1)
+  lcd.drawText(rectx+xsize, recty+(2*ysize), "3", SMLSIZE+COLOR_THEME_SECONDARY1)
+  lcd.drawText(rectx+xsize, recty+(3*ysize), "4", SMLSIZE+COLOR_THEME_SECONDARY1)
 
-  lcd.drawRectangle(rectx+8+xsize, recty, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx+8+xsize, recty, xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+9+xsize, recty, "R Wa", SMLSIZE+TEXT_COLOR)
-  lcd.drawRectangle(rectx+8+xsize, recty+ysize, xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx+8+xsize, recty+ysize, xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+9+xsize, recty+ysize, "4 Wa", SMLSIZE+TEXT_COLOR)
-  lcd.drawRectangle(rectx+8+xsize, recty+(2*ysize), xsize, ysize, CURVE_COLOR, 1)
+  lcd.drawRectangle(rectx+8+xsize, recty+(2*ysize), xsize, ysize, COLOR_THEME_SECONDARY1, 1)
   lcd.drawText(rectx+9+xsize, recty+(2*ysize), "Turn L", SMLSIZE+TEXT_COLOR)
 end
 

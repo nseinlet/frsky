@@ -1,3 +1,0 @@
-[Models]
-model1.bin
-model2.bin

@@ -1,3 +1,0 @@
-XM....frk:        16 VOIES
-XM..._RSSI8.frk:   7 VOIES + RSSI sur VOIE08
-XM..._RSSI16.frk: 15 VOIES + RSSI sur VOIE16

@@ -36,10 +36,9 @@ end
 function refresh(wgt)
    local val = getValue(wgt.options.soundsource);
    -- #100/88/76/64/52/40/28/16/0
+   local TEXT_COLOR = COLOR_THEME_PRIMARY2
    if getValue(wgt.options.soundtrigger) > 0 then
-     lcd.setColor(TEXT_COLOR, RED)
-   else
-     lcd.setColor(TEXT_COLOR, BLACK)
+      TEXT_COLOR = COLOR_THEME_FOCUS
    end
     if val < -900 then
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "Start", TEXT_COLOR+BOLD)
@@ -81,7 +80,6 @@ function refresh(wgt)
     else
        lcd.drawText(wgt.zone.x+5, wgt.zone.y+5, "", BLACK+BOLD)
     end
-    lcd.setColor(TEXT_COLOR, BLACK)
 end
 
 return { name="Benedini", options=options, create=create, update=update, refresh=refresh, background=background }

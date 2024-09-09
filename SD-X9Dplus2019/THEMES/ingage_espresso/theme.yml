@@ -1,0 +1,17 @@
+---
+summary:
+  name: IG_Espresso
+  author: InGage FPV
+  info: FLy fast boi!
+colors:
+  PRIMARY1:   0xb67847
+  PRIMARY2:   0x7c1e3b
+  PRIMARY3:   0x8a3f1f
+  SECONDARY1: 0xb67847
+  SECONDARY2: 0x8a3f1f
+  SECONDARY3: 0xf6e7ce
+  FOCUS:      0x8a3f1f
+  EDIT:       0xf6e7ce
+  ACTIVE:     0x8a3f1f
+  WARNING:    0xFFFFFF
+  DISABLED:   0x808080

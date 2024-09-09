@@ -257,7 +257,7 @@ local function Multi_Init()
     stick_names[4] = "Aux3"
   elseif ( protocol == 48 and sub_protocol == 0 ) then -- V761 3CH
     stick_names[4] = "n-a"
-  elseif protocol == 47 or  protocol == 49 or  protocol == 58 then -- GD00x, KF606, FX816
+  elseif protocol == 47 or  protocol == 49 or  ( protocol == 58 and sub_protocol < 2 ) then -- GD00x, KF606, FX816
     stick_names[1] = "n-a"
     stick_names[2] = "n-a"
   end
@@ -280,11 +280,27 @@ local function Multi_Init()
   end
  
   --Exceptions on first 4 channels...
-  if ( protocol == 73 or (protocol == 74 and sub_protocol == 0) ) then -- Kyosho or RadioLink Surface
+  if ( protocol == 73 or (protocol == 74 and sub_protocol == 0) or (protocol == 60 and sub_protocol == 2) or protocol == 89) then -- Kyosho or RadioLink Surface or Pelikan/SCX24 or Losi
     channel_names[1] = "ST"
     channel_names[2] = "THR"
     channel_names[3] = "CH3"
-    channel_names[4] = "CH4"
+    if(protocol == 60 and sub_protocol == 2) then
+      channel_names[4] = "n-a"
+    else
+      channel_names[4] = "CH4"
+    end
+  end
+  if ( protocol == 6 and sub_protocol == 5 ) then -- DSMR
+    channel_names[1] = "ST"
+    channel_names[2] = "THR"
+    channel_names[3] = "AUX1"
+    channel_names[4] = "AUX2"
+  end
+  if ( protocol == 90 ) then -- Mould King
+    channel_names[1] = "A"
+    channel_names[2] = "B"
+    channel_names[3] = "C"
+    channel_names[4] = "D"
   end
  
   --Check MultiChan.txt

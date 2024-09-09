@@ -1,0 +1,17 @@
+---
+summary: 
+  name: Tractors!
+  author: Nicolas Seinlet
+  info: Tractors themes
+colors:
+  PRIMARY1: 0x9C1410
+  PRIMARY2: 0xFFFFFF
+  PRIMARY3: 0x9C1410
+  SECONDARY1: 0x9C1410
+  SECONDARY2: 0xDEDDDA
+  SECONDARY3: 0xFFFFFF
+  FOCUS: 0x5E5C64
+  EDIT: 0x5E5C64
+  ACTIVE: 0xF66151
+  WARNING: 0xFFFFFF
+  DISABLED: 0x000000

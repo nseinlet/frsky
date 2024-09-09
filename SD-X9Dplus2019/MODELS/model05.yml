@@ -1,0 +1,716 @@
+header: 
+   name: "Snapper7"
+   modelId: 
+      0:
+         val: 12
+   bitmap: "Tor110"
+timers: 
+   0:
+      start: 240
+      swtch: "NONE"
+      value: 0
+      mode: THR
+      countdownBeep: 2
+      minuteBeep: 1
+      persistent: 0
+      countdownStart: -1
+      name: "Lip\xF1"
+   1:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   2:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 0
+displayChecklist: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Moteur"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Roulis"
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Lacet"
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Tangag"
+ -
+   weight: 100
+   destCh: 4
+   srcRaw: SE
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Armer"
+ -
+   weight: 100
+   destCh: 5
+   srcRaw: SA
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Beeper"
+ -
+   weight: 100
+   destCh: 6
+   srcRaw: SB
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Mode"
+ -
+   weight: 100
+   destCh: 7
+   srcRaw: POT1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 8
+   srcRaw: I9
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Parm"
+ -
+   weight: 200
+   destCh: 15
+   srcRaw: I8
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: -100
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Rssi"
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SE
+   carryTrim: 0
+   chn: 4
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SA
+   carryTrim: 0
+   chn: 5
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SB
+   carryTrim: 0
+   chn: 6
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: POT1
+   carryTrim: 0
+   chn: 7
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 100
+   srcRaw: tele(9)
+   carryTrim: 0
+   chn: 8
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "Rssi"
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SH
+   carryTrim: 0
+   chn: 9
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: "Parm"
+   offset: 0
+logicalSw: 
+   0:
+      func: FUNC_VNEG
+      def: "tele(0),380"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   1:
+      func: FUNC_VPOS
+      def: "tele(0),150"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   2:
+      func: FUNC_EDGE
+      def: "L1,40,-"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+   3:
+      func: FUNC_STICKY
+      def: "L3,L2"
+      andsw: "NONE"
+      delay: 0
+      duration: 0
+customFn: 
+   0:
+      swtch: "L4"
+      func: PLAY_TRACK
+      def: "batlow,1x"
+   1:
+      swtch: "ON"
+      func: PLAY_TRACK
+      def: "Mob7,1x"
+   2:
+      swtch: "L4"
+      func: PLAY_VALUE
+      def: "tele(0),8"
+   3:
+      swtch: "SH0"
+      func: PLAY_VALUE
+      def: "tele(0),1x"
+   4:
+      swtch: "SI2"
+      func: RESET
+      def: "Tmr1,1"
+flightModeData: 
+   0:
+      trim: 
+         0:
+            value: -2
+            mode: 0
+         3:
+            value: -2
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: AuBuCuDuEuFuGuHuIu
+rssiSource: none
+voltsSource: none
+altitudeSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+moduleData: 
+   1:
+      type: TYPE_MULTIMODULE
+      subType: 15,0
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOPULSES
+      mod: 
+         multi: 
+            disableTelemetry: 0
+            disableMapping: 0
+            autoBindMode: 0
+            lowPowerMode: 0
+            optionValue: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+inputNames: 
+   0:
+      val: "Thr"
+   1:
+      val: "Ail"
+   2:
+      val: "Ele"
+   3:
+      val: "Rud"
+   8:
+      val: "Rss\xF7"
+   9:
+      val: "Par\xF3"
+potsWarnEnabled: 0
+telemetrySensors: 
+   0:
+      id1: 
+         id: 528
+      id2: 
+         instance: 251
+      label: "VFAS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   1:
+      id1: 
+         id: 2320
+      id2: 
+         instance: 251
+      label: "A4"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   2:
+      id1: 
+         id: 512
+      id2: 
+         instance: 251
+      label: "Curr"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 2
+      prec: 1
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 1
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   3:
+      id1: 
+         id: 1536
+      id2: 
+         instance: 251
+      label: "Fuel"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 13
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   4:
+      id1: 
+         id: 2112
+      id2: 
+         instance: 251
+      label: "Hdg"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 20
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   5:
+      id1: 
+         id: 1792
+      id2: 
+         instance: 251
+      label: "AccX"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 19
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   6:
+      id1: 
+         id: 1808
+      id2: 
+         instance: 251
+      label: "AccY"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 19
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   7:
+      id1: 
+         id: 65534
+      id2: 
+         instance: 248
+      label: "TRSS"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 17
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   8:
+      id1: 
+         id: 65533
+      id2: 
+         instance: 248
+      label: "TQly"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 0
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   9:
+      id1: 
+         id: 61697
+      id2: 
+         instance: 248
+      label: "RSSI"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 13
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   10:
+      id1: 
+         id: 1824
+      id2: 
+         instance: 251
+      label: "AccZ"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 19
+      prec: 2
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+   11:
+      id1: 
+         id: 61700
+      id2: 
+         instance: 248
+      label: "RxBt"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 1
+      prec: 1
+      autoOffset: 0
+      filter: 1
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 132
+            offset: 0
+   12:
+      id1: 
+         id: 1024
+      id2: 
+         instance: 251
+      label: "Tmp1"
+      subId: 0
+      type: TYPE_CUSTOM
+      unit: 11
+      prec: 0
+      autoOffset: 0
+      filter: 0
+      logs: 1
+      persistent: 0
+      onlyPositive: 0
+      cfg: 
+         custom: 
+            ratio: 0
+            offset: 0
+screens: 
+   0:
+      type: VALUES
+      u: 
+         lines: 
+            0:
+               sources: 
+                  0:
+                     val: tele(9)
+                  1:
+                     val: tele(0)
+            2:
+               sources: 
+                  1:
+                     val: TIMER1
+   1:
+      type: BARS
+      u: 
+         bars: 
+            0:
+               source: I0
+               barMin: -100
+               barMax: 100
+            1:
+               source: I8
+               barMin: 20
+               barMax: 100
+            2:
+               source: tele(0)
+               barMin: 150
+               barMax: 380
+            3:
+               source: TIMER1
+               barMin: 0
+               barMax: 180
+   2:
+      type: SCRIPT
+      u: 
+         script: 
+            file: "bf"
+view: 0
+modelRegistrationID: "\xF5 \xE6\xE6%\xE6\x04\x18"

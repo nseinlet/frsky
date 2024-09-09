@@ -1,3 +1,0 @@
-XM....frk:        16 VOIES
-XM..._RSSI8.frk:   8 VOIES + RSSI
-XM..._RSSI16.frk: 16 VOIES + RSSI

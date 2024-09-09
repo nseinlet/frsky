@@ -1,0 +1,267 @@
+header: 
+   name: ""
+   modelId: 
+      0:
+         val: 5
+      1:
+         val: 4
+timers: 
+   0:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   1:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+   2:
+      start: 0
+      swtch: "NONE"
+      value: 0
+      mode: OFF
+      countdownBeep: 0
+      minuteBeep: 0
+      persistent: 0
+      countdownStart: -1
+      name: ""
+telemetryProtocol: 0
+thrTrim: 0
+noGlobalFunctions: 0
+displayTrims: 0
+ignoreSensorIds: 0
+trimInc: 0
+disableThrottleWarning: 1
+displayChecklist: 0
+extendedLimits: 0
+extendedTrims: 0
+throttleReversed: 0
+beepANACenter: 0
+mixData: 
+ -
+   weight: 100
+   destCh: 0
+   srcRaw: I0
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Engine"
+ -
+   weight: 100
+   destCh: 1
+   srcRaw: I1
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Roll"
+ -
+   weight: 100
+   destCh: 2
+   srcRaw: I2
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Pitch"
+ -
+   weight: 100
+   destCh: 3
+   srcRaw: I3
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "Yaw"
+ -
+   weight: 100
+   destCh: 4
+   srcRaw: I4
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+ -
+   weight: 100
+   destCh: 5
+   srcRaw: I5
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   offset: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
+expoData: 
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Thr
+   carryTrim: 0
+   chn: 0
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ail
+   carryTrim: 0
+   chn: 1
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Ele
+   carryTrim: 0
+   chn: 2
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: Rud
+   carryTrim: 0
+   chn: 3
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SA
+   carryTrim: 0
+   chn: 4
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+ -
+   mode: 3
+   scale: 0
+   srcRaw: SB
+   carryTrim: 0
+   chn: 5
+   swtch: "NONE"
+   flightModes: 000000000
+   weight: 100
+   name: ""
+   offset: 0
+flightModeData: 
+   0:
+      trim: 
+         1:
+            value: -2
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
+thrTraceSrc: Thr
+switchWarningState: EuFu
+rssiSource: none
+thrTrimSw: 0
+potsWarnMode: WARN_OFF
+moduleData: 
+   0:
+      type: TYPE_XJT_PXX1
+      subType: D16
+      channelsStart: 0
+      channelsCount: 16
+      failsafeMode: NOPULSES
+      mod: 
+         pxx: 
+            power: 0
+            receiverTelemetryOff: 0
+            receiverHigherChannels: 0
+            antennaMode: 0
+inputNames: 
+   0:
+      val: "Gaz"
+   1:
+      val: "Ail"
+   2:
+      val: "Prf"
+   3:
+      val: "Dir"
+potsWarnEnabled: 0
+view: 0
+modelRegistrationID: ""
