@@ -130,7 +130,7 @@ function refresh(pie)
   lcd.drawText(pie.zone.x+30, pie.zone.y+58, "RssI", SMLSIZE+TEXT_COLOR)
   lcd.drawChannel(pie.zone.x+65, pie.zone.y+58, "RSSI", SMLSIZE+TEXT_COLOR+BOLD)
   lcd.drawText(pie.zone.x+30, pie.zone.y+69, "RxBt", SMLSIZE+TEXT_COLOR)
-  lcd.drawChannel(pie.zone.x+65, pie.zone.y+69, "RxBt", SMLSIZE+MENU_TITLE_BGCOLOR+BOLD)
+  lcd.drawChannel(pie.zone.x+65, pie.zone.y+69, "RxBt", SMLSIZE+TEXT_COLOR+BOLD)
 
   if getValue("C1")>0 then
       -- Only available with FLVSS or any other compatible sensor
@@ -164,7 +164,7 @@ function refresh(pie)
   drawServo(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, 40, 10, getValue('ch32')/10, 100)
   drawVerticalGauge(pie.zone.x+pie.zone.w-32, pie.zone.y+pie.zone.h-11, 23, 10, 100+(getValue('6P')/10), 200)
   if getFlightMode()==0 then
-    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = sound", SMLSIZE+TEXT_COLOR)
+    lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SH = sound", SMLSIZE+TEXT_COLOR)
   end
   if getFlightMode()==1 then
     lcd.drawText(pie.zone.x+pie.zone.w-118, pie.zone.y+pie.zone.h-12, "SE = Av/Ar", SMLSIZE+COLOR_THEME_SECONDARY1+BOLD)
