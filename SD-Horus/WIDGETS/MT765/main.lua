@@ -17,9 +17,10 @@
 ---- #########################################################################
 
 local options = {
-  { "Option1", SOURCE, 1 },
-  { "Option2", VALUE, 1000 },
-  { "Option3", COLOR, RED }
+  { "FrontLift", BOOL, 0 },
+  { "FrontOutput", BOOL, 0 },
+  { "FirstFrontChannel", VALUE, 12, 1, 24},
+  { "FirstRearChannel", VALUE, 6, 1, 24},
 }
 
 local function drawVerticalGauge(x, y, size, width, value, max)
@@ -59,7 +60,7 @@ local function drawServo(x, y, size, width, value, max)
 end
 
 local function create(zone, options)
-  local pie = { zone=zone, options=options, bitmap = Bitmap.open("/IMAGES/MT765.png") }
+  local pie = { zone=zone, options=options, bitmap = Bitmap.open("/IMAGES/" .. model.getInfo().bitmap) }
   return pie
 end
 
