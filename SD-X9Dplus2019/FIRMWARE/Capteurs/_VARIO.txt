@@ -1,0 +1,18 @@
+VARIO2_2014-01-24.frk:
+======================
+Firmware orginal pour l'ancien
+hardware.
+
+VARIO2_2014-10-08.frk:
+======================
+FrSky utilise une nouvelle puce
+pour le variometre de haute
+precision depuis Avril 2014.
+Ne pas faire de mise a jour sur un
+hardware anterieur a cette date.
+Il est recommande de mettre a jour
+les Varios ayant une date de
+production comprise entre Avril et
+Septembre 2014.
+Cette mise a jour ameliore la
+precision.

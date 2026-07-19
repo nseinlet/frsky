@@ -1,0 +1,7 @@
+Il faut desolidariser le VCC du
+cordon de mise a jour. Connectez
+uniquement le GND et le signal
+S.Port sur le RB. Brancher le VCC
+sur le + de n'importe quelle sortie
+CH1-CH16.
+Puis, faire la mise a jour.

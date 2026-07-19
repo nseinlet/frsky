@@ -1,0 +1,12 @@
+FLVSS_A_2014-08-05.frk:
+=======================
+Firmware uniquement pour le nouvel
+hardware du capteur FLVSS.
+La derniere lettre du numero de
+serie est "A". Si ce n'est pas le
+cas, alors ne mettez pas a jour !!!
+
+FLVSS_2014-03-05.frk:
+=====================
+Firmware orginal pour l'ancien
+hardware du capteur FLVSS.
